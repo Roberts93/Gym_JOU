@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-oct-2014, 23:22:04
+    Author     : Oscar
+*/
+
+.titulos{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 60px;
+    text-decoration: activeborder;
+    font-style: italic;
+}
+
+.tex{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 30px;
+    text-decoration: activeborder;
+    font-style: italic;
+    position: relative;
+}
+
+#secusu{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: rgba(242,246,248,1);
+background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(44%, rgba(181,198,208,1)), color-stop(72%, rgba(216,225,231,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
+}
+
+#secpass{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    background: rgba(242,246,248,1);
+background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(44%, rgba(181,198,208,1)), color-stop(72%, rgba(216,225,231,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(181,198,208,1) 44%, rgba(216,225,231,1) 72%, rgba(224,239,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );
+}
+
+.boton{
+    background: rgba(73,155,234,1);
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+    display:inline-block;
+    margin:10px 80px;
+    padding:7px 20px 7px;
+    color: #ffffff;
+    text-decoration:none;
+    
+    text-shadow: rgba(0,0,0,1) 5px 5px 5px;
+    border:2px solid #cccccc;
+    
+}

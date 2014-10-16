@@ -1,0 +1,31 @@
+
+/* 
+    Created on : 15/10/2014, 10:43:58 PM
+    Author     : RO CARLOS
+*/
+
+#img{
+    vertical-align: middle;
+    font-size: 35px;
+}
+
+#pocision{
+    float: left;
+     font-size: 14px;
+     margin: 20px;
+}
+
+
+#estilito{
+    -webkit-box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75);
+box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75); 
+    width:  98%;
+    border: 1px #cccccc solid;
+        height: 188px;
+        text-align: left;
+        font-family: monospace;
+        font-size: 20px;
+        background: white;  
+        margin: 10px;
+}
