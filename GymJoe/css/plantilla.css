@@ -18,7 +18,7 @@ border: 2px solid #000000;
 
 #cajaprincipa{
     width: 90%;
-        height: 900px;
+        height: 1200px;
         margin-left: 60px;
         background: #ffffff;
 border: 2px solid #000000;
@@ -45,7 +45,7 @@ box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75);
 #cuerpo{
     border: 1px #cccccc solid;
     width: 80%;
-    height: 500px;
+    height: 750px;
     float: left;
 }
 #categorias{

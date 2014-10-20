@@ -10,14 +10,17 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/estilosBlog.css">
+        <link rel="stylesheet" href="css/plantilla.css">
+        <link rel="stylesheet"  href="css/menu.css">
+        <link rel="stylesheet" href="css/textos.css">
     </head>
     <body>
         <div id="caja1">
-            <header id="cabecera">
-                 
-                <center><h1 id="text">BLOG</h1> </center>
-                <img src="img/comida.jpg" id="tit" >
-            </header>
+        
+            <?php
+include('menu.php');
+            ?>
+            <img src="img/comida.jpg" id="tit" >
             <section id="Titulo">5 ideas de comidas rápidas y saludables!</section><br>
             <section id="articulo">¿Quién dijo que la comida rápida no era saludable?
 <p>Es la comida chatarra la que debemos evitar pero para quienes no tienen demasiado 
@@ -47,9 +50,10 @@ un exquisito plato.</p>
 El atún es un alimento muy saludable, es rico en proteínas y bajo en grasas por lo que es cocerlo a la parrilla junto a
 algunos vegetales es una idea perfecta que podrás preparar en cuestión de minutos.</p>
 
+<img src="img/30.jpg" id="articulo2" >
 </section>
-        </div><br>
-        
+        </div></br>
+      
        
         
         
