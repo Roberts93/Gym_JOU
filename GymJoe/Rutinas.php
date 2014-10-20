@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="css/plantilla.css">
         <link rel="stylesheet"  href="css/menu.css">
         <link rel="stylesheet" href="css/textos.css">
-        <link rel="stylesheet" href="css/Rutinas.css">
         <link rel="stylesheet" href="css/piepagina.css">
+        <link rel="stylesheet" href="css/Rutinas.css">
     </head>
     <body background="img/Textura.jpg">
     <!--
@@ -17,7 +17,7 @@
                 <img src="img/GymBanner.png"  id="tit">
             </header>
             -->
-              <?php
+<?php
 include('menu.php');
 ?>	
 

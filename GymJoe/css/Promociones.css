@@ -1,3 +1,44 @@
-*{
-	background: black;
+#img{
+    vertical-align: middle;
+    margin: 10px;
+    font-size: 35px;
+    width: 320px;
+    height: 200px;
+}
+
+#cajaprincipal{
+    width: 90%;
+        height: 1200px;
+        margin-left: 60px;
+        background: #ffffff;
+border: 2px solid #000000;
+}
+
+#texto_centro{
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    margin: 10px;
+    top: -100px;
+}
+
+#pocision{
+    float: left;
+     font-size: 14px;
+     margin: 20px;
+}
+
+
+#estilito{
+    -webkit-box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75);
+box-shadow: 5px 17px 20px 5px rgba(0,0,0,0.75); 
+    width:  98%;
+    border: 1px #cccccc solid;
+        height: 188px;
+        text-align: left;
+        font-family: monospace;
+        font-size: 20px;
+        background: white;  
+        margin: 10px;
 }
