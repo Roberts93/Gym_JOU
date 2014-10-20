@@ -10,6 +10,6 @@
                     <li class="lito"><a href="Rutinas.php">Rutinas</a></li>
                     <li id="lisintal"><a href="instalaciones.php">Instalaciones</a></li>
                     <li class="lito"><a href="blog.php">Blog</a></li>
-                    <li id="lispromo"><a>Promociones</a></li>
+                    <li id="lispromo"><a href="Promociones">Promociones</a></li>
                     </ul>
             </nav>
