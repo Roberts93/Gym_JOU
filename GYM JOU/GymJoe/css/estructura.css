@@ -1,0 +1,33 @@
+*{
+	display: block;
+	margin-top: 0px;
+}
+body,div,header{
+	display: block;
+	margin-top: 0px;
+}
+
+#caja_principal{
+	width: 90%;
+	height: 100%;
+	border:1px solid white;
+	margin-left: 55px;
+	background: white;
+	margin-top: 0px;
+}
+
+body{
+	background: black;
+	color:white;
+}
+
+@font-face {
+    font-family: 'sinkin';
+    src: url('SinkinSans-600SemiBold.otf'); 
+}
+
+#letra{
+  font-family: 'sinkin';
+  font-size:90px;
+  color: red;
+}
