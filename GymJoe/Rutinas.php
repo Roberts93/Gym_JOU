@@ -1,87 +1,102 @@
-<!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Rutinas</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/plantilla.css">
-        <link rel="stylesheet"  href="css/menu.css">
-        <link rel="stylesheet" href="css/textos.css">
-        <link rel="stylesheet" href="css/piepagina.css">
-        <link rel="stylesheet" href="css/Rutinas.css">
-    </head>
-    <body background="img/Textura.jpg">
-    <!--
-        <header id="cabeza">
-                <img src="img/GymBanner.png"  id="tit">
-            </header>
-            -->
-<?php
-include('menu.php');
-?>	
+<head>
+	<title>Gym Joe</title>
+	<link rel="stylesheet" type="text/css" href="css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="css/menu2.css">
+    <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
+    <link rel="stylesheet" type="text/css" href="css/Rutinas.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="caja_principal">
+	
+							<?php 
+								include('menu.php');
+							?>
+						<br>
+    <hr width="100%" height="100" color="red">
 
-<div id="cajaprincipal">
-<h2><center>Rutinas Basicas para tu cuerpo!!</center></h2>
-<header>
+    <div id="caja_arriba">
+    <h2><center style="color: black;">Rutinas Basicas para tu Cuerpo!! </center></h2>
+    
+    <div>
 <img  style="float" src="img/3.png" id="img" alt="" controls>
-<a id="img">Como Mejorar la Resistencia? </a>
-<h6 id="texto_centro"><em>Tips y recomendaciones basicas</em></h6>
-<hr>
-</header>
-
+<img  style="float" src="img/SPORTA/11.png" id="img2" alt="" controls>
+<p id="titulo">Como Mejorar la Resistencia? </p>
+<h6 id="texto_centro"><em><center>Tips y recomendaciones basicas</center></em></h6>
+</div>
+</div>
+<hr width="100%" height="100" color="green">
 <br>
 
-<div id="cuerpo">
-<header id="pocision">
-<img src="img/2.jpg" width="200" height="150" id="pocision" controls>
-<p><b>¿Que es el sobre entrenamiento?</b></p>
-</header>
+<div id="cajota">
 
-<header id="pocision">
-<img src="img/3.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Quieres Probar una rutina diferente?</b></p>
-</header>
-   
-<header id="pocision">
-<img src="img/SPORTA/16.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Aprende la forma de realizar las sentadillas?</b></p>
-</header>
-        
-<header id="pocision">
-<img src="img/SPORTA/39.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Definicion Muscular rapida?</b></p>
-</header>
+<figure class="pocision">
+<img src="img/2.jpg" width="220" height="165" controls>
+<figcaption><b>Que es el sobre entrenamiento?</b></figcaption>
+</figure>
 
-<header id="pocision">
-<img src="img/SPORTA/44.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿7 beneficios de las sentadillas?</b></p>
-</header>
+<div class="pocision">
+<img align="center" src="img/3.jpg" width="220" height="165" controls>
+<figcaption><b>Quieres Probar una rutina diferente?</b></figcaption>
+</div>
 
-<header id="pocision">
-<img src="img/SPORTA/46.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿8 Errores que cometes en el Gym?</b></p>
-</header>
+<div class="pocision">
+<img src="img/SPORTA/16.jpg" width="220" height="165" controls>
+<figcaption><b>Forma de realizar las sentadillas?</b></figcaption>
+</div>
 
-<header id="pocision">
-<img src="img/SPORTA/48.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Ejercicio lento y controlado?</b></p>
-</header>
+<div class="pocision">
+<img src="img/SPORTA/39.jpg" width="200" height="150" controls>
+<figcaption><b>Definicion Muscular rapida?</b></figcaption>
+</div>
 
-<header id="pocision">
-<img src="img/SPORTA/58.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Tips para un Mejor entrenamiento?</b></p>
-</header>
+<div class="pocision">
+<img src="img/SPORTA/44.jpg" width="220" height="150" controls>
+<figcaption><b>7 beneficios de las sentadillas?</b></figcaption>
+</div>
 
-<header id="pocision">
-<img src="img/SPORTA/64.jpg" width="200" height="150" controls id="pocision">
-<p><b>¿Maximimar el desarrollo Muscular?</b></p>
-</header>
-    </div>
-            </div>
-            <hr id="linea">
-        <div id="pie">
+<div class="pocision">
+<img src="img/SPORTA/46.jpg" width="220" height="150" controls>
+<figcaption><b>8 Errores que cometes en el Gym?</b></figcaption>
+</div>
 
-        </div>
-    </body>
+<div class="pocision">
+<img src="img/SPORTA/48.jpg" width="220" height="165" controls>
+<figcaption><b>Ejercicio lento y controlado?</b></figcaption>
+</div>
+
+<div class="pocision">
+<img src="img/SPORTA/58.jpg" width="220" height="150" controls>
+<figcaption><b>Tips para un Mejor entrenamiento?</b></figcaption>
+</div>
+
+<div class="pocision">
+<img src="img/SPORTA/64.jpg" width="220" height="150" controls>
+<figcaption><b>Maximimar el desarrollo Muscular?</b></figcaption>
+</div>
+
+<div class="pocision">
+<img src="img/SPORTA/1.jpg" width="220" height="150" controls>
+<figcaption><b> Tonifica tus Brazos?</b></figcaption>
+</div>
+
+<div class="pocision">
+<img src="img/SPORTA/31.jpg" width="220" height="150" controls>
+<figcaption><b> Luce una figura envidiable</b></figcaption>
+</div>
+
+<div class="pocision" >
+<img align="center" src="img/SPORTA/69.jpg" width="220" height="150" controls >
+<figcaption><b>Mejora tu Abdomen</b></figcaption>
+</div>
+</div>
+
+</div>
+
+	<?php
+	include('pie.php');
+	?>
+
+</body>
 </html>

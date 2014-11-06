@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Gym Joe</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/plantilla.css">
-        <link rel="stylesheet"  href="css/menu.css">
-        <link rel="stylesheet" href="css/textos.css">
-    </head>
-    <body background="img/Textura.jpg">
-        
-        <div>
-            <?php
-            include('menu.php');
-            ?>
-            <aside id="usuario">
-                <a class="titulos">Usuarios</a>
-                <hr>
-                <section id="secusu">
-                <a class="tex">Usuario: </a>
-                <input type="text" value="Nombre usuario">
-                </section>
-                <section id="secpass">
-                <a class="tex">Contraseña: </a>
-                <input type="password" value="Contraseña">
-                </section>
-                
-                <input class="boton" type="button" value="Iniciar Sesion">
-            </aside>
+<head>
+	<title>Gym Joe</title>
+	<link rel="stylesheet" type="text/css" href="css/estructura.css">
+	<link rel="stylesheet" type="text/css" href="css/menu2.css">
+	<link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/portada.css">
+</head>
+<body>
+<div id="caja_principal">
+		<?php 
+		include('menu.php');
+		?>
+						<br>
+	
+	<h1  id="quien" style="font-family: Bastion; color: black; margin-left:7%; margin-top: 5%; pading: 0px; ">QUIENES SOMOS</h1>
+	<hr width="90%" height="7%" color="blue">
+
+	<p>
+		GYM JOE somos una organizacion en linea de Suplementos Alimenticios y articulos deportivos.
+		 Contamos con la caracteristica principal: ofrecer los <b>PRECIOS MAS BAJOS DEL MERCADO.</b>
+	</p>
+
+<p>
+GYM JOE tiene su sede en Ciudad Altamirano, Guerrero, no obstante somos una Gymnasio/Tienda a nivel Nacional
+ y entregamos nuestros productos a todo Mexico, somos una organizacion eficaz y esto se ve reflejado en nuestros envios.
+</p>
+
+<p>
+	La Mision de GYM JOE es ser la mejor Empresa en el Pais, ofreciendo un inmejorable precio y un excelente servicio, ganandonos la preferencia de todo el mercado Mexicano.
+</p>
+
+<p>
+	Nuestra Vision es expandirnos a nivel Internacional, ser una Empresa Mexicana competitiva en el mercado de los Suplementos y Articulos Deportivos consolidando asi nuestra marca.
+</p>
 
 
-        </div>
-    </body>
+	<div align="center">
+		<img align='center' style="float" src="img/portada.png" id="img" alt="" controls>
+	</div>
+
+</div>
+
+	<?php
+	include('pie.php');
+	?>
+
+</body>
 </html>
