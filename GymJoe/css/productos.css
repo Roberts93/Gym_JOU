@@ -1,0 +1,51 @@
+#sep{
+	margin: 5% 0% 0% 0%;
+}
+
+#carrusel{
+	margin: auto auto auto 0%;
+	padding: auto;
+	border: 3px solid red;
+	text-align: center;
+	color: black;
+	width: 78%;
+	height: 60%;
+	float: left;
+}
+#servicio{
+	margin: auto auto auto auto;
+	border: 3px solid green;
+	color: black;
+	width: 21%;
+	height: 60%;
+	display: inline-block;
+}
+#max{
+	margin: auto auto 6% auto;
+}
+#encabezadomax{
+	color: black;
+	border-radius: 70px 20px;	
+	width: 100%;
+	height: 10%;
+	margin: 4% auto auto auto;
+}
+#des{
+	font-size: 50px;
+	margin: auto auto auto 5%;
+	display: inline-block;
+}
+#prod{
+	color: black;	
+	margin: 5% auto auto 3.4%;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+img{
+	display: inherit;
+}
+button{
+	margin: auto auto auto auto;
+	width: 40%;
+}
