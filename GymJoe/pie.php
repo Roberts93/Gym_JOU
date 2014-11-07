@@ -1,4 +1,4 @@
-<div style="background: url(img/textu.jpg) no-repeat;width:100%;height:400px">
+<div style="background: url(img/textu.jpg) no-repeat;width:100%;height:310px">
  
  <div id="info_pie">
                 <h2 id="titulos_pie">Menu</h2>

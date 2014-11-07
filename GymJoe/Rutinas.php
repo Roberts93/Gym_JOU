@@ -2,7 +2,7 @@
 <head>
 	<title>Gym Joe</title>
 	<link rel="stylesheet" type="text/css" href="css/estructura.css">
-    <link rel="stylesheet" type="text/css" href="css/menu2.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/Rutinas.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
@@ -13,6 +13,7 @@
 							<?php 
 								include('menu.php');
 							?>
+						<br>
 						<br>
     <hr width="100%" height="100" color="red">
 
@@ -32,7 +33,7 @@
 <div id="cajota">
 
 <figure class="pocision">
-<img src="img/2.jpg" width="220" height="165" controls>
+<img src="img/2.png" width="220" height="165" controls>
 <figcaption><b>Que es el sobre entrenamiento?</b></figcaption>
 </figure>
 
@@ -42,7 +43,7 @@
 </div>
 
 <div class="pocision">
-<img src="img/SPORTA/16.jpg" width="220" height="165" controls>
+<img src="img/SPORTA/16.png" width="220" height="165" controls>
 <figcaption><b>Forma de realizar las sentadillas?</b></figcaption>
 </div>
 
@@ -72,22 +73,22 @@
 </div>
 
 <div class="pocision">
-<img src="img/SPORTA/64.jpg" width="220" height="150" controls>
+<img src="img/SPORTA/64.png" width="220" height="150" controls>
 <figcaption><b>Maximimar el desarrollo Muscular?</b></figcaption>
 </div>
 
 <div class="pocision">
-<img src="img/SPORTA/1.jpg" width="220" height="150" controls>
+<img src="img/SPORTA/1.png" width="220" height="150" controls>
 <figcaption><b> Tonifica tus Brazos?</b></figcaption>
 </div>
 
 <div class="pocision">
-<img src="img/SPORTA/31.jpg" width="220" height="150" controls>
+<img src="img/SPORTA/31.png" width="220" height="150" controls>
 <figcaption><b> Luce una figura envidiable</b></figcaption>
 </div>
 
 <div class="pocision" >
-<img align="center" src="img/SPORTA/69.jpg" width="220" height="150" controls >
+<img align="center" src="img/SPORTA/69.png" width="220" height="150" controls >
 <figcaption><b>Mejora tu Abdomen</b></figcaption>
 </div>
 </div>
