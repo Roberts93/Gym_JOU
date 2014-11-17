@@ -8,6 +8,35 @@
     <link rel="stylesheet" type="text/css" href="css/productos.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
     <meta charset="UTF-8"/>
+    <script type="text/javascript" src="js/jquery-1.5.2.min.js" ></script>
+            <script src="js/jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+            <script type="text/javascript">
+            $(function() {
+              $("#carrusel").jCarouselLite({
+                vertical: false,
+                hoverPause:true,
+                btnPrev: ".previous",
+                btnNext: ".next",
+                visible: 1,
+                start: 0,
+                scroll: 1,
+                circular: true,
+                auto:1000,
+                speed:800,        
+                btnGo:
+                    [".1", ".2",
+                    ".3", ".4"],
+                
+                afterEnd: function(a, to, btnGo) {
+                    if(btnGo.length <= to){
+                      to = 0;
+                    }
+                    $(".thumbActive").removeClass("thumbActive");
+                    $(btnGo[to]).addClass("thumbActive");
+                    }
+              });
+            });
+            </script>
 </head>
 <body>
 <div id="caja_principal">
@@ -17,7 +46,27 @@
 <hr width="100%" height="100" color="red">
 <header>
   <hr id="sep" width="100%" height="100" color="blue">
-  <div id="carrusel"><h1>Aqui va el Carrusel</h1></div>
+  <div id="carrusel">
+  <div class="next"></div>
+                <div class="previous"></div>
+                  <div class="thumbs">
+                    <a href="#" onClick="" class="1 thumbActive">1</a> 
+                      <a href="#" onClick="" class="2">2</a> 
+                      <a href="#" onClick="" class="3 ">3</a> 
+                      <a href="#" onClick="" class="4">4</a> 
+                  </div>
+              <ul>
+                  <li>
+                    <IMG SRC="img/productos/7.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                  </li>
+                  <li>
+                      <IMG SRC="img/productos/8.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                  </li>                  
+                  <li>
+                      <IMG SRC="img/productos/9.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                  </li>
+              </ul>
+  </div>
   <aside id="servicio"><h1>Aquí va el servicio</h1>
   </aside>  
   <section id="max">
