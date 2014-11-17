@@ -2,10 +2,10 @@
 #tama{
 	float: right;
 	margin-right: 30px;
-    width: 250px;
+    width: 280px;
     height: 150px;
     position: relative;
-    top: -40px;
+    top: -60px;
     vertical-align: middle;
     border-radius: 30px;
 }
