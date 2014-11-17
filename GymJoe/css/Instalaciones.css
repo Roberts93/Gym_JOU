@@ -2,10 +2,10 @@
 #tama{
 	float: right;
 	margin-right: 30px;
-    width: 280px;
+    width: 250px;
     height: 150px;
     position: relative;
-    top: -60px;
+    top: -40px;
     vertical-align: middle;
     border-radius: 30px;
 }
@@ -37,7 +37,7 @@ opacity: .9;
     vertical-align: middle;
 }
 
-.poci{
+.pocision{
     
      margin-left: 5%;
      margin-bottom: 4%;
