@@ -2,10 +2,155 @@
 #tama{
 	float: right;
 	margin-right: 30px;
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 130px;
     position: relative;
     top: -40px;
     vertical-align: middle;
     border-radius: 30px;
+}
+
+#caja_arriba{
+width: 95%;
+height: 170px;
+margin-left: 60px;
+background: aquamarine;
+border: 2px solid black;
+margin: 30px;
+border-radius: 60px;
+font-family: sans-serif 30px;
+opacity: .9;
+
+-moz-box-shadow: rgb(150,150,150) 5px 5px; 
+ -webkit-box-shadow: rgb(150,150,150) 5px 5px;
+   box-shadow: rgb(150,150,150) 5px 5px;
+}
+
+
+
+#img{  
+    float: right 2500px;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    top: -40px;
+    vertical-align: middle;
+}
+
+.poci{
+    
+     margin-left: 5%;
+     margin-bottom: 4%;
+     color: black;
+     font-family: sans-serif;
+     font-size: 12px;
+     text-align: center;
+     width: 18.5%;
+      margin: 3%;
+      margin-left: 9%;
+}
+
+#tama2{
+  border: 2px solid yellow;
+    position:relative;
+    top: -450px;
+      float:right;
+      margin-right: 120px;
+}
+
+#tama3{
+  border: 2px solid orange;
+    float:right;
+    margin-right: -305px;
+    position: relative;
+    top: -240px;
+}
+
+#tama4{
+      border: 2px solid green;
+    float: right;
+    margin-right: 120px;
+    position: relative;
+    top: -450px;
+}
+
+#tama5{
+  border: 2px solid blue;
+    float:right;
+    margin-right: -305px;
+    position: relative;
+    top: -240px;
+    margin-bottom: 30px;
+}
+
+#tama6{
+      border: 2px solid green;
+    float: right;
+    margin-right: 120px;
+    position: relative;
+    top: -450px;
+}
+
+#tama7{
+  border: 2px solid blue;
+    float:right;
+    margin-right: -305px;
+    position: relative;
+    top: -240px;
+    margin-bottom: 30px;
+}
+
+#vestiDer{
+
+ width: 500px;
+    height: 400px;
+    position:relative;
+    top: 38px;
+      float:right;margin-right:-20px;
+
+}
+
+#VestiDerAb{
+
+float:right;margin-right:300px;
+    width: -600px;
+    height: 230px;
+    position: relative;
+    top: -270px;
+
+}
+
+#PesasDerAb{
+
+   float: right;
+    margin-right: 300px;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    vertical-align: middle;
+    border-radius: 30px;
+
+
+}
+
+#tama8{
+border: 2px solid blue;
+    float:right;
+    margin-right: 115px;
+    position: relative;
+    top: -440px;
+    margin-bottom: 30px;
+
+}
+
+#tama9{
+
+border: 2px solid blue;
+    float:right;
+    margin-right: -305px;
+    position: relative;
+    top: -235px;
+    margin-bottom: 30px;
+
 }
