@@ -31,7 +31,7 @@
 <br>
 
 
-<div class="pocision">
+<div class="poci">
 <img src="img/spi11.jpg" width="500" height="400" controls>
 <figcaption><b>Spinning</b></figcaption>
 </div>
@@ -48,7 +48,7 @@
 </div>
 
 
-<div class="pocision">
+<div class="poci">
 <img src="img/pesa2.jpg"  width="500" height="400" controls>
 <figcaption><b>Pesas</b></figcaption>
 </div>
@@ -63,7 +63,7 @@
 <figcaption><b></b></figcaption>
 </div>
 
-<div class="pocision">
+<div class="poci">
 <img src="img/vesti.jpg"  width="500" height="400" controls>
 <figcaption><b>Vestidores</b></figcaption>
 </div>
