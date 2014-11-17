@@ -20,7 +20,7 @@
     <hr width="100%" height="100" color="red">
 
     <div id="caja_arriba">
-    <h2><center style="color: black;">CONOCE NUESTRAS INSTALACIONES </center></h2>
+    <h2><center style="color: black;">Conoce nuestras instalaciones </center></h2>
     <header>
 <img  style="float" src="img/Instala.jpg" id="tama" alt="" controls>
 <p></p>
