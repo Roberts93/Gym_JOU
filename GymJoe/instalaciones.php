@@ -78,7 +78,7 @@
 <figcaption><b></b></figcaption>
 </div>
 
-<div class="pocision">
+<div class="poci">
 <img src="img/salon.jpg"  width="500" height="400" controls>
 <figcaption><b>Salon de baile</b></figcaption>
 </div>
