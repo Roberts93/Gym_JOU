@@ -1,42 +1,97 @@
+#hr_separador{
+	margin: 5% 0% 0% 0%;
+}
+
 .row {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; 
-}
+  max-width: 62.5rem; }
 
-.cajita{
-	width: 50%;
-	height: 25%;
-	background: lavender;
-	margin: 0%;
-}
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+     .row:after {
+    clear: both; }
 
- .large-6 {
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
+
+
+.large-6 {
     width: 50%; }
 
-  .large-8 {
-    width: 66.66667%; }
-     .column.large-centered,
+    .column.large-centered,
   .columns.large-centered {
     margin-left: auto;
     margin-right: auto;
     float: none; }
 
+    .column.large-centered:last-child,
+  .columns.large-centered:last-child {
+    float: none; }
 
-#boton{
-  border-radius: 50px;
-  background-color: #00ccff;
-  width: 200px;
-  height: 50px;
-  margin: 5%; 
-}
+  .column.large-uncentered:last-child,
+  .columns.large-uncentered:last-child {
+    float: left; }
+
+   button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #007095; }
+  button:hover, button:focus, .button:hover, .button:focus {
+    color: white; }
+
+    .large-8 {
+    width: 66.66667%; }
+
+      button.small, .button.small {
+    padding-top: 0.875rem;
+    padding-right: 1.75rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.75rem;
+    font-size: 0.8125rem; }
+
+    button.radius, .button.radius {
+    border-radius: 3px; }
+  button.round, .button.round {
+    border-radius: 1000px; }
 
 
+button, .button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: white;
+  transition: background-color 300ms ease-out; }
 
- h1, h2, h3, h4, h5, h6 {
+  button.expand, .button.expand {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%; }
+
+/* Default header styles */
+h3{
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -44,21 +99,85 @@
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  line-height: 1.4; 
-}
+  line-height: 1.4; }
+  h3 small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0; }
 
-  h3 {
-  font-size: 1.375rem; 
-}
+    h3 {
+  font-size: 1.375rem; }
 
-hr {
-  border: solid #dddddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 1.25rem 0 1.1875rem;
-  height: 0; 
-}
+  /* Label Styles */
+label {
+  font-size: 0.875rem;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+  /* Styles for required inputs */ }
 
-<script>
-      $(document).foundation();
-</script>
+/* We use this to get basic styling on all basic form elements */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out; }
+
+/* Respect enforced amount of rows for textarea */
+textarea[rows] {
+  height: auto; }
+
+form {
+  margin: 0 0 1rem; }
+
+  /* Panels */
+.panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f2f2f2;
+  color: #333333; }
+
+
+
+
+
+  /* Normalize file input width */
+input[type="file"] {
+  width: 100%; }
+
+  body{
+  	background: #cccccc;
+  }
