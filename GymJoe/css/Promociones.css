@@ -1,3 +1,102 @@
-*{
-	background: black;
+
+#caja_arriba{
+width: 95%;
+height: 170px;
+margin-left: 60px;
+background: aquamarine;
+border: 2px solid black;
+margin: 30px;
+border-radius: 60px;
+font-family: sans-serif 30px;
+opacity: .9;
+}
+
+#img{  
+    float: right;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    top: -40px;
+    vertical-align: middle;
+}
+
+
+#img2{
+    float: left;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    top: -40px;
+    vertical-align: middle;
+    margin-left: 2%;
+}
+
+#titulo{
+     font-style: oblique black;
+      font-size: 24px;
+      vertical-align: middle;
+      margin-left: 400px;
+      color: #000099;
+}
+
+#texto_centro{
+    font-size: 18px;
+    position: relative;
+    margin-left: 430px;
+    top: -90px;
+    display: inline-block;
+    color: black;
+}
+
+.pocision{
+     
+     margin-left: 5%;
+     margin-bottom: 4%;
+     color: black;
+     font-family: sans-serif;
+     font-size: 12px;
+     text-align: center;
+     
+     width: 18.5%;
+     display: inline-block;
+      margin: 3%;
+      margin-left: 9%;
+
+
+}
+
+
+#cajota{
+  width: 99.2%;
+  border: 5px solid green;
+    background: -webkit-linear-gradient(60deg, blue, aquamarine, white);
+
+
+}
+@font-face{
+font-family: 'sikin';
+src: url('SinkinSans-600SemiBold.otf');
+}
+
+p{
+font-size: 20px;
+font-family: 'sikin';
+
+}
+
+figcaption{
+
+  font-size: 14px;
+}
+
+/*
+img{
+border:  2px solid gray;
+
+}
+*/
+
+#precio{
+ color: blue;
+
 }
