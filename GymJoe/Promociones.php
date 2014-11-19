@@ -17,16 +17,54 @@
 
 <h1>HOLA EQUIPO</h1>
 
-<!--
-AQUI PONDRAS TODA LA INFORMACION PARA LLENAR TU APARTADO, CONFORME, VALLAS LLENANDO, LA CAJA_PRINCIPAL,
-IRA INCREMENTANDO AUTOMATICAMENTE......
-
-BASATE EN EL DE RUTINAS Y YO SOLO CREE OTRO ESTILO DIFERENTE, AL QUE LLAME Rutinas.css,,
-si tu ocupas otros estilos diferentes, sientete con la libertad de emplearlos, solo agrega un archivo nuevo 
-con extension .css y lo referencias con el link
 
 
--->
+<center><img src="img/Promociones/P1.png" width="60%" height="40%"></center>
+<p></p>
+<hr>
+<p></p>
+
+<div id="completo">
+
+<div class="pocision">
+<img align="center" src="img/Promociones/P2.png" width="300" height="250" controls>
+<figcaption><center><i><strong>Elite XT</strong></i></center>
+<p id="precio"> 500 gramos</p>
+<button>Añadir</button>
+</figcaption>
+</div>
+
+<div class="pocision">
+<img align="center" src="img/Promociones/P3.png" width="300" height="250" controls>
+<figcaption>
+<center>
+<i><strong>Suplemento- Proteina de suero</strong></i>
+</center>
+<p id="precio"> 500 gramos</p>
+<button>Añadir</button>
+</figcaption>
+
+</div>
+
+<div class="pocision">
+<img align="center" src="img/Promociones/newForm.png" width="300" height="250" controls>
+<figcaption><center><i><strong>New Form</strong></i></center>
+<p id="precio"> 500 gramos</p>
+<button>Añadir</button></figcaption>
+</div>
+
+<div class="pocision">
+<img align="center" src="img/Promociones/lite.png" width="300" height="250" controls>
+<figcaption><center><i><strong>Lite</strong></i></center>
+<p id="precio"> 500 gramos</p>
+<button>Añadir</button>
+</figcaption>
+</div>
+
+</div>
+       
+
+    </div>
 
     </div>
 
