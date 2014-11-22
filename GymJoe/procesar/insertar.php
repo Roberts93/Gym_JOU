@@ -25,7 +25,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$pass = $_POST['pass'];
 			$archivo =$nick.$extensionArchivo;
 			$sql = $sql."'0','$nombre','$apellido','nick',password('$pass'),'$archivo')";
-		     move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
+		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
 				
 
 		$paginaRetorno = 'Formulario.php';
@@ -35,7 +35,36 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		}
 
 	}else
-//-------------------------------------TABLA EXAMENES ------------------------------------	
+//-------------------------------------TABLA EXAMENES ------------------------------------		
+
+	if($tabla == 'productos')
+	{
+		if(isset($_POST['nombre']) && isset($_POST['nombre']) && isset($_POST['marca'])
+			&& isset($_POST['precio_publi']) && isset($_POST['precio_prov'])
+			&& isset($_POST['tam']) && isset($_POST['tipo']) && isset($_FILES['img'])
+			&& isset($_POST['des']))
+{
+	$extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));
+
+		$id= $_POST['id'];
+		$nombre= $_POST['nombre'];
+		$marca= $_POST['marca'];
+		$precio_publico= $_POST['precio_publi'];
+		$precio_proveedor= $_POST['precio_prov'];
+		$tamaño= $_POST['tam'];
+		$tipo= $_POST['tipo'];
+		$archivo =$nombre.$extensionArchivo;
+		$descripcion= $_POST['des'];
+		$sql = $sql."'0','$nombre','$marca','$precio_publico','$precio_proveedor','$tamaño','$tipo','$archivo','$descripcion')";
+		move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
+
+		$paginaRetorno = 'regpro.php';
+}else{
+	die('Error en datos: ERROR 0xE');
+}
+	}
+
+
 	if($tabla == 'examenes'){
 //if(FALSE)
 if(isset($_POST['Id']) && isset($_POST['Nick'])

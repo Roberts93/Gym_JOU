@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/estructura.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
-    <link rel="stylesheet" type="text/css" href="css/productos.css">
+    <link rel="stylesheet" type="text/css" href="css/productos.css">    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
     <meta charset="UTF-8"/>
     <script type="text/javascript" src="js/jquery-1.5.2.min.js" ></script>
@@ -44,7 +44,6 @@
            include('menu.php');
            ?>
 <hr width="100%" height="100" color="red">
-<header>
   <hr id="sep" width="100%" height="100" color="blue">
   <div id="carrusel">
   <div class="next"></div>
@@ -68,9 +67,15 @@
               </ul>
   </div>
   <aside id="servicio"><h1>Aquí va el servicio</h1>
-  </aside>  
+  </aside>
+  <section>
+  <nav>
+    <ul>
+      <li><a href="RegPro.php">Registrar Productos</a></li>
+    </ul>
+  </nav>
+  </section>  
   <section id="max">
-  <header>
     <div id="encabezadomax"><section id="des">Destacados</section></div>
     <section>
       <figure id="prod">
@@ -110,9 +115,7 @@
         </figcaption>
       </figure>
     </section>
-  </header>  
   </section>
-</header>
   </div>  
 
 

@@ -1,33 +1,19 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : hola
-Source Server Version : 50529
-Source Host           : 127.0.0.1:3306
-Source Database       : gymnasio
+Source Server         : conec
+Source Server Version : 50617
+Source Host           : localhost:3306
+Source Database       : gym
 
 Target Server Type    : MYSQL
-Target Server Version : 50529
+Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2014-11-21 14:16:06
+Date: 2014-11-22 03:29:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for categoria
--- ----------------------------
-DROP TABLE IF EXISTS `categoria`;
-CREATE TABLE `categoria` (
-  ` ID_Categoria` int(11) NOT NULL AUTO_INCREMENT,
-  `Categoria` varchar(45) NOT NULL,
-  PRIMARY KEY (` ID_Categoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of categoria
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for datos
@@ -98,15 +84,13 @@ CREATE TABLE `productos` (
   `Tipo` varchar(45) NOT NULL,
   `Img` varchar(200) NOT NULL,
   `Descripcion` varchar(200) DEFAULT NULL,
-  `ID_Categoria` int(11) NOT NULL,
-  PRIMARY KEY (`ID_Producto`),
-  KEY `ID_Categoria` (`ID_Categoria`),
-  CONSTRAINT `ID_Categoria` FOREIGN KEY (`ID_Categoria`) REFERENCES `categoria` (` ID_Categoria`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`ID_Producto`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of productos
 -- ----------------------------
+INSERT INTO `productos` VALUES ('1', 'Carnetina', 'Adruplex', '1200', '700', '1Kg.', 'Oxido', 'Carnetina.jpg', 'La mejor marca en oxidos, tomar una capsula antes de hacer un entrenamiento reguroso');
 
 -- ----------------------------
 -- Table structure for promociones
@@ -170,12 +154,13 @@ CREATE TABLE `usuario` (
   `Password` varchar(45) NOT NULL,
   `Img` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`ID_Usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of usuario
 -- ----------------------------
 INSERT INTO `usuario` VALUES ('1', 'Mario', 'Zavaleta', 'ma', '1', null);
+INSERT INTO `usuario` VALUES ('2', 'Marioarturo', 'Zavaleta', 'nick', '*E6CC90B878B948C35E92B003C792C46C58C4AF40', 'tutuyo.jpg');
 
 -- ----------------------------
 -- Table structure for ventas
