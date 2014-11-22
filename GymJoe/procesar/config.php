@@ -1,7 +1,8 @@
-<?php 
-$servidor = "localhost";
-$usuario = "root";
-$password = "corazon";
-$baseDeDatos = "gymnasio";
+<?php
+class config{ 
+static $servidor = "localhost";
+static $usuario = "root";
+static $password = "corazon";
+static $baseDeDatos = "gymnasio";
+}
  ?>
- 

@@ -20,21 +20,25 @@ include('menu.php');
 <div class="panel2">
 <h3>¿Eres Nuevo en Gym Joe?   Registrate</h3>
 
-	<form method="post" action="procesar/insertar.php">
+	<form method="post" enctype="multipart/form-data" action="procesar/insertar.php">
 	<input type="hidden" name="tabla" value="usuario">
 
 	<label>
-			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
+			
+			<input type="text" id="nick" name="id" 	placeholder="ID">
 			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
 			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
+			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
 			<input type="password" id="password" name="pass" placeholder="Contraseña" required>
 			<label>
 			Foto: 
-			<input type="file" name="foto" accept="image/*">
+			<input type="file" name="img" accept="image/*">
 		</label>
 		
 			</label>
-			<button class="small round button">Guardar Datos</button>
+			<input type="submit" class="small round button" value="Guardar">
+			<!--
+			<button class="small round button">Guardar Datos</button>  -->
 		<a href="login.php" id="botoncito"> Cancelar</a>
       </form>
       <?php
@@ -56,7 +60,8 @@ else{
 }
 	}
  ?>
-  </div>
+	</div>
+</div>	
 </div>
 
 
