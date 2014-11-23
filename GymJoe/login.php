@@ -27,14 +27,14 @@ include('menu.php');
 <div class="large-6 large-centered columns">
 	<div class="panel radius">
 	
-	<form method="post">
+	<form method="post" action"iniciarSesion.php">
 		<label>
 			Usuario:
-			<input type="text" id="nick" autofocus>			
+			<input type="text" id="nick" autofocus name="nick">			
 		</label>
 		<label>
 			Password:
-			<input type="password" id="nick">
+			<input type="password" id="nick" name="pass">
 		</label>	
 		<div  class="row">		
 		<div class="large-8 large-centered columns"> 		
