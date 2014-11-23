@@ -19,9 +19,28 @@ echo "<tr>
 	</tr>";
 
 }
-
 mysqli_close($conexion);
 mysqli_free_result($consulta);
+}
+
+public function consultarProductos(){
+	$conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);
+	$consulta = mysqli_query($conexion, "select * from productos");
+	while ($fila = mysqli_fetch_array($consulta)) {
+		echo "<tr>
+				<td>$fila[0]</td>
+				<td>$fila[1]</td>
+				<td>$fila[2]</td>
+				<td>$fila[3]</td>
+				<td>$fila[4]</td>
+				<td>$fila[5]</td>
+				<td>$fila[6]</td>
+				<td><img src='fotos/$fila[7]' width'100px' heigth'100px'></td>
+				<td>$fila[8]</td>
+			  </tr>";
+	}
+	mysqli_close($conexion);
+	mysqli_free_result($consulta);
 }
 
 public function consultarLogin($nick,$pass){
@@ -41,7 +60,6 @@ mysqli_free_result($consulta);
 
 return $res;
 }
-
 }
 
 ?>

@@ -137,3 +137,18 @@
 #menupro{
 	height: 7%;
 }
+
+#pro{
+	color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+}
+
+td,
+th {
+  padding: 0;
+}
