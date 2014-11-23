@@ -13,7 +13,7 @@
            include('menu.php');
            ?>
 <hr width="100%" height="100" color="red">
-
+<hr id="sep" width="100%" height="100" color="blue">
 
 <h1>HOLA EQUIPO</h1>
 
