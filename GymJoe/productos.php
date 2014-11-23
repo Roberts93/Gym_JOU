@@ -56,35 +56,33 @@
                   </div>
               <ul>
                   <li>
-                    <IMG SRC="img/productos/7.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                    <IMG SRC="img/productos/7.jpg" width="97%" height="97%" alt="descuentos" >
                   </li>
                   <li>
-                      <IMG SRC="img/productos/8.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                      <IMG SRC="img/productos/8.jpg" width="97%" height="97%" alt="descuentos">
                   </li>                  
                   <li>
-                      <IMG SRC="img/productos/9.jpg" width="97%" height="97%" alt="descuentos" style="width='99%'; height='99%';">
+                      <IMG SRC="img/productos/9.jpg" width="97%" height="97%" alt="descuentos">
                   </li>
               </ul>
   </div>
   <aside id="servicio"><h1>Aquí va el servicio</h1>
   </aside>
-  <section>
-  <nav>
+  <nav id="menupro">
     <ul>
       <li><a href="RegPro.php">Registrar Productos</a></li>
     </ul>
   </nav>
-  </section>  
   <section id="max">
-    <div id="encabezadomax"><section id="des">Destacados</section></div>
-    <section>
+    <div id="encabezadomax">Destacado</div>
+    <section id="produc">
       <figure id="prod">
         <img src="img/productos/1.jpg" width="70%" height="40%" alt="Redes Sociales">
         <figcaption>
           <p>Carnitina</p>
           <p>(500 gramos)</p>
           <p>$600.00</p>
-          <button>Añadir</button>
+          <button class="botoncito">Añadir</button>
         </figcaption>
       </figure>
       <figure id="prod">
@@ -93,7 +91,7 @@
           <p>Carnitina</p>
           <p>(500 gramos)</p>
           <p>$600.00</p>
-          <button>Añadir</button>
+          <button class="botoncito">Añadir</button>
         </figcaption>
       </figure>
       <figure id="prod">
@@ -102,7 +100,7 @@
           <p>Carnitina</p>
           <p>(500 gramos)</p>
           <p>$600.00</p>
-          <button>Añadir</button>
+          <button class="botoncito">Añadir</button>
         </figcaption>
       </figure>
       <figure id="prod">
@@ -111,7 +109,7 @@
           <p>Carnitina</p>
           <p>(500 gramos)</p>
           <p>$600.00</p>
-          <button>Añadir</button>
+          <button class="botoncito">Añadir</button>
         </figcaption>
       </figure>
     </section>
