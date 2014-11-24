@@ -9,7 +9,7 @@
                     <li id="elementos_menu"><a  href="instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="blog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="promociones.php">Promociones |</a></li>
-                    <li id="elementos_menu"><a href="login.php">Iniciar Sesion</a></li>
+                    <li id="elementos_menu"><a href="login.php">Iniciar Sesion |</a></li>
                     <li id="elementos_menu"><a href="conUsuario.php">Consultar clietes</a></li>
                     </ul>
                 </div>
