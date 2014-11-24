@@ -28,7 +28,6 @@ Bienvenido Administrador GYM JOE </font></h1></center>
 <div class="row">
 <div class="large-6 large-centered columns">
 	<div class="panel radius">
-	
 	<form method="post" action="login1.php">
 		<label>
 			Usuario Administrador:
@@ -36,18 +35,43 @@ Bienvenido Administrador GYM JOE </font></h1></center>
 		</label>
 		<label>
 			Password:
-			<input type="password" name="password" required>
+			<input type="password" name="pass" required>
 		</label>	
 		<div  class="row">		
 		<div class="large-8 large-centered columns"> 		
-		<button class="small round button expand">Ingresar</button>
-							
+		<button class="small round button expand">Ingresar</button>					
 		</div>
 		</div>	
 	</form>
 	</div>
 </div>	
 </div>
+
+<?php
+session_start();
+
+if(isset($_POST['sesion'])){
+	$sesion=$_POST['sesion'];
+	if ($sesion==1) 
+		session_destroy();	
+}
+
+
+if ( isset($_POST['usuario']) && isset($_POST['pass'])){
+	$nick = $_POST['usuario'];
+	$pass = $_POST['pass'];
+
+$conexion = mysqli_connect("127.0.0.1", "root", "corazon", "examenes");
+$res = mysqli_query($conexion, "select * from usuarios where nick='$nick' and password='$pass'");
+
+if($lector = mysqli_fetch_array($res)){
+	$_SESSION['inicio']='ok';
+	header("Location: consultar.php");
+}else{
+	echo 'Datos Incorrectos!';
+}
+}
+?>
 
 
 

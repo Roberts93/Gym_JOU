@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -34,6 +34,7 @@ include('menu.php');
 		<th>Nick</th>
 		<th>Password</th>
 		<th>Imagen</th>
+		<th>Operaciones</th>
 	</tr>
 </thead>
 <tbody>
