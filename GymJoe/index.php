@@ -40,9 +40,8 @@
 							<?php 
 								include('menu.php');
 							?>
-						<br>
-						<br>
-						<br>
+							<hr width="100%" height="100" color="red">
+							<hr id="sep" width="100%" height="100" color="blue">
 						<div id="slidebox">
 							<div class="next"></div>
 								<div class="previous"></div>

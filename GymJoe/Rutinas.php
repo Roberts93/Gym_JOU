@@ -13,9 +13,8 @@
 							<?php 
 								include('menu.php');
 							?>
-						<br>
-						<br>
-    <hr width="100%" height="100" color="red">
+<hr width="100%" height="100" color="red">
+<hr id="sep" width="100%" height="100" color="blue">
 
     <div id="caja_arriba">
     <h2><center style="color: black;">Rutinas Basicas para tu Cuerpo!! </center></h2>
