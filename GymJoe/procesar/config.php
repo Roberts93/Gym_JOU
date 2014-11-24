@@ -1,8 +1,8 @@
 <?php
 class config{ 
-static $servidor = "localhost";
+static $servidor = "127.0.0.1";
 static $usuario = "root";
-static $password = "corazon";
-static $baseDeDatos = "gymnasio";
+static $password = "11070020";
+static $baseDeDatos = "gimnasio";
 }
  ?>

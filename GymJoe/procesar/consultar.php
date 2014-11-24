@@ -6,12 +6,16 @@ class consultar{
 
 public function consultarUsuarios(){
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$consulta = mysqli_query($conexion, "select * from usuarios");
+$consulta = mysqli_query($conexion, "select * from usuario");
 
 while($fila = mysqli_fetch_array($consulta)){
 echo "<tr>
 		<td>$fila[0]</td>
-		<td><img src='fotos/$fila[2]' width='100px' heigth='100px'></td>
+		<td>$fila[1]</td>
+		<td>$fila[2]</td>
+		<td>$fila[3]</td>
+		<td>$fila[4]</td>
+		<td>$fila[5]</td>
 		<td>
 		<img class='imagen' src='img/usuario_Borrar.png'>
 		<img class='imagen' src='img/usuario_editar.png'>
