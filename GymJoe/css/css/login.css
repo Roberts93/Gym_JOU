@@ -32,6 +32,13 @@
     margin-right: auto;
     float: none; }
 
+    #columna{
+       width: 50%;
+       margin-left: auto;
+    margin-right: auto;
+    float: left;
+    }
+
     .column.large-centered:last-child,
   .columns.large-centered:last-child {
     float: none; }

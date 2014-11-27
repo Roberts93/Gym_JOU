@@ -7,17 +7,16 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/Instalaciones.css">
 </head>
-<body background="img/circulos.jpg">
+<body>
 
     <div id="caja_principal">
 
     <?php 
         include('menu.php');
-        echo("<hr width='100%' height='100' color='red'>")
     ?>
-
-    <br>
     <hr width="100%" height="100" color="red">
+    <hr id="sep" width="100%" height="100" color="blue">
+
 
     <div id="caja_arriba">
     <h2><center style="color: black;">Conoce nuestras instalaciones </center></h2>

@@ -24,7 +24,7 @@ include('menu.php');
 </div>
 </div>
 <div class="row">
-<div class="large-6 large-centered columns">
+<div id="columna">
 <table>
 <thead>
 	<tr>
@@ -37,6 +37,7 @@ include('menu.php');
 		<th>Tipo</th>
 		<th>Imagen</th>
 		<th>Descripcion</th>
+		<th>Operaciones</th>
 	</tr>
 </thead>
 <tbody>
@@ -47,21 +48,6 @@ $con = new consultar();
 $con->consultarProductos();
  ?>
 
-<!--		<tr>
-			<td>Pepe</td>
-			<td>
-			<img class="imagen" src="img/usuario_Borrar.png">
-			<img class="imagen" src="img/usuario_editar.png">
-			</td>	
-		</tr>
-		<tr>
-			<td>Maria</td>
-			<td>
-			<img class="imagen" src="img/usuario_Borrar.png">
-			<img class="imagen" src="img/usuario_editar.png">
-			</td>	
-		</tr>
-		-->
 </tbody>
 </table>
 

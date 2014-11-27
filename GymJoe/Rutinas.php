@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/Rutinas.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+	<link rel="stylesheet" href="css/estiloCarrusel_Rutinas.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
 </head>
 <body>
@@ -72,7 +74,7 @@
 </div>
 
 <div class="pocision">
-<img src="img/SPORTA/64.png" width="220" height="150" controls>
+<img src="img/Carrucel_Rutinas/64.png" width="220" height="150" controls>
 <figcaption><b>Maximimar el desarrollo Muscular?</b></figcaption>
 </div>
 
@@ -87,16 +89,37 @@
 </div>
 
 <div class="pocision" >
-<img align="center" src="img/SPORTA/69.png" width="220" height="150" controls >
+<img align="center" src="img/Carrucel_Rutinas/69.png" width="220" height="150" controls >
 <figcaption><b>Mejora tu Abdomen</b></figcaption>
 </div>
 </div>
 
+<div id="fondo">
+<div class="multiple-items">
+	<div><img src="img/Carrusel_Rutinas/57.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/99.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/100.jpg" class="tam_imagen" ></div>
+	<div><img src="img/Carrusel_Rutinas/101.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/102.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/68.jpg" class="tam_imagen"></div>
+</div>
+<script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
+     <script rel="text/javascript" src="slick-master/slick/slick.js"></script>
+	<script type="text/javascript">
+  $('.multiple-items').slick({
+  infinite: true,
+ // slidesToShow: 4,
+ // slidesToScroll: 4
+});
+
+</script>
 </div>
 
+
+
+</div>
 	<?php
 	include('pie.php');
 	?>
-
 </body>
 </html>
