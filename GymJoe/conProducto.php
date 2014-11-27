@@ -37,6 +37,7 @@ include('menu.php');
 		<th>Tipo</th>
 		<th>Imagen</th>
 		<th>Descripcion</th>
+		<th>Operaciones</th>
 	</tr>
 </thead>
 <tbody>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/productos.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pestana.css"/>
     <script type="text/javascript" src="js/cambiarPestanna.js"></script>
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
@@ -15,7 +15,8 @@
 <body>
 <div id="caja_principal">
            <?php
-           include('menu.php');
+           include('menu.php');           
+           #
            ?>
 <hr width="100%" height="100" color="red">
 <hr id="sep" width="100%" height="100" color="blue">      
@@ -29,7 +30,7 @@
                     <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>NOS</a></li>
                     <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>HC</a></li>
                     <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
-                    <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'><input type="text" id="nick" name="nombre" 	placeholder="Buscar"></a><button onclick="">Buscar</button></li>
+                    <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'><input type="text" id="nick" name="nombre" 	placeholder="Buscar"></a><input type="submit" value"Buscar" action="consultarbus()"></li>
                 </ul>
             </div>
             

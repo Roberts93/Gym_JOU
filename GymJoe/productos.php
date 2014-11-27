@@ -71,7 +71,7 @@
   <nav id="menupro">
     <ul>
       <li><a href="RegPro.php">Registrar Productos</a></li>
-      <li><a href="conpro.php">Consultar Productos</a></li>
+      <li><a href="conproducto.php">Consultar Productos</a></li>
     </ul>
   </nav>
   <section id="max">

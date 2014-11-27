@@ -5,11 +5,9 @@
 #carrusel{
 	margin: auto auto auto 0%;
 	padding: auto;
-	border: 3px solid #ccc;
-	text-align: center;
 	color: black;
-	width: 76.4%;
-	height: 60%;
+	width: 70.4%;
+	height: 50%;
 	float: left;
 	overflow:hidden;
 	position:relative; 
@@ -19,14 +17,13 @@
 #carrusel ul {	
 	width:99%;
 	height:99%;
+	border: 2px solid green;
 }
 
-#carrusel ul li{	
-	width:96.6%;
-	height:99%;
-}
 
 #carrusel ul li{
+	width:96.6%;
+	height:99%;
 	position:relative;
 	left:0;
 	background:#eee; 
@@ -104,23 +101,20 @@
 	margin: auto auto auto auto;
 	border: 3px solid green;
 	color: black;
-	width: 21%;
-	height: 60%;
+	width: 27.1%;
+	height: 50%;
 	display: inline-block;
 }
 #max{
-	margin: auto auto 6% auto;
+	margin: auto auto auto auto;
+	width: 99.6%;
+	height: 70%;
 }
 #encabezadomax{
-	color: black;
-	border-radius: 70px 20px;	
-	width: 100%;
-	height: 10%;
-	margin: 4% auto auto auto;
-}
-#des{
-	font-size: 50px;
-	margin: auto auto auto 5%;
+	color: black;	
+	height: 15%;
+	margin: auto auto auto auto;
+	font-size: 50px;	
 	display: inline-block;
 }
 #prod{
@@ -130,10 +124,35 @@
 	width: 20%;
 	text-align: center;
 }
-img{	
+#prod img{	
 	display: inherit;
 }
-button{
-	margin: auto auto auto auto;
+
+#prod p{
+	height: 10%;
+}
+.botoncito{
 	width: 40%;
+}
+#produc{
+	width: 99.6%;
+	height: 75%;
+}
+#menupro{
+	height: 7%;
+}
+
+#pro{
+	color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+}
+
+td,
+th {
+  padding: 0;
 }

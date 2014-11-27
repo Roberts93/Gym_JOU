@@ -42,7 +42,7 @@ bottom: 20px;
   margin-left: 50px;
 }
 
-a:link{
+#lista a:link{
     text-decoration: none;
     color: #333333;
     list-style: none;
@@ -52,7 +52,7 @@ a:link{
    margin-bottom:20px;
     
 }
-a:visited{
+#lista a:visited{
     
     color: #333333;
     text-decoration: none;
@@ -63,7 +63,7 @@ a:visited{
    margin-bottom: 20px;
 }
 
-a:hover{
+#lista a:hover{
   background: #666666;
   color: #ffffff;
   cursor: pointer;

@@ -13,7 +13,7 @@ echo "<tr>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
 		<td>$fila[4]</td>
-		<td>$fila[5]</td>
+		<td><img src='../fotos/$fila[5]' width'100px' heigth'100px'></td>
 		<td>
 		<a href= 'Eliminar_Usuarios.php'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a> 
@@ -41,8 +41,9 @@ public function consultarProductos(){
 				<td>$fila[4]</td>
 				<td>$fila[5]</td>
 				<td>$fila[6]</td>
-				<td><img src='fotos/$fila[7]' width'100px' heigth'100px'></td>
+				<td><img src='../fotos/$fila[7]' width'100px' heigth'100px'></td>
 				<td>$fila[8]</td>
+				<td><img class='imagen' src='img/usuario_Borrar.png'></td></a>
 			  </tr>";
 	}
 	mysqli_close($conexion);
@@ -55,7 +56,7 @@ public function consultarquema(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -75,7 +76,7 @@ public function consultaraumen(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -95,7 +96,7 @@ public function consultarnos(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -115,7 +116,7 @@ public function consultarhc(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -135,7 +136,7 @@ public function consultarcrea(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -150,23 +151,24 @@ public function consultarcrea(){
 }
 
 public function consultarbus(){
-	$conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);
-	$consulta = mysqli_query($conexion, "select * from productos where tipo='HC'");
-	while ($fila = mysqli_fetch_array($consulta)) {				
-		echo "
-		<figure id='prod'>
-		<img src='fotos/$fila[7]' width='60%' heigth='60%'/>
-			  <figcaption>
-			  <p>$fila[1]</p>
-			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
-			  </figcaption>
-			  </figure>
-			  ";				  
-	}
-	mysqli_close($conexion);
-	mysqli_free_result($consulta);
+    $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
+    $n=$_GET['nombre'];                                           
+    $consulta = mysqli_query($conexion, "select * from productos where nombre like '$n'");
+    while ($fila = mysqli_fetch_array($consulta)) {             
+        echo "
+        <figure id='prod'>
+        <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+              <figcaption>
+              <p>$fila[1]</p>
+              <p>$fila[5]</p>
+              <p>$fila[3]</p>             
+              <button class='botoncito'>Agregar</button>
+              </figcaption>
+              </figure>
+              ";                  
+    }
+    mysqli_close($conexion);
+    mysqli_free_result($consulta);
 }
 
 public function consultarLogin($nick,$pass){
