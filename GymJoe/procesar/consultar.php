@@ -8,7 +8,7 @@ $consulta = mysqli_query($conexion, "select * from usuario");
 
 while($fila = mysqli_fetch_array($consulta)){
 echo "<tr>
-		<td>$fila[0]</td>
+		<td name='id'>$fila[0]</td>
 		<td>$fila[1]</td>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
@@ -21,10 +21,6 @@ echo "<tr>
 		</td>	
 	</tr>";
 }
-
-
-
-
 mysqli_close($conexion);
 mysqli_free_result($consulta);
 }
@@ -187,5 +183,4 @@ mysqli_free_result($consulta);
 return $res;
 }
 }
-
 ?>

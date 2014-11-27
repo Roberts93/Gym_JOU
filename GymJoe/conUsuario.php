@@ -15,7 +15,6 @@
 include('menu.php');
 ?>	
 
-
 <hr width="100%" height="100" color="red">
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="row">
@@ -24,7 +23,7 @@ include('menu.php');
 </div>
 </div>
 <div class="row">
-<div class="large-6 large-centered columns">
+<div id="columna">
 <table>
 <thead>
 	<tr>
@@ -45,21 +44,6 @@ $con = new consultar();
 $con->consultarUsuarios();
  ?>
 
-<!--		<tr>
-			<td>Pepe</td>
-			<td>
-			<img class="imagen" src="img/usuario_Borrar.png">
-			<img class="imagen" src="img/usuario_editar.png">
-			</td>	
-		</tr>
-		<tr>
-			<td>Maria</td>
-			<td>
-			<img class="imagen" src="img/usuario_Borrar.png">
-			<img class="imagen" src="img/usuario_editar.png">
-			</td>	
-		</tr>
-		-->
 </tbody>
 </table>
 
