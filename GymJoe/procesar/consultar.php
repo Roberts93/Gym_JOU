@@ -147,26 +147,9 @@ public function consultarcrea(){
 }
 
 public function consultarbus(){
-    $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
-    $n=$_GET['nombre'];                                           
-    $consulta = mysqli_query($conexion, "select * from productos where nombre like '$n'");
-    while ($fila = mysqli_fetch_array($consulta)) {             
-        echo "
-        <figure id='prod'>
-        <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
-              <figcaption>
-              <p>$fila[1]</p>
-              <p>$fila[5]</p>
-              <p>$fila[3]</p>             
-              <button class='botoncito'>Agregar</button>
-              </figcaption>
-              </figure>
-              ";                  
-    }
-    mysqli_close($conexion);
-    mysqli_free_result($consulta);
-}
-
+	
+                }
+              
 public function consultarLogin($nick,$pass){
 $res = false;
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);

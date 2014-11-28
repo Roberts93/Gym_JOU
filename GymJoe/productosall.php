@@ -21,7 +21,7 @@
 <hr width="100%" height="100" color="red">
 <hr id="sep" width="100%" height="100" color="blue">      
   <section id="max">  
-    <div class="contenedor">
+    <form class="contenedor" action="" method="post">
             <div class="titulo">Productos</div>
             <div id="pestanas">
                 <ul id="listapro">
@@ -30,7 +30,9 @@
                     <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>NOS</a></li>
                     <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>HC</a></li>
                     <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
-                    <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'><input type="text" id="nick" name="nombre" 	placeholder="Buscar"></a><input type="submit" value"Buscar" action="consultarbus()"></li>
+                    <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
+                    <input type="text" id="nick" name="nombre" placeholder="Buscar"></a><input type="submit" value="Buscar" name"bus" id="bus"/>
+                    </li>                    
                 </ul>
             </div>
             
@@ -72,10 +74,32 @@
                     $conc-> consultarcrea();
                     ?>
                 </div>
-                <div id="cpestana6">                    
+                <div id="cpestana6">
+                    <?php
+                    if(isset($_POST['bus'])){
+                    $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
+                    $n=$_POST['nombre'];                                           
+                    $consulta = mysqli_query($conexion, "select * from productos");
+                    while ($fila = mysqli_fetch_array($consulta)) {             
+                    echo "
+                    <figure id='prod'>
+                    <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+                    <figcaption>
+                    <p>$fila[1]</p>
+                    <p>$fila[5]</p>
+                    <p>$fila[3]</p>             
+                    <button class='botoncito'>Agregar</button>
+                    </figcaption>
+                    </figure>
+                    ";                  
+                    }
+                    mysqli_close($conexion);
+                    mysqli_free_result($consulta);
+                    }                    
+                    ?>
                 </div>
             </div>
-        </div>
+        </form>
   </section>
   </div>  
 
