@@ -1,22 +1,22 @@
 <?php 
 require_once 'config.php';
 class consultar{
-
+	
 public function consultarUsuarios(){
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
 $consulta = mysqli_query($conexion, "select * from usuario");
 
 while($fila = mysqli_fetch_array($consulta)){
 echo "<tr>
-		<td name='id'>$fila[0]</td>
+		<td>$fila[0]</td>
 		<td>$fila[1]</td>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
 		<td>$fila[4]</td>
 		<td><img src='../fotos/$fila[5]' width'100px' heigth'100px'></td>
 		<td>
-		<a href= 'Eliminar_Usuarios.php'>
-		<img class='imagen' src='img/usuario_Borrar.png'></a> 
+		<a href='procesar/Eliminar_Usuarios.php?id_usuario=$fila[0]'>
+		<img class='imagen' src='img/usuario_Borrar.png'></a>
 		<img class='imagen' src='img/usuario_editar.png'>
 		</td>	
 	</tr>";
@@ -147,7 +147,26 @@ public function consultarcrea(){
 }
 
 public function consultarbus(){
-	
+if(isset($_POST['nombre'])){
+                    $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
+                    $n=$_POST['nombre'];
+                    $consulta = mysqli_query($conexion, "select * from productos where nombre like '$n%'");
+                    while ($fila = mysqli_fetch_array($consulta)) {             
+                    echo "
+                    <figure id='prod'>
+                    <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+                    <figcaption>
+                    <p>$fila[1]</p>
+                    <p>$fila[5]</p>
+                    <p>$fila[3]</p>             
+                    <button class='botoncito'>Agregar</button>
+                    </figcaption>
+                    </figure>
+                    ";                  
+                    }
+                    mysqli_close($conexion);
+                    mysqli_free_result($consulta);
+                    }                    	
                 }
               
 public function consultarLogin($nick,$pass){

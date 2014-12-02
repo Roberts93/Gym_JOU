@@ -8,6 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+    <?php
+    if(isset($_POST['eli']))
+	{
+		require_once'procesar/Eliminar_Usuarios.php';
+		$cona = new eliminar();
+		$cona-> eliminarUsuarios();
+	}
+	?>
+
 </head>
 <body>
 <div id="caja_principal">

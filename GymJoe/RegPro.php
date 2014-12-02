@@ -22,8 +22,7 @@
 	<form method="post" enctype="multipart/form-data" action="procesar/insertar.php">
 	<input type="hidden" name="tabla" value="productos">
 
-	<label>			
-			<input type="text" id="nick" name="id" 	placeholder="ID">
+	<label>		
 			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
 			<input type="text" id="nick" name="marca" placeholder="Marca" required>
 			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" required>
@@ -33,9 +32,8 @@
 			Foto: <input type="file" name="img" accept="image/*">
 			<br>
 			<br>
-			<input type="text" id="nick" name="des" 	placeholder="Descripción" required>
+			<input type="text" id="nick" name="des" placeholder="Descripción" required>
 			<label>
-
 		</label>
 		
 			</label>

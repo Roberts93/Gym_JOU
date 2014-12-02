@@ -76,26 +76,9 @@
                 </div>
                 <div id="cpestana6">
                     <?php
-                    if(isset($_POST['bus'])){
-                    $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
-                    $n=$_POST['nombre'];                                           
-                    $consulta = mysqli_query($conexion, "select * from productos");
-                    while ($fila = mysqli_fetch_array($consulta)) {             
-                    echo "
-                    <figure id='prod'>
-                    <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
-                    <figcaption>
-                    <p>$fila[1]</p>
-                    <p>$fila[5]</p>
-                    <p>$fila[3]</p>             
-                    <button class='botoncito'>Agregar</button>
-                    </figcaption>
-                    </figure>
-                    ";                  
-                    }
-                    mysqli_close($conexion);
-                    mysqli_free_result($consulta);
-                    }                    
+                    require_once 'procesar/consultar.php';
+                        $conb= new consultar();
+                        $conb-> consultarbus();
                     ?>
                 </div>
             </div>

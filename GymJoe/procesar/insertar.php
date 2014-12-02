@@ -12,13 +12,12 @@ if(isset($_POST['tabla'])){
 
 //------------------------------------TABLA USUARIOS ----------------------------------
 	if($tabla == 'usuario'){
-		if(isset($_POST['nombre']) && isset($_POST['nombre']) && isset($_POST['apellido'])
+		if(isset($_POST['nombre']) && isset($_POST['apellido'])
 		 && isset($_POST['nick']) && isset($_POST['pass']) && isset($_FILES['img'])){
 
 
 $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));			
-						
-			$id = $_POST['id'];
+									
 			$nombre = $_POST['nombre'];
 			$apellido = $_POST['apellido'];
 			$nick = $_POST['nick'];
