@@ -28,7 +28,15 @@
 			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" required>
 			<input type="text" id="nick" name="precio_prov" 	placeholder="Precio del Proveedor" required>
 			<input type="text" id="nick" name="tam" 	placeholder="Tamaño" required>
-			<input type="text" id="nick" name="tipo" 	placeholder="Tipo" required>
+			<select id="nick" name="tipo">
+			<option value="Aumenta Masa">Aumenta Masa</option>
+			<option value="Quema Grasa">Quema Grasa</option>
+			<option value="Oxido Nitrico">Oxido Nitrico</option>
+			<option value="Creatina">Creatina</option>
+			<option value="Glutamina">Glutamina</option>
+			<option value"Testosterona">Testosterona</option>
+			</select>
+			<br>
 			Foto: <input type="file" name="img" accept="image/*">
 			<br>
 			<br>

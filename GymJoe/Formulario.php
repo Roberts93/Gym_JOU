@@ -23,9 +23,7 @@ include('menu.php');
 	<form method="post" enctype="multipart/form-data" action="procesar/insertar.php">
 	<input type="hidden" name="tabla" value="usuario">
 
-	<label>
-			
-			<input type="text" id="nick" name="id" 	placeholder="ID">
+	<label>			
 			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
 			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
 			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>

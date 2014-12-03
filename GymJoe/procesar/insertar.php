@@ -38,14 +38,13 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 
 	if($tabla == 'productos')
 	{
-		if(isset($_POST['nombre']) && isset($_POST['nombre']) && isset($_POST['marca'])
+		if( isset($_POST['nombre']) && isset($_POST['marca'])
 			&& isset($_POST['precio_publi']) && isset($_POST['precio_prov'])
 			&& isset($_POST['tam']) && isset($_POST['tipo']) && isset($_FILES['img'])
 			&& isset($_POST['des']))
 {
 	$extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));
-
-		$id= $_POST['id'];
+		
 		$nombre= $_POST['nombre'];
 		$marca= $_POST['marca'];
 		$precio_publico= $_POST['precio_publi'];

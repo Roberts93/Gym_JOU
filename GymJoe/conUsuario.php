@@ -8,6 +8,18 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>    
+    <script type="text/javascript">
+    function mensaje(){
+    	var res=confirm("¿Está seguro de eliminar este registro?");
+    	if(res==true){
+    		window.location="procesar/eliminar.php"
+    	}
+    }
+
+    function borrar_registro(){
+
+    }
+    </script>
 </head>
 <body>
 <div id="caja_principal">

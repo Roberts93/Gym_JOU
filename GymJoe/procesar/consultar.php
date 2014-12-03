@@ -15,7 +15,7 @@ echo "<tr>
 		<td>$fila[4]</td>
 		<td><img src='../fotos/$fila[5]' width'100px' heigth'100px'></td>
 		<td>
-		<a href='procesar/eliminar.php?id_usuario=$fila[0]'>
+		<a onclick='mensaje()'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
 		<img class='imagen' src='img/usuario_editar.png'>
 		</td>	
