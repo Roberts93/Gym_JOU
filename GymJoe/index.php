@@ -51,23 +51,27 @@
 											<a href="#" onClick="" class="3 ">3</a> 
 											<a href="#" onClick="" class="4">4</a> 
 									</div>
+
+						<div class="">
 							<ul>
 						    	<li>
-						    		<IMG SRC="img/Slider.png">
+						    		<IMG SRC="img/INICIO/1.png" id="tam_imagen">
 						    		</li>
-						    		<li>content 2
-											<IMG SRC="img/Slider.png">
+						    		<li>
+											<IMG SRC="img/INICIO/CAMBIO.png" id="tam_imagen">
 						    	</li>
 						    	</li>
-						    	<li>content 3
-											<IMG SRC="img/Slider.png">
+						    	<li>
+											<IMG SRC="img/INICIO/3.png" id="tam_imagen">
 						    	</li>
 						    	</li>
-						    	<li>content 4
-											<IMG SRC="img/Slider.png">
+						    	<li>
+											<IMG SRC="img/INICIO/5.png" id="tam_imagen">
 						    	</li>
 						    	</li>
 							</ul>
+						</div>
+							
 						</div>
 
 						
