@@ -55,18 +55,18 @@
 						<div class="">
 							<ul>
 						    	<li>
-						    		<IMG SRC="img/INICIO/1.png" id="tam_imagen">
+						    		<IMG SRC="img/INICIO/3.png" id="tam_imagen">
 						    		</li>
 						    		<li>
-											<IMG SRC="img/INICIO/CAMBIO.png" id="tam_imagen">
+											<IMG SRC="img/Productos.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 						    	<li>
-											<IMG SRC="img/INICIO/3.png" id="tam_imagen">
+											<IMG SRC="img/Rutinas.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 						    	<li>
-											<IMG SRC="img/INICIO/5.png" id="tam_imagen">
+											<IMG SRC="img/Promociones.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 							</ul>
