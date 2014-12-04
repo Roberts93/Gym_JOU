@@ -23,7 +23,7 @@
     <header>
 <img  style="float" src="img/Instala.jpg" id="tama" alt="" controls>
 <p></p>
-<h6 ><em><center>A QUI ENTRENAN LOS CAMPEONES.</center></em></h6>
+
 </div>
 </header>
 <hr>
