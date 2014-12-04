@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/css/diseño_Tabla.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>    
     <script type="text/javascript">
     function mensaje(id){
@@ -22,9 +23,9 @@
 <?php
 include('menu.php');
 ?>	
-
 <hr width="100%" height="100" color="red">
-<hr id="hr_separador" width="100%" height="100" color="blue">
+<hr id="sep" width="100%" height="100" color="blue">
+
 <div class="row">
 <div class="large-6 large-centered columns">
 <h3>Consulta de usuario</h3>
@@ -46,7 +47,6 @@ include('menu.php');
 </thead>
 <tbody>
 <?php 
-
 require_once 'procesar/consultar.php';
 $con = new consultar();
 $con->consultarUsuarios();
@@ -57,8 +57,9 @@ $con->consultarUsuarios();
 
 </div>	
 </div>
+</div>
 <?php
-include('tema.php');
+include('pie.php');
 ?>
 </body>
 </html>

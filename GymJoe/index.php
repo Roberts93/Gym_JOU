@@ -113,7 +113,6 @@ GYM JOE tiene su sede en Ciudad Altamirano, Guerrero, no obstante somos una Gymn
 
 
 
-
 </div>
 	<?php
 	include('pie.php');

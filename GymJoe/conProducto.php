@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,7 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/css/diseño_Tabla.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+
+    <script type="text/javascript">
+    function mensaje2(id){
+    	var res=confirm("¿Está seguro de eliminar este registro de Productos?");
+    	if(res==true){
+    		window.location="procesar/eliminarProductos.php?id_producto="+id;
+    	}
+    }
+    </script>
+
 </head>
 <body>
 <div id="caja_principal">
@@ -53,8 +63,9 @@ $con->consultarProductos();
 
 </div>	
 </div>
+</div>
 <?php
-include('tema.php');
+include('pie.php');
 ?>
 </body>
 </html>
