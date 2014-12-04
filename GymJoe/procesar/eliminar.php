@@ -1,9 +1,5 @@
 <?php 
 require_once 'config.php';
-$sql = 'delete from ';
-$paginaRetorno = '';
-$resultadoRetorno = 0;
-
 
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
 $id=$_GET['id_usuario'];
@@ -34,7 +30,6 @@ echo "<tr>
 mysqli_close($conexion);
 
 
-
 echo '
 
 <html>
@@ -43,5 +38,4 @@ echo '
 </head>
 </html>
 ';
-
 ?>

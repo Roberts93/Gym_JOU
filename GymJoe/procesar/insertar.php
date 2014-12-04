@@ -9,7 +9,6 @@ if(isset($_POST['tabla'])){
 
 	$sql = $sql.$tabla.' values(';
 
-
 //------------------------------------TABLA USUARIOS ----------------------------------
 	if($tabla == 'usuario'){
 		if(isset($_POST['nombre']) && isset($_POST['apellido'])
@@ -23,7 +22,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$nick = $_POST['nick'];
 			$pass = $_POST['pass'];
 			$archivo =$nick.$extensionArchivo;
-			$sql = $sql."'0','$nombre','$apellido','nick',password('$pass'),'$archivo')";
+			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
 				
 

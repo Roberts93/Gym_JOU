@@ -15,9 +15,10 @@ echo "<tr>
 		<td>$fila[4]</td>
 		<td><img src='../fotos/$fila[5]' width'100px' heigth'100px'></td>
 		<td>
-		<a onclick='mensaje()'>
+		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
-		<img class='imagen' src='img/usuario_editar.png'>
+		<a href='procesar/actualizar.php?id_usuario=$fila[0]&nombre=$fila[1]&apellido=$fila[2]&nick=$fila[3]&password=$fila[4]&imagen=".$fila[5]."'>
+		<img class='imagen' src='img/usuario_editar.png'></a>
 		</td>	
 	</tr>";
 }
@@ -39,7 +40,10 @@ public function consultarProductos(){
 				<td>$fila[6]</td>
 				<td><img src='../fotos/$fila[7]' width'100px' heigth'100px'></td>
 				<td>$fila[8]</td>
-				<td><img class='imagen' src='img/usuario_Borrar.png'></td></a>
+				<td>
+				<a href='javascript:void(0)' onclick='mensaje2(".$fila[0].")'>
+				<img class='imagen' src='img/usuario_Borrar.png'></a></td>
+				<td><img class='imagen' src='usuario_editar.png'></td>
 			  </tr>";
 	}
 	mysqli_close($conexion);

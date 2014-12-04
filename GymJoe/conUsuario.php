@@ -9,15 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>    
     <script type="text/javascript">
-    function mensaje(){
+    function mensaje(id){
     	var res=confirm("¿Está seguro de eliminar este registro?");
     	if(res==true){
-    		window.location="procesar/eliminar.php"
+    		window.location="procesar/eliminar.php?id_usuario="+id;
     	}
-    }
-
-    function borrar_registro(){
-
     }
     </script>
 </head>
