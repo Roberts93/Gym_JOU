@@ -18,11 +18,11 @@
 <hr id="sep" width="100%" height="100" color="blue">
 
 
-<h1>HOLA EQUIPO</h1>
 
+          <?php 
+           include('CarruselPromociones.php');
+           ?>
 
-
-<center><img src="img/Promociones/P1.png" width="60%" height="40%"></center>
 <p></p>
 <hr>
 <p></p>
