@@ -21,7 +21,8 @@
 								speed:800,				
 								btnGo:
 								    [".1", ".2",
-								    ".3", ".4"],
+								    ".3", ".4",
+								    ".5", ".6"],
 								
 								afterEnd: function(a, to, btnGo) {
 										if(btnGo.length <= to){
@@ -50,23 +51,31 @@
 											<a href="#" onClick="" class="2">2</a> 
 											<a href="#" onClick="" class="3 ">3</a> 
 											<a href="#" onClick="" class="4">4</a> 
+											<a href="#" onClick="" class="5">5</a> 
+											<a href="#" onClick="" class="6">6</a> 
 									</div>
 
 						<div class="">
 							<ul>
 						    	<li>
-						    		<IMG SRC="img/INICIO/3.png" id="tam_imagen">
+						    		<IMG SRC="img/CarrucelPrincipal/GymJoe.png" id="tam_imagen">
 						    		</li>
 						    		<li>
-											<IMG SRC="img/Productos.jpg" id="tam_imagen">
+											<IMG SRC="img/CarrucelPrincipal/Productos.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 						    	<li>
-											<IMG SRC="img/Rutinas.jpg" id="tam_imagen">
+											<IMG SRC="img/CarrucelPrincipal/Rutinas.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 						    	<li>
-											<IMG SRC="img/Promociones.jpg" id="tam_imagen">
+											<IMG SRC="img/CarrucelPrincipal/Instalaciones.jpg" id="tam_imagen">
+						    	</li>
+						    	<li>
+											<IMG SRC="img/CarrucelPrincipal/Blog.jpg" id="tam_imagen">
+						    	</li>
+						    	<li>
+											<IMG SRC="img/CarrucelPrincipal/Promociones.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 							</ul>
