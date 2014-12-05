@@ -27,7 +27,7 @@ div.ic_myCarousel {
         a(document).ready(function() {
         a('#carousel').infiniteCarousel({
            imagePath: '',
-           transitionSpeed:12000,
+           transitionSpeed:9000,
            displayTime: 0,
            thumbnailType: 'none',
            customClass: 'myCarousel',
@@ -50,10 +50,10 @@ div.ic_myCarousel {
 
 <ul id="carousel">
   <li><img width="851" height="315" alt="" src="img/Promociones/Promociones.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones/1Mes.jpg" /></li>
   <li><img width="851" height="315" alt="" src="img/Promociones/Proteinas.jpg" /></li>
-  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
-  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
-  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones/Barras.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones/Quemadores.jpg" /></li>
  
 </ul>
 
