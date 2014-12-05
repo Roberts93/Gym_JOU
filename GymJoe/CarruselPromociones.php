@@ -49,11 +49,12 @@ div.ic_myCarousel {
 
 
 <ul id="carousel">
-  <li><img width="1080" height="360" alt="" src="img/Promociones.jpg" /></li>
-  <li><img width="1080" height="300" alt="" src="image2.jpg" /></li>
-  <li><img width="1080" height="300" alt="" src="image3.jpg" /></li>
-  <li><img width="1080" height="300" alt="" src="image4.jpg" /></li>
-  <li><img width="1080" height="300" alt="" src="image5.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones/Promociones.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones/Proteinas.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
+  <li><img width="851" height="315" alt="" src="img/Promociones.jpg" /></li>
+ 
 </ul>
 
 
