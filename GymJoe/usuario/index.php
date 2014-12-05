@@ -53,18 +53,18 @@
 									</div>
 							<ul>
 						    	<li>
-						    		<IMG SRC="img/Slider.png">
+						    		<IMG SRC="img/INICIO/3.png" id="tam_imagen">
 						    		</li>
-						    		<li>content 2
-											<IMG SRC="img/Slider.png">
+						    		<li>
+											<IMG SRC="img/Productos.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
-						    	<li>content 3
-											<IMG SRC="img/Slider.png">
+						    	<li>
+											<IMG SRC="img/Rutinas.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
-						    	<li>content 4
-											<IMG SRC="img/Slider.png">
+						    	<li>
+											<IMG SRC="img/Promociones.jpg" id="tam_imagen">
 						    	</li>
 						    	</li>
 							</ul>

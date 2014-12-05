@@ -5,7 +5,7 @@
                                 <?php
                                
         session_start();
-        echo '<a id="usuario">'.$_SESSION['usuario'].'</a>';
+        echo '<a href="index.php" id="texto_usuario">'.$_SESSION['usuario']."</a><img src=".$_SESSION['contra'].' width="30px" height="30px" id="ig_per">';
         ?>
                                 
 			<ul id="lista">
@@ -15,8 +15,7 @@
                     <li id="elementos_menu"><a  href="instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="blog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="promociones.php">Promociones |</a></li>
-                    <li id="elementos_menu"><a href="login.php">Perfil |</a></li>
-                    <li id="elementos_menu"><a href="login.php">Cerrar Sesion|</a></li>
+                    <li id="elementos_menu"><a href="procesar/cerrarsesion.php">Cerrar Sesion|</a></li>
                     
                     </ul>
                 </div>

@@ -12,7 +12,7 @@ body {
 
 #slidebox{
 	position:relative; 
-	border:1px solid #ccc; 
+	border:1px solid yellow; 
 	margin:40px auto;
 	overflow:hidden;
 }
@@ -33,10 +33,19 @@ body {
 	background:#eee; 
 	float:left;
 	list-style: none;
-	padding:15px 28px;
+	padding:0px 0px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:13px;
 }
+.multiple-items{
+	width:700;
+	height: 300;
+}
+#tam_imagen{
+width: 100%;
+height: 100%;
+}
+
 
 #slidebox .next, #slidebox .previous{
 	position:absolute;
@@ -117,4 +126,29 @@ body {
 	margin: 5%;
 	text-align: justify;
 	text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+
+#texto_usuario{
+	font-size: 24px;
+	font-color: black;
+	float: right;
+	position: relative;
+	top: 8px;
+	margin-right: 15px;
+	vertical-align: middle;
+	font-family: sans-serif;
+}
+
+#ig_per{
+	border-radius: 2px 2px 2px 2px;
+	margin-top: 8px;
+	float: right;
+	margin-right: 7px;
+
+}
+
+#texto_usuario a:visited{
+ color: white;
+ text-decoration: none;
+
 }
