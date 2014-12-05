@@ -1,0 +1,158 @@
+#sep{
+	margin: 5% 0% 0% 0%;
+}
+
+#carrusel{
+	margin: auto auto auto 0%;
+	padding: auto;
+	color: black;
+	width: 70.4%;
+	height: 50%;
+	float: left;
+	overflow:hidden;
+	position:relative; 
+}
+
+
+#carrusel ul {	
+	width:99%;
+	height:99%;
+	border: 2px solid green;
+}
+
+
+#carrusel ul li{
+	width:96.6%;
+	height:99%;
+	position:relative;
+	left:0;
+	background:#eee; 
+	float:left;
+	list-style: none;
+	padding:15px 28px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+}
+
+#carrusel .next, #carrusel .previous{
+	position:absolute;
+	z-index:2;
+	display:block; 
+	width:21px; 
+	height:21px;
+	top:139px;
+}
+
+#carrusel .next{
+	right:0; 
+	margin-right:10px; 
+	background:url(img/slidebox_next.png) no-repeat left top;
+}
+
+#carrusel .next:hover{
+	background:url(img/slidebox_next_hover.png) no-repeat left top;
+}
+
+#carrusel .previous{
+	margin-left:10px; 
+	background:url(img/slidebox_previous.png) no-repeat left top;
+}
+
+#carrusel .previous:hover{
+	background:url(img/slidebox_previous_hover.png) no-repeat left top;
+}
+
+#carrusel .thumbs{
+	position:absolute; 
+	z-index:2; 
+	bottom:10px; 
+	right:10px;
+}
+
+#carrusel .thumbs a{
+	display:block; 
+	margin-left:5px; 
+	float:left; 
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:9px; 
+	text-decoration:none; 
+	padding:2px 4px; 
+	background:url(slidebox_thumb.png); 
+	color:#fff;
+}
+
+#carrusel .thumbs a:hover{
+	background:#fff; 
+	color:#000;
+}
+
+#carrusel .thumbs .thumbActive{
+	background:#fff; 
+	color:#000;
+	 display:block;
+	  margin-left:5px; 
+	  float:left; font-family:Verdana, Geneva, sans-serif;
+	   font-size:9px; 
+	   text-decoration:none; 
+	   padding:2px 4px;
+	}
+
+#servicio{
+	margin: auto auto auto auto;
+	border: 3px solid green;
+	color: black;
+	width: 27.1%;
+	height: 50%;
+	display: inline-block;
+}
+#max{
+	margin: auto auto auto auto;
+	width: 99.6%;
+	height: 70%;
+}
+#encabezadomax{
+	color: black;	
+	height: 15%;
+	margin: auto auto auto auto;
+	font-size: 50px;	
+	display: inline-block;
+}
+#prod{
+	color: black;	
+	margin: 5% auto auto 3.4%;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+#prod img{	
+	display: inherit;
+}
+
+#prod p{
+	height: 10%;
+}
+.botoncito{
+	width: 40%;
+}
+#produc{
+	width: 99.6%;
+	height: 75%;
+}
+#menupro{
+	height: 7%;
+}
+
+#pro{
+	color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+}
+
+td,
+th {
+  padding: 0;
+}
