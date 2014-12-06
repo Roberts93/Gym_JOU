@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>Inicio</title>
 	<link rel="stylesheet" type="text/css" href="css/estructura.css"/>
 	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 	<link rel="stylesheet" type="text/css" href="css/pie_pagina.css"/>
@@ -41,7 +42,7 @@
 							<?php 
 								include('menu.php');
 							?>
-							<hr width="100%" height="100" color="red">
+							<hr width="100%" height="100" color="#ccc">
 							<hr id="sep" width="100%" height="100" color="blue">
 						<div id="slidebox">
 							<div class="next"></div>
@@ -53,6 +54,12 @@
 											<a href="#" onClick="" class="4">4</a> 
 											<a href="#" onClick="" class="5">5</a> 
 											<a href="#" onClick="" class="6">6</a> 
+											<a href="#" onClick="" class="7">7</a> 
+											<a href="#" onClick="" class="8">8</a> 
+											<a href="#" onClick="" class="9">9</a> 
+											<a href="#" onClick="" class="10">10</a> 
+											<a href="#" onClick="" class="11">11</a> 
+											<a href="#" onClick="" class="12">12</a> 
 									</div>
 
 						<div class="">
@@ -60,23 +67,42 @@
 						    	<li>
 						    		<IMG SRC="img/CarrucelPrincipal/GymJoe.png" id="tam_imagen">
 						    		</li>
-						    		<li>
-											<IMG SRC="img/CarrucelPrincipal/Productos.jpg" id="tam_imagen">
-						    	</li>
-						    	</li>
 						    	<li>
-											<IMG SRC="img/CarrucelPrincipal/Rutinas.jpg" id="tam_imagen">
-						    	</li>
-						    	</li>
+									<IMG SRC="img/CarrucelPrincipal/Productos.jpg" id="tam_imagen">
+						    		</li>
+						    </li>
 						    	<li>
-											<IMG SRC="img/CarrucelPrincipal/Instalaciones.jpg" id="tam_imagen">
-						    	</li>
+									<IMG SRC="img/CarrucelPrincipal/Rutinas.jpg" id="tam_imagen">
+						    		</li>
+						    </li>
 						    	<li>
-											<IMG SRC="img/CarrucelPrincipal/Blog.jpg" id="tam_imagen">
-						    	</li>
+									<IMG SRC="img/CarrucelPrincipal/Instalaciones.jpg" id="tam_imagen">
+						    		</li>
 						    	<li>
-											<IMG SRC="img/CarrucelPrincipal/Promociones.jpg" id="tam_imagen">
-						    	</li>
+									<IMG SRC="img/CarrucelPrincipal/Blog.jpg" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/Promociones.jpg" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/20.png" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/21.png" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/22.png" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/23.png" id="tam_imagen">
+						    		</li>
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/24.png" id="tam_imagen">
+						    		</li>					
+						    	<li>
+									<IMG SRC="img/CarrucelPrincipal/25.png" id="tam_imagen">
+						    		</li>		
+
 						    	</li>
 							</ul>
 						</div>
