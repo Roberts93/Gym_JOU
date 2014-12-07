@@ -13,7 +13,7 @@ echo "<tr>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
 		<td>$fila[4]</td>
-		<td><img src='../fotos/$fila[5]' width'100px' heigth'100px'></td>
+		<td><img src='../GymJoe/fotos/$fila[5]' width='100px' heigth='100px'></td>
 		<td>
 		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
@@ -38,7 +38,7 @@ public function consultarProductos(){
 				<td>$fila[4]</td>
 				<td>$fila[5]</td>
 				<td>$fila[6]</td>
-				<td><img src='../fotos/$fila[7]' width'100px' heigth'100px'></td>
+				<td><img src='../GymJoe/fotos/$fila[7]' width='100px' heigth='100px'></td>
 				<td>$fila[8]</td>
 				<td>
 				<a href='javascript:void(0)' onclick='mensaje2(".$fila[0].")'>
