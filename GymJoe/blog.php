@@ -32,7 +32,6 @@ con extension .css y lo referencias con el link
 
     <?php
     include('pie.php');
-    ?>
-        
+    ?>  
     </body>
 </html>
