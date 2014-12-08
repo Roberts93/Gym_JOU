@@ -22,8 +22,6 @@
 	</script>
 </head>
 <body>
-
-
 		<div id="caja_principal">
 		<?php 
 		include('menu.php');

@@ -13,7 +13,7 @@ echo "<tr>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
 		<td>$fila[4]</td>
-		<td><img src='../GymJoe/fotos/$fila[5]' width='100px' heigth='100px'></td>
+		<td><img src='../GymJoe/fotos/usuarios/$fila[5]' width='100px' heigth='100px'></td>
 		<td>
 		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
@@ -38,7 +38,7 @@ public function consultarProductos(){
 				<td>$fila[4]</td>
 				<td>$fila[5]</td>
 				<td>$fila[6]</td>
-				<td><img src='../GymJoe/fotos/$fila[7]' width='100px' heigth='100px'></td>
+				<td><img src='../GymJoe/fotos/productos/$fila[7]' width='100px' heigth='100px'></td>
 				<td>$fila[8]</td>
 				<td>
 				<a href='javascript:void(0)' onclick='mensaje2(".$fila[0].")'>
@@ -56,7 +56,7 @@ public function consultarquema(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -76,7 +76,7 @@ public function consultaraumen(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -92,11 +92,11 @@ public function consultaraumen(){
 
 public function consultarnos(){
 	$conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);
-	$consulta = mysqli_query($conexion, "select * from productos where tipo='NOS'");
+	$consulta = mysqli_query($conexion, "select * from productos where tipo='Oxido Nitrico'");
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -110,13 +110,13 @@ public function consultarnos(){
 	mysqli_free_result($consulta);
 }
 
-public function consultarhc(){
+public function consultarglu(){
 	$conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);
-	$consulta = mysqli_query($conexion, "select * from productos where tipo='HC'");
+	$consulta = mysqli_query($conexion, "select * from productos where tipo='Glutamina'");
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -132,11 +132,11 @@ public function consultarhc(){
 
 public function consultarcrea(){
 	$conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);
-	$consulta = mysqli_query($conexion, "select * from productos where tipo='Creatine'");
+	$consulta = mysqli_query($conexion, "select * from productos where tipo='Creatina'");
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -154,11 +154,11 @@ public function consultarbus(){
 if(isset($_POST['nombre'])){
                     $conexion = mysqli_connect(config::$servidor, config::$usuario,config::$password,config::$baseDeDatos);    
                     $n=$_POST['nombre'];
-                    $consulta = mysqli_query($conexion, "select * from productos where nombre like '$n%'");
+                    $consulta = mysqli_query($conexion, "select * from productos where (nombre like '$n%') or (tipo like '$n%')");
                     while ($fila = mysqli_fetch_array($consulta)) {             
                     echo "
                     <figure id='prod'>
-                    <img src='../fotos/$fila[7]' width='60%' heigth='60%'/>
+                    <img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
                     <figcaption>
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>

@@ -34,7 +34,6 @@
 			<option value="Oxido Nitrico">Oxido Nitrico</option>
 			<option value="Creatina">Creatina</option>
 			<option value="Glutamina">Glutamina</option>
-			<option value"Testosterona">Testosterona</option>
 			</select>
 			<br>
 			Foto: <input type="file" name="img" accept="image/*">
