@@ -22,23 +22,9 @@ include('..\menu.php');
 </div>
 <div class="row" width="90%">
 <div id="columna" width="90%">
-<table width="29%">
-<thead>
-	<tr>
-	    <th>ID_Producto</th>
-		<th>Nombre</th>
-		<th>Marca</th>
-		<th>Precio al publico</th>
-		<th>Precio Proveedor</th></tr>
-		<tr>
-		<th>Tamaño</th>
-		<th>Tipo</th>
-		<th>Imagen</th>
-		<th>Descripcion</th>
-		<th>Operaciones</th>
-	</tr>
-</thead>
-<tbody width="98%">
+
+
+<tbody>
 
 <?php
 session_start();
@@ -57,7 +43,7 @@ session_start();
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
 $consulta = mysqli_query($conexion, "select * from productos where id_producto='".$idp."' and nombre='".$nom."' and marca='".$mar."' and precio_publico='".$pre_pu."' and precio_proveedor='".$pre_pro."' and tamano='".$tama."' and tipo='".$tipo."' and img='".$imagen."' and descripcion='".$desc."' ");
 
-/*
+
 echo "
 <table width'1000px';>
 <thead width'800px';>
@@ -67,17 +53,11 @@ echo "
 		<th>Marca</th>
 		<th>Precio_Publico</th>
 		<th>Precio_Proveedor</th></tr>
-		<tr>
-		<th>Tamaño</th> 
-		<th>Tipo</th>
-		<th>Imagen</th>
-		<th>Descripcion</th>
-		<th>Operaciones</th>
-	</tr>
+
 </thead>
 <tbody>
 ";
-*/
+
 while($fila = mysqli_fetch_array($consulta)){
 	echo "<tr>
 	<form action='modificarproductos.php' method='post' enctype='multipart/form-data'>
@@ -86,6 +66,15 @@ while($fila = mysqli_fetch_array($consulta)){
 		<td><input type='text' name='marca' value='$fila[2]'></td>
 		<td><input type='text' name='precio_publi' value='$fila[3]'></td>
 		<td><input type='text' name='precio_prov' value='$fila[4]'></td></tr>
+		
+
+			
+		<th>Tamaño</th> 
+		<th>Tipo</th>
+		<th>Imagen</th>
+		<th>Descripcion</th>
+		<th>Operaciones</th>
+	
 		<tr>
 		<td><input type='text' name='tam' value='$fila[5]'> </td>
 		<td><input type='text' name='tipo' value='$fila[6]'></td>
@@ -102,7 +91,7 @@ mysqli_free_result($consulta);
 ?>
 
 </tbody>
-</table>
+
 </div>	
 </div>
 
