@@ -24,15 +24,7 @@
     <hr id="sep" width="100%" height="100" color="blue">
 
 
-    
-
-
-
-
-
-
-
-</div>
+    </div>
 
 <div id="fondo">
 <div class="multiple-items">
@@ -130,20 +122,12 @@
 <img src="img/bailee.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
-
-
-
-
-
-
-
-
 </div>
     
     <hr>
     <?php
     include('pie.php');
     ?>
+    
 </body>
 </html>
