@@ -7,7 +7,7 @@
                     <li id="elementos_menu"><a  href="productos.php">Productos |</a></li>
                     <li id="elementos_menu"><a  href="Rutinas.php">Rutinas |</a></li>
                     <li id="elementos_menu"><a  href="instalaciones.php">Instalaciones |</a></li>
-                    <li id="elementos_menu"><a  href="blog.php">Blog |</a></li>
+                    <li id="elementos_menu"><a  href="ConectaBlog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="promociones.php">Promociones |</a></li>
                     <li id="elementos_menu"><a href="login.php">Iniciar Sesion |</a></li>
                     <li id="elementos_menu"><a href="conUsuario.php">Consultar Usuario |</a></li>

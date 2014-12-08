@@ -2,17 +2,17 @@
  
  <div id="info_pie">
                 <h2 id="titulos_pie">Menu</h2>
-                <p id="texto_pie">Inicio</p>
+                <p id="texto_pie" href="index.php">Inicio</p>
                 <hr id="separador">
-                <p id="texto_pie">Productos</p>
+                <p id="texto_pie" href="productos.php">Productos</p>
                 <hr id="separador">
-                <p id="texto_pie">Rutinas</p>
+                <p id="texto_pie" href="Rutinas.php">Rutinas</p>
                 <hr id="separador">
-                <p id="texto_pie">Instalaciones</p>
+                <p id="texto_pie" href="instalaciones.php">Instalaciones</p>
                 <hr id="separador">
-                <p id="texto_pie">Blog</p>
+                <p id="texto_pie" href="blog.php">Blog</p>
                 <hr id="separador">
-                <p id="texto_pie">Promociones</p>
+                <p id="texto_pie" href="Promociones.php">Promociones</p>
             </div>
 
             <div id="info_pie">
