@@ -15,6 +15,7 @@ $tipo=$_POST['tipo'];
 $archivo =$nombre.$extensionArchivo;
 $descripcion=$_POST['des'];
 $modifica = mysqli_query($conexion, "update productos set nombre='".$nombre."', marca='".$marca."', precio_publico='".$pre_pu."', precio_proveedor='".$pre_pro."', tamano='".$tama."' , tipo='".$tipo."' , img='".$archivo."', descripcion='".$descripcion."' where id_producto='".$id."'");
+move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
 
 mysqli_close($conexion);
 

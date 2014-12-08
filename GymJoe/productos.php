@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>Gym Joe</title>
+    <title>Productos</title>
     <link rel="stylesheet" type="text/css" href="css/estructura.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
@@ -66,12 +66,18 @@
                   </li>
               </ul>
   </div>
-  <aside id="servicio"><h1>Aquí va el servicio</h1>
+  <aside id="servicio">
+  <form method="POST" action="serviciosweb/cliente.php">
+  <h1>Aquí va el servicio</h1>
+  <h3>Convertidor de Pesos Mexicanos a Dolares</h3>
+  <input type="number" placeholder="pesos" name="cantidad">
+  <input type="number" placeholder="valor_dolar" name="dolar"><input type="submit" value="convertir">
+  </form>
   </aside>
   <nav id="menupro">
     <ul>
       <li><a href="RegPro.php">Registrar Productos</a></li>
-      <li><a href="conproducto.php">Consultar Productos</a></li>
+      <li><a href="conproducto.php">Consultar Productos</a></li>      
     </ul>
   </nav>
   <section id="max">
