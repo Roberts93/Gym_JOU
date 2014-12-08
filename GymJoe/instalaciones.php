@@ -36,8 +36,8 @@
 	<div><img src="img/Carrusel_Instalaciones/6.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/7.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/8.jpg" class="tam_imagen" ></div>
-	<div><img src="img/Carrusel_Instalaciones/9.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/10.jpg" class="tam_imagen"></div>
+	
+	
 	
 </div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
