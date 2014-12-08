@@ -23,7 +23,7 @@ include('..\menu.php');
 </div>
 <div class="row">
 <div id="columna">
-<table width="70%">
+
 
 <tbody>
 <?php
@@ -83,7 +83,7 @@ mysqli_free_result($consulta);
 ?>
 
 </tbody>
-</table>
+
 </div>	
 </div>
 
