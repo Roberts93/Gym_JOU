@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/instalaciones.css">
     <link rel="stylesheet" href="slick-master/slick/slick.css">
-	<link rel="stylesheet" href="css/estiloCarrusel_Rutinas.css">
+	<link rel="stylesheet" href="css/estiloCarrusel_Instalaciones.css">
 
 
 
