@@ -23,7 +23,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$pass = $_POST['pass'];
 			$archivo =$nick.$extensionArchivo;
 			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo')";
-		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
+		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
 				
 
 		$paginaRetorno = 'Formulario.php';
@@ -33,6 +33,31 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		}
 
 	}else
+
+	//------------------------------------TABLA imagenes ----------------------------------
+	if($tabla == 'imagenes'){
+		if(isset($_FILES['img']) && isset($_POST['seccion'])
+		 && isset($_POST['categoria'])){
+
+
+$extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));			
+									
+			$descripcion = $_POST['des'];
+			$seccion = $_POST['seccion'];
+			$categoria = $_POST['categoria'];			
+			$archivo =$categoria.$extensionArchivo;
+			$sql = $sql."'0','$archivo','$descripcion','$seccion', '$categoria')";
+		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/imagenes/'.$archivo);
+				
+
+		$paginaRetorno = 'panel.php';
+			//$paginaRetorno = $archivo;
+		}else{
+			die('Error en datos: ERROR 0xU');	
+		}
+
+	}else
+
 //-------------------------------------TABLA EXAMENES ------------------------------------		
 
 	if($tabla == 'productos')
@@ -53,7 +78,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		$archivo =$nombre.$extensionArchivo;
 		$descripcion= $_POST['des'];
 		$sql = $sql."'0','$nombre','$marca','$precio_publico','$precio_proveedor','$tamaño','$tipo','$archivo','$descripcion')";
-		move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/'.$archivo);
+		move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/productos/'.$archivo);
 
 		$paginaRetorno = 'regpro.php';
 }else{

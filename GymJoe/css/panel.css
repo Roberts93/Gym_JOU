@@ -1,0 +1,29 @@
+.menuizq li{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+.menuizq a{
+	color: #000000;
+	text-decoration: none;
+}
+.menuizq a:hover{
+	color: #47a3da;
+}
+#ImagenPrincipal{
+margin: 0%;
+width: 99.9%;
+height: 270px;
+}
+#tamaImagen{
+width: 100%;
+height: 100%;
+}
+.menuizq h4{
+	color: #47a3da;
+}
+.menuizq{
+	border: 1px solid red;
+	height: 100%;
+	width: 20%;	
+	display: inline-block;
+}

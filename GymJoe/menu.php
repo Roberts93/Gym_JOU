@@ -10,8 +10,6 @@
                     <li id="elementos_menu"><a  href="ConectaBlog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="promociones.php">Promociones |</a></li>
                     <li id="elementos_menu"><a href="login.php">Iniciar Sesion |</a></li>
-                    <li id="elementos_menu"><a href="conUsuario.php">Consultar Usuario |</a></li>
-                    <li id="elementos_menu"><a href="conProducto.php">Consultar Productos</a></li>
                     <li id="elementos_menu"><a href="panel.php">Panel de Control</a></li>
                     </ul>
                 </div>

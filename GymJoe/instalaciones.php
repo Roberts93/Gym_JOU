@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/instalaciones.css">
     <link rel="stylesheet" href="slick-master/slick/slick.css">
-	<link rel="stylesheet" href="css/estiloCarrusel_Rutinas.css">
+	<link rel="stylesheet" href="css/estiloCarrusel_Instalaciones.css">
 
 
 
@@ -24,15 +24,7 @@
     <hr id="sep" width="100%" height="100" color="blue">
 
 
-    
-
-
-
-
-
-
-
-</div>
+    </div>
 
 <div id="fondo">
 <div class="multiple-items">
@@ -44,8 +36,8 @@
 	<div><img src="img/Carrusel_Instalaciones/6.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/7.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/8.jpg" class="tam_imagen" ></div>
-	<div><img src="img/Carrusel_Instalaciones/9.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/10.jpg" class="tam_imagen"></div>
+	
+	
 	
 </div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
@@ -130,20 +122,12 @@
 <img src="img/bailee.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
-
-
-
-
-
-
-
-
 </div>
     
     <hr>
     <?php
     include('pie.php');
     ?>
+    
 </body>
 </html>
