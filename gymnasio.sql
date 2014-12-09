@@ -1,40 +1,19 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : conec
-Source Server Version : 50617
-Source Host           : localhost:3306
-Source Database       : gym
+Source Server         : hola
+Source Server Version : 50529
+Source Host           : 127.0.0.1:3306
+Source Database       : gymnasio
 
 Target Server Type    : MYSQL
-Target Server Version : 50617
+Target Server Version : 50529
 File Encoding         : 65001
 
-Date: 2014-11-22 03:29:54
+Date: 2014-12-08 22:30:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for datos
--- ----------------------------
-DROP TABLE IF EXISTS `datos`;
-CREATE TABLE `datos` (
-  `ID_Datos` int(11) NOT NULL AUTO_INCREMENT,
-  `Tipo_Usuario` varchar(45) NOT NULL,
-  `Calle` varchar(45) NOT NULL,
-  `Colonia` varchar(45) NOT NULL,
-  `#_Casa` int(11) NOT NULL,
-  `Municipio` varchar(45) NOT NULL,
-  `Estado` varchar(45) NOT NULL,
-  `Telefono` int(10) NOT NULL,
-  `CP` int(11) NOT NULL,
-  PRIMARY KEY (`ID_Datos`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of datos
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for imagenes
@@ -90,7 +69,7 @@ CREATE TABLE `productos` (
 -- ----------------------------
 -- Records of productos
 -- ----------------------------
-INSERT INTO `productos` VALUES ('1', 'Carnetina', 'Adruplex', '1200', '700', '1Kg.', 'Oxido', 'Carnetina.jpg', 'La mejor marca en oxidos, tomar una capsula antes de hacer un entrenamiento reguroso');
+INSERT INTO `productos` VALUES ('1', 'Carnetina', 'Adruplex', '1200', '700', '1Kg.', 'Oxido', 'Carnetina.png', 'La mejor marca en oxidos, tomar una capsula antes de hacer un entrenamiento reguroso');
 
 -- ----------------------------
 -- Table structure for promociones
@@ -153,14 +132,24 @@ CREATE TABLE `usuario` (
   `Nick` varchar(45) NOT NULL,
   `Password` varchar(45) NOT NULL,
   `Img` varchar(200) DEFAULT NULL,
+  `Tipo_Usuario` varchar(45) NOT NULL,
+  `Calle` varchar(45) NOT NULL,
+  `Colonia` varchar(45) NOT NULL,
+  `#_Casa` int(11) NOT NULL,
+  `Municipio` varchar(45) NOT NULL,
+  `Estado` varchar(45) NOT NULL,
+  `Telefono` int(11) NOT NULL,
+  `CP` int(11) NOT NULL,
+  `Email` varchar(45) NOT NULL,
   PRIMARY KEY (`ID_Usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of usuario
 -- ----------------------------
-INSERT INTO `usuario` VALUES ('1', 'Mario', 'Zavaleta', 'ma', '1', null);
-INSERT INTO `usuario` VALUES ('2', 'Marioarturo', 'Zavaleta', 'nick', '*E6CC90B878B948C35E92B003C792C46C58C4AF40', 'tutuyo.jpg');
+INSERT INTO `usuario` VALUES ('3', 'ROBERTO', 'PINEDA', 'nick', '*AE844B047E02E5FAD4AD353DD1E0D61CB7F89C8C', 'nick', '', '', '', '0', '', '', '0', '0', '');
+INSERT INTO `usuario` VALUES ('4', 'ROBERTO Carlos', 'TABAREZ', 'car', '*5B88EAE2C3C04A26B371B27ABD59D3F055288E8E', 'car', '', '', '', '0', '', '', '0', '0', '');
+INSERT INTO `usuario` VALUES ('5', 'Mario Mujercita', 'Perez', 'mama', '*09BAE5136AC8FEDC0428153B85589CF729E4ECC6', 'mama', '', '', '', '0', '', '', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for ventas
@@ -176,8 +165,8 @@ CREATE TABLE `ventas` (
   PRIMARY KEY (`ID_Ventas`),
   KEY `ID_Producto` (`ID_Producto`),
   KEY `ID_Usuario` (`ID_Usuario`),
-  CONSTRAINT `ID_Usuario` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `ID_Producto` FOREIGN KEY (`ID_Producto`) REFERENCES `productos` (`ID_Producto`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `ID_Producto` FOREIGN KEY (`ID_Producto`) REFERENCES `productos` (`ID_Producto`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `ID_Usuario` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
