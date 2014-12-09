@@ -24,9 +24,7 @@
 								    [".1", ".2",
 								    ".3", ".4",
 								    ".5", ".6",
-								    ".7", ".8",
-								    ".9", ".10",
-								    ".11", ".12"],
+								    ".7"],
 								
 								afterEnd: function(a, to, btnGo) {
 										if(btnGo.length <= to){
@@ -58,34 +56,13 @@
 											<a href="#" onClick="" class="5">5</a> 
 											<a href="#" onClick="" class="6">6</a> 
 											<a href="#" onClick="" class="7">7</a> 
-											<a href="#" onClick="" class="8">8</a> 
-											<a href="#" onClick="" class="9">9</a> 
-											<a href="#" onClick="" class="10">10</a> 
-											<a href="#" onClick="" class="11">11</a> 
-											<a href="#" onClick="" class="12">12</a> 
+											
 									</div>
 
 						<div class="">
 							<ul>
 						    	<li>
 						    		<IMG SRC="img/CarrucelPrincipal/GymJoe.png" id="tam_imagen">
-						    		</li>
-						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/Productos.jpg" id="tam_imagen">
-						    		</li>
-						    </li>
-						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/Rutinas.jpg" id="tam_imagen">
-						    		</li>
-						    </li>
-						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/Instalaciones.jpg" id="tam_imagen">
-						    		</li>
-						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/Blog.jpg" id="tam_imagen">
-						    		</li>
-						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/Promociones.jpg" id="tam_imagen">
 						    		</li>
 						    	<li>
 									<IMG SRC="img/CarrucelPrincipal/20.png" id="tam_imagen">
@@ -146,6 +123,7 @@ GYM JOE tiene su sede en Ciudad Altamirano, Guerrero, no obstante somos una Gymn
 	<?php
 	include('mapa-gmaps.php');
 	?>
+
 </div>
 
 

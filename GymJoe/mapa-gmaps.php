@@ -11,6 +11,7 @@ html,body{height:100%;margin:0;padding:0;}
 #map{height:92.5%;}
 -->
 </style>	
+
 </head>
 <body>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>
