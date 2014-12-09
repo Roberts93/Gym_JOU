@@ -118,6 +118,17 @@ height: 100%;
 	background: white;
 	top: 0px;
 }
+#caja_principal2{
+	width: 90%;
+	height: 700px;
+	border:2px solid gray;
+	margin-left: 55px;
+	background: white;
+	top: 0px;
+	font-style: black;
+	font-color: red;
+}
+
 
 #texto_parrafo{
 	color: black;
@@ -125,7 +136,18 @@ height: 100%;
 	font-family: Berlin Sans FB Demi;
 	margin: 5%;
 	text-align: justify;
-	text-shadow: rgb(0,0,150) 3px 3px 5px;
+	text-shadow: rgb(0,0,150) 3px 3px 3px;
+}
+
+#texto_parrafo2{
+	font-color: red;
+	color: black;
+	font-size: 18px;
+	font-family: Berlin Sans FB Demi;
+	margin: 5%;
+	text-align: justify;
+	text-shadow: rgb(0,0,150) 3px 3px 6px;
+	margin-left: 0%;
 }
 
 #texto_usuario{

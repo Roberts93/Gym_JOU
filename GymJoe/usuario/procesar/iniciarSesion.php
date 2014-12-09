@@ -11,20 +11,24 @@ $consulta = "SELECT * FROM usuario WHERE nick='{$_POST['nick']}' AND password='{
 $cons=mysqli_query($conexion,$consulta)
 or die("Error: ".  mysqli_error($conexion));
 
-while($dato=mysqli_fetch_array($cons)){
+$dato=mysqli_fetch_array($cons);
 $usuario=$dato[3];
 $cont=$dato[4];
+$img=$dato[5];
 
     if($nick==$usuario && $pass==$cont){
         $_SESSION['usuario']=$usuario;
-        $_SESSION['contra']=$cont;
-        echo "Tu usuario es: ".$_SESSION['usuario']."<>Tu contraseña es: ".$_SESSION['contra'];
-   header('location: ../usuario/index2.php');
-    }else{
+        $_SESSION['contra']=$img;
+     	
+      
+        //echo "El usuario existe";
+        header('location: ../usuario/index.php');
+       }else{
     echo 'El usuario no existe';   
 }
-   
-}
+
+ mysqli_close($conexion);  
+
 
 
 ?>

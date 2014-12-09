@@ -12,7 +12,7 @@
            <?php 
            include('menu.php');
            ?>
-<hr width="100%" height="100" color="red">
+<hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">
 
 <h1>HOLA EQUIPO</h1>
@@ -32,7 +32,6 @@ con extension .css y lo referencias con el link
 
     <?php
     include('pie.php');
-    ?>
-        
+    ?>  
     </body>
 </html>

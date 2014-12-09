@@ -21,11 +21,17 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$apellido = $_POST['apellido'];
 			$nick = $_POST['nick'];
 			$pass = $_POST['pass'];
+			$esta=$_POST['estado'];
+			$ciuda=$_POST['ciudad'];
+			$call=$_POST['calle'];
+			$col=$_POST['colonia'];
+			$numca=$_POST['numcasa'];
+			$tel=$_POST['telefono'];
+			$codigoposta=$_POST['cp'];
+			$correo=$_POST['email'];
 			$archivo =$nick.$extensionArchivo;
-			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo')";
+			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo','2','$call','$col','$numca','$ciuda','$esta','$tel','$codigoposta','$correo')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
-				
-
 		$paginaRetorno = 'Formulario.php';
 			//$paginaRetorno = $archivo;
 		}else{

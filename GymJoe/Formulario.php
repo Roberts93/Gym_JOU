@@ -28,6 +28,14 @@ include('menu.php');
 			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
 			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
 			<input type="password" id="password" name="pass" placeholder="Contraseña" required>
+			<input type="text" id="nick" name="estado" placeholder="Estado" required>
+			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" required>
+			<input type="text" id="nick" name="calle" placeholder="Calle" required>
+			<input type="text" id="nick" name="colonia" placeholder="Colonia" required>
+			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
+			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
+			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" required>
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">

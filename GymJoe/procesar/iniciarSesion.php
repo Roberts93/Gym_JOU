@@ -2,7 +2,7 @@
 require_once 'config.php';
 
 session_start();
-
+$resultadoRetorno=0;
 $nick = $_POST['nick'];
 $pass = $_POST['pass'];
 $conexion = mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
@@ -15,7 +15,7 @@ $dato=mysqli_fetch_array($cons);
 $usuario=$dato[3];
 $cont=$dato[4];
 $img=$dato[5];
-
+$cont2=md5($cont);
     if($nick==$usuario && $pass==$cont){
         $_SESSION['usuario']=$usuario;
         $_SESSION['contra']=$img;
@@ -24,7 +24,8 @@ $img=$dato[5];
         //echo "El usuario existe";
         header('location: ../usuario/index.php');
        }else{
-    echo 'El usuario no existe';   
+       	$resultadoRetorno=1;
+       	header('Location: ../login.php?res='.$resultadoRetorno);
 }
 
  mysqli_close($conexion);  

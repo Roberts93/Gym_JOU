@@ -16,7 +16,7 @@ include('menu.php');
 ?>	
 
 
-<hr width="100%" height="100" color="red">
+<hr width="100%" height="100" color="#ccc">
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="row">
 <div class="large-6 large-centered columns">
@@ -30,11 +30,11 @@ include('menu.php');
             <form method="post" action="procesar/iniciarSesion.php">
 		<label>
 			Usuario:
-                        <input type="text" id="nick" placeholder="Usuario" autofocus name="nick" required>			
+			<input type="text" id="nick" autofocus name="nick" placeholder="Usuario" required>			
 		</label>
 		<label>
 			Password:
-                        <input type="password" id="nick" placeholder="Contraseña" name="pass" required>
+			<input type="password" id="nick" name="pass" placeholder="Contraseña" required>
 		</label>	
 		<div  class="row">		
 		<div class="large-8 large-centered columns"> 		

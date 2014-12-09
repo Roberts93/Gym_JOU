@@ -16,7 +16,7 @@ include('menu.php');
 ?>	
 
 
-<hr width="100%" height="100" color="#ccc">
+<hr width="100%" height="100" color="red">
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="row">
 <div class="large-6 large-centered columns">
@@ -42,7 +42,18 @@ include('menu.php');
 		<a href="Formulario.php" id="botoncito" > Registrate</a>
 							
 		</div>
-		</div>	
+		</div>
+		<?php
+			session_start();
+			if(isset($_GET['res'])){
+	$resultado = $_GET['res'];	
+	if($resultado==1){
+		echo '<div data-alert class="alert-box success round">El usuario no existe, verifique su contraseña y su usuario</div>';
+	}
+}
+	?>
+			
+
 	</form>
 	</div>
 </div>	

@@ -1,5 +1,5 @@
         <link rel="stylesheet" type="text/css" href="css/foundation.css">
-	    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	    <link rel="stylesheet" type="text/css" href="css/estilooo.css">
 	    <link rel="stylesheet" href="iconos/foundation-icons.css">
 		<script type="text/javascript" src="js/vendor/modernizr.js"></script>	
 		<script src="js/vendor/jquery.js"></script>

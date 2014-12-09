@@ -1,20 +1,53 @@
+.body1{
+/* background: url("img/background/4.jpg"), url("img/background/8.png"); */
+    /*background-color: #ccc; Puedes combinarlo con colores de fondo también*/
+    /*
+    background-size: cover;
+    background-blend-mode: lighten, normal;
+    background: url("img/background/4.jpg"), url("img/background/8.png"); */
+    border-radius:5px;
+ border:solid 1px #DEDEDE;
+ background:rgba(204,204,204,0.3);
+}
 
-#caja_arriba{
-width: 95%;
-height: 170px;
-margin-left: 60px;
+
+#ImagenPrincipal{
+margin: 0%;
+background: yellow;
+border: 3px solid #cccccc;
+width: 99.5%;
+height: 40%;
+}
+#tamaImagen{
+width: 100%;
+height: 100%;
+}
+
+.division1{
+    border: 3px solid #ccc;
+    width: 64.9%;
+    height: 90%;
+    float: right;
+    background-color: black;
+   /* background-color: rgb(0,0,255); opacity: 0.9;    */
+}
+
+.caja_arriba{
+width: 34.1%;
+height: 90%;
 background: lavender;
-border: 2px solid black;
-margin: 30px;
-margin-top: 90px;
+border: 3px solid #ccc;
+margin: 0px;
+margin-top: 0px;
 margin-bottom: 50px;
-border-radius: 60px;
+border-radius: 0px;
 font-family: sans-serif 30px;
 opacity: .9;
-
+/*
 -moz-box-shadow: rgb(150,150,150) 5px 5px; 
  -webkit-box-shadow: rgb(150,150,150) 5px 5px;
-   box-shadow: rgb(150,150,150) 5px 5px;
+   box-shadow: rgb(150,150,150) 5px 5px;  */
+   float: left;
 }
 
 #img{  
@@ -22,7 +55,7 @@ opacity: .9;
     width: 400px;
     height: 150px;
     position: relative;
-    top: -60px;
+    top: -13px;
     vertical-align: middle;
 }
 
@@ -31,30 +64,30 @@ opacity: .9;
     width: 250px;
     height: 150px;
     position: relative;
-    top: -60px;
+    top: 160px;
     vertical-align: middle;
-    margin-left: 2%;
+    margin-left: 1%;
 }
 
 #titulo{
      font-style: oblique black;
       font-size: 24px;
-      vertical-align: middle;
-      margin-left: 400px;
+      float: left;
+      margin-left: 55px;
       color: #000099;
+      margin-top: -130px;
 }
 
 #texto_centro{
     font-size: 18px;
     position: relative;
-    margin-left: 430px;
+    margin-left: 70px;
     top: -140px;
     display: inline-block;
     color: black;
 }
-
 .pocision{
-     margin-left: 5%;
+     border: 3px solid blue;
      margin-bottom: 4%;
      color: black;
      font-family: sans-serif;
@@ -66,12 +99,30 @@ opacity: .9;
       margin-left: 9%;
 }
 
+#r{
+margin-left: 1%;
+margin-bottom: 1.5%;
+height: 3%;
+width: 98%;
+float: left;
+}
+
+#r2{
+margin-left: 1%;
+margin-top: -3.5%;
+height: 3%;
+width: 98%;
+float: left;
+}
 
 #cajota{
-	width: 99.2%;
-	border: 5px solid blue;
-    background: -webkit-linear-gradient(250deg, blue, lavender, white);
-box-shadow: rgb(150,150,150) 5px 5px 10px;
+
+    margin-top: 49.4%;
+	width: 99.5%;
+	border: 3px solid #ccc;
+/*    background: -webkit-linear-gradient(250deg, blue, lavender, white);
+    box-shadow: rgb(150,150,150) 5px 5px 10px; */
+    background-color: #ccc;
 }
 
 
@@ -85,3 +136,17 @@ font-size: 20px;
 font-family: 'sikin';
 
 }
+
+#Enlace1{
+    width: 50%;
+    display: inline-block;
+}
+#Conte{
+    width: 48%;
+    display: inline-block;
+    color: black;
+    float: right;
+    margin-right: 2%;
+    text-align: justify;
+}
+

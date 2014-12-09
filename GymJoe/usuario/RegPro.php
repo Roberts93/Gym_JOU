@@ -14,7 +14,7 @@
 		<?php
 			include('menu.php');			
 		?>
-		<hr width="100%" height="100" color="red">
+		<hr width="100%" height="100" color="#ccc">
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="panel2">
 <h3>Registro de Productos</h3>
@@ -34,7 +34,6 @@
 			<option value="Oxido Nitrico">Oxido Nitrico</option>
 			<option value="Creatina">Creatina</option>
 			<option value="Glutamina">Glutamina</option>
-			<option value"Testosterona">Testosterona</option>
 			</select>
 			<br>
 			Foto: <input type="file" name="img" accept="image/*">
