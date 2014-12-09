@@ -33,7 +33,15 @@
                     <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Glutamina</a></li>
                     <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
                     <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
-                    <input type="text" id="nick" name="nombre" placeholder="Buscar"></a><input type="submit" value="Buscar" name"bus" id="bus"/>
+                    <script type="text/javascript">
+function txNombres() {
+ if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
+  event.returnValue = false;
+}
+
+
+                    </script>
+                    <input type="text" id="nick" name="nombre" placeholder="Buscar" onkeypress="txNombres()"></a><input type="submit" value="Buscar" name"bus" id="bus"  />
                     </li>                    
                 </ul>
             </div>
