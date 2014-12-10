@@ -109,6 +109,7 @@ mysqli_free_result($consulta);
 <hr id="sep" width="100%" height="100" color="blue">    
 <div id="ImagenPrincipal">
   <img  style="float" src="fotos/imagenes/productosbanner.jpg" id="tamaImagen" alt="" controls>    
+  </img>
 </div>        
   <section id="max">  
     <form class="contenedor" action="" method="post">
