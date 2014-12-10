@@ -2,31 +2,17 @@
  
  <div id="info_pie">
                 <h2 id="titulos_pie">Menu</h2>
-<<<<<<< HEAD
-                <p id="texto_pie" href="index.php">Inicio</p>
-                <hr id="separador">
-                <p id="texto_pie" href="productos.php">Productos</p>
-                <hr id="separador">
-                <p id="texto_pie" href="Rutinas.php">Rutinas</p>
-                <hr id="separador">
-                <p id="texto_pie" href="instalaciones.php">Instalaciones</p>
-                <hr id="separador">
-                <p id="texto_pie" href="blog.php">Blog</p>
-                <hr id="separador">
-                <p id="texto_pie" href="Promociones.php">Promociones</p>
-=======
-                <p id="texto_pie"><a href="index.php">Inicio</a></p>
+                <p id="texto_pie" ><a href="index.php">Inicio</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="productos.php">Productos</a></p>
                 <hr id="separador">
-                <p id="texto_pie"><a href="rutinas.php">Rutinas</a></p>
+                <p id="texto_pie"><a href="Rutinas.php">Rutinas</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="instalaciones.php">Instalaciones</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="blog.php">Blog</a></p>
                 <hr id="separador">
-                <p id="texto_pie"><a href="promociones.php">Promociones</a></p>
->>>>>>> 1c6f8f3ff115c8b85a9a60de482b681bb9b3d242
+                <p id="texto_pie"><a href="Promociones.php">Promociones</a></p>
             </div>
 
             <div id="info_pie">
@@ -36,17 +22,17 @@
                 <br>
                 <img src="img/twitter.png" width="50" height="50">
                 <br>
-                <img src="img/instagram.png" width="50" height="50">
+                <a href="https://plus.google.com/u/0/b/105283164262137932306/105283164262137932306/posts"><img src="img/google.jpg" width="50" height="50"></a>
                 <br>
             </div>
             
             <div id="info_pie">
                 <h2 id="titulos_pie">Contactanos</h2>
-                <p id="texto_pie">Telefono: </p>
+                <p id="texto_pie">Telefono: 7676720715</p>
                 <hr id="separador">
-                <p id="texto_pie">Direccion: </p>
+                <p id="texto_pie">Direccion: Fray Juan Bautista 1009, Col. Linda Vista.</p>
                 <hr id="separador"> 
-                <p id="texto_pie">Correo Electronico: </p>
+                <p id="texto_pie">Correo Electronico: gymjoe@gmail.com</p>
                 
             </div>
 

@@ -64,7 +64,7 @@
 else{
 ?>
 	<div data-alert class="alert-box alert round">
-  	 No se ha podido registrar el producto  
+  	 No se ha podido registrar el producto <b>nombre repetido</b>
 	</div>
 <?php
 }

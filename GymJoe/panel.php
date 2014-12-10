@@ -28,7 +28,7 @@
                     <li><a href="conusuario.php">Consultar Usuarios</a></li>                    
                 </ul>               
 </nav>
-<div class="panel2" style="border:2px solid red;">
+<div class="panel2">
 <h3>Configuración</h3>
 
     <form method="post" enctype="multipart/form-data" action="procesar/insertar.php">

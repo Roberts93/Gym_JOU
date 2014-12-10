@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
-    <script type="text/javascript" src="js/Validar.js"></script> 
 </head>
 <body>
 
@@ -25,17 +24,17 @@ include('menu.php');
 	<input type="hidden" name="tabla" value="usuario">
 
 	<label>			
-			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required onkeypress="return txLetras()">
-			<input type="text" id="nick" name="apellido" placeholder="Apellido" required onkeypress="return txLetras()">
+			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
+			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
 			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
 			<input type="password" id="password" name="pass" placeholder="Contraseña" required>
-			<input type="text" id="nick" name="estado" placeholder="Estado" required onkeypress="return txLetras()">
-			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" required onkeypress="return txLetras()">
-			<input type="text" id="nick" name="calle" placeholder="Calle" required onkeypress="return txLetras()">
-			<input type="text" id="nick" name="colonia" placeholder="Colonia" required onkeypress="txLetras()">
-			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required onkeypress="return txNumeros()">
-			<input type="text" id="nick" name="telefono" placeholder="Telefono" required onkeypress="return txNumeros()">
-			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required onkeypress="return txNumeros()">
+			<input type="text" id="nick" name="estado" placeholder="Estado" required>
+			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" required>
+			<input type="text" id="nick" name="calle" placeholder="Calle" required>
+			<input type="text" id="nick" name="colonia" placeholder="Colonia" required>
+			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
+			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
+			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
 			<input type="text" id="nick" name="email" placeholder="Correo electronico" required>
 			<label>
 			Foto: 
@@ -61,7 +60,7 @@ include('menu.php');
 else{
 ?>
 	<div data-alert class="alert-box alert round">
-  	 No se ha podido registrar el usuario  
+  	 No se ha podido registrar el usuario  <b>nick repetido</b>
 	</div>
 <?php
 }
