@@ -16,7 +16,7 @@ include('menu.php');
 ?>	
 
 
-<hr width="100%" height="100" color="red">
+<hr width="100%" height="100" color="#ccc">
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="row">
 <div class="large-6 large-centered columns">
@@ -51,9 +51,7 @@ include('menu.php');
 		echo '<div data-alert class="alert-box success round">El usuario no existe, verifique su contraseña y su usuario</div>';
 	}
 }
-	?>
-			
-
+	?>	
 	</form>
 	</div>
 </div>	
