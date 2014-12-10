@@ -12,9 +12,7 @@
 
 </head>
 <body>
-
     <div id="caja_principal">
-
     <?php 
         include('menu.php');
     ?>
@@ -25,13 +23,14 @@
 <div id="fondo">
 <div class="multiple-items">
 	<div><img src="img/Carrusel_Instalaciones/Instalaciones.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/2.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/3.jpg" class="tam_imagen" ></div>
-	<div><img src="img/Carrusel_Instalaciones/4.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/5.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/6.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/7.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/8.jpg" class="tam_imagen" ></div>
+	<div><img src="img/Carrusel_Instalaciones/1.jpg" class="tam_imagen"></div>
+    <div><img src="img/Carrusel_Instalaciones/dos.jpg" class="tam_imagen"></div>
+
+	<div><img src="img/Carrusel_Instalaciones/tres.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/cuatro.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/cinco.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/seis.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/siete.jpg" class="tam_imagen" ></div>
 	</div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
      <script rel="text/javascript" src="slick-master/slick/slick.js"></script>
@@ -47,48 +46,47 @@
 
 
 <div id="info">
-<p id="CLetra">¿Quieres entrenar en las mejores intalaciones?</p>
-<p id="CLetra"> Gym Joe cuenta con las mejores instalaciones para que puedas desarrollar  tus capacidades al maximo</p>
-<p id="CLetra">Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
-
-
+<p >¿Quieres entrenar en las mejores instalaciones?</p>
+<p > GYM JOE cuenta con las mejores instalaciones, donde puedes desarrollar  tus capacidades al maximo.</p>
+<p >Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
 </div>
 
+<div id="cajota">
 
-
-<div class="poci">
+<div id="caja1">
+<div id="poci">
 <img src="img/spi11.jpg" width="500" height="400" controls>
 <figcaption><b>Spinning</b></figcaption>
 </div>
-
 <div id="tama2">
 <img src="img/spi5.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
-
 <div id="tama3">
 <img src="img/spi4.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
+</div>
 
 
-<div class="poci">
+<div id="caja2">
+    <div id="poci1">
 <img src="img/pesa2.jpg"  width="500" height="400" controls>
 <figcaption><b>Pesas</b></figcaption>
 </div>
-
 <div id="tama4">
 <img src="img/61.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
 <div id="tama5">
 <img src="img/pesas.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
+</div>
 
-<div class="poci">
+
+<div id="caja3">
+    <div id="poci2">
 <img src="img/vesti.jpg"  width="500" height="400" controls>
 <figcaption><b>Vestidores</b></figcaption>
 </div>
@@ -102,26 +100,39 @@
 <img src="img/vesti4.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
+</div>
 
-<div class="poci">
+<div id="caja4">
+    <div id="poci">
 <img src="img/salon.jpg"  width="500" height="400" controls>
 <figcaption><b>Salon de baile</b></figcaption>
 </div>
-
 <div id="tama8">
 <img src="img/baile.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
 <div id="tama9">
 <img src="img/bailee.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
+
+
 </div>
 
-    </div>
-    <?php
+
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<?php
     include('pie.php');
     ?>
-    </body>
+</body>
 </html>
