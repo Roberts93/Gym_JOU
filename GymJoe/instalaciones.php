@@ -48,7 +48,7 @@
 
 
 <div id="info">
-<p id="CLetra">¿Quieres entrenar en las mejores intalaciones?</p>
+<p id="CLetra">¿Quieres entrenar en las mejores instalaciones?</p>
 <p id="CLetra"> GYM JOE cuenta con las mejores instalaciones, donde puedes desarrollar  tus capacidades al maximo.</p>
 <p id="CLetra">Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
 
