@@ -13,7 +13,7 @@ if(isset($_POST['tabla'])){
 	if($tabla == 'usuario'){
 		if(isset($_POST['nombre']) && isset($_POST['apellido'])
 		 && isset($_POST['nick']) && isset($_POST['pass']) && isset($_FILES['img'])){
-
+$contador=0;
 
 $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));			
 									
@@ -21,19 +21,40 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$apellido = $_POST['apellido'];
 			$nick = $_POST['nick'];
 			$pass = $_POST['pass'];
-			$esta=$_POST['estado'];
-			$ciuda=$_POST['ciudad'];
-			$call=$_POST['calle'];
-			$col=$_POST['colonia'];
-			$numca=$_POST['numcasa'];
-			$tel=$_POST['telefono'];
-			$codigoposta=$_POST['cp'];
-			$correo=$_POST['email'];
 			$archivo =$nick.$extensionArchivo;
-			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo','2','$call','$col','$numca','$ciuda','$esta','$tel','$codigoposta','$correo')";
+			//comprobacion
+			require_once 'config.php';
+			$conexion = mysqli_connect(config::$servidor, config::$usuario, 
+			config::$password, config::$baseDeDatos );
+			$consulta="select * from usuario";
+			$resultado = mysqli_query($conexion, $consulta);
+
+			while($fila=mysqli_fetch_array($resultado))
+			{
+				if($fila[3] == $nick)
+				{
+					$contador++;
+				}
+				else{}
+			}
+		mysqli_close($conexion);
+		mysqli_free_result($resultado);
+
+
+		//condicion
+		if($contador == 0)
+		{
+			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
+				
+
 		$paginaRetorno = 'Formulario.php';
 			//$paginaRetorno = $archivo;
+	}
+	else{
+		echo "el nombre del nick esta repetido favor de introducir otro";
+				$paginaRetorno = 'Formulario.php';
+	}
 		}else{
 			die('Error en datos: ERROR 0xU');	
 		}
@@ -73,8 +94,8 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			&& isset($_POST['tam']) && isset($_POST['tipo']) && isset($_FILES['img'])
 			&& isset($_POST['des']))
 {
-	$extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));
-		
+	$contador=0;
+	$extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));				
 		$nombre= $_POST['nombre'];
 		$marca= $_POST['marca'];
 		$precio_publico= $_POST['precio_publi'];
@@ -83,10 +104,36 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		$tipo= $_POST['tipo'];
 		$archivo =$nombre.$extensionArchivo;
 		$descripcion= $_POST['des'];
+
+
+		require_once 'config.php';
+			$conexion = mysqli_connect(config::$servidor, config::$usuario, 
+			config::$password, config::$baseDeDatos );
+			$consulta="select * from usuario";
+			$resultado = mysqli_query($conexion, $consulta);
+
+			while($fila=mysqli_fetch_array($resultado))
+			{
+				if($fila[3] == $nick)
+				{
+					$contador++;
+				}
+				else{}
+			}
+		mysqli_close($conexion);
+		mysqli_free_result($resultado);
+
+
+		if($contador == 0){			
+
 		$sql = $sql."'0','$nombre','$marca','$precio_publico','$precio_proveedor','$tamaño','$tipo','$archivo','$descripcion')";
 		move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/productos/'.$archivo);
 
 		$paginaRetorno = 'regpro.php';
+	}
+	else{
+		$paginaRetorno = 'regpro.php'
+	}
 }else{
 	die('Error en datos: ERROR 0xE');
 }
