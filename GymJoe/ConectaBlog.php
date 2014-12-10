@@ -15,7 +15,7 @@ include('menu.php');
 ?>
 
 <div id="ImagenPrincipal">
-	<img  style="float"  src="img/CarrucelPrincipal/Blog.jpg" id="tamaImagen" alt="" controls style="width: 99.7px" style="height: 53px">		
+	<img  style="float"  src="img/CarrucelPrincipal/Blog.jpg" id="tamaImagen" alt="" controls style="width: 100px" style="height: 53px">		
 	</div>
 
 <div id="cuadroEntradas">
