@@ -61,7 +61,7 @@ public function consultarquema(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <img src='img/carrito/agregar.png' width='10%'/>
+			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -101,7 +101,7 @@ public function consultarnos(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <img src='img/carrito/agregar.png'/>
+			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -121,7 +121,7 @@ public function consultarglu(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <img src='img/carrito/agregar.png'/>
+			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -141,7 +141,7 @@ public function consultarcrea(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <img src='img/carrito/agregar.png'/>
+			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -163,7 +163,7 @@ if(isset($_POST['nombre'])){
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>
                     <p>$fila[3]</p>             
-                    <img src='img/carrito/agregar.png'/>
+                    <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
                     </figcaption>
                     </figure>
                     ";                  

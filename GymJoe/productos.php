@@ -145,8 +145,8 @@ session_start();
                 <div id="cpestana6">
                     <?php
                     require_once 'procesar/consultar.php';
-                        $conb= new consultar();
-                        $conb-> consultarbus();
+                    $conb= new consultar();
+                    $conb-> consultarbus();
                     ?>
                 </div>
                 <div id="cpestana7">
@@ -158,7 +158,7 @@ session_start();
                             ?>
                     <figure id="prod">
                     <center>
-                        <img src="img/productos/<?php echo $datos[$i]['Imagen'];?>"><br>
+                        <img src="fotos/productos/<?php echo $datos[$i]['Imagen'];?>" width="60%" heigth="60%"><br>
                         <figcaption>
                         <span ><?php echo $datos[$i]['Nombre'];?></span><br>
                         <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>

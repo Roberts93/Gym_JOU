@@ -12,7 +12,11 @@ if(isset($_POST['tabla'])){
 //------------------------------------TABLA USUARIOS ----------------------------------
 	if($tabla == 'usuario'){
 		if(isset($_POST['nombre']) && isset($_POST['apellido'])
-		 && isset($_POST['nick']) && isset($_POST['pass']) && isset($_FILES['img'])){
+		 && isset($_POST['nick']) && isset($_POST['pass']) && isset($_FILES['img']) && 
+		 isset($_POST['calle']) && isset($_POST['colonia']) && isset($_POST['numcasa']) &&
+		 isset($_POST['ciudad']) && isset($_POST['estado'])
+		 && isset($_POST['telefono']) && isset($_POST['cp']) &&
+		 isset($_POST['email'])){
 $contador=0;
 
 $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'],'.'));			
@@ -21,7 +25,16 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$apellido = $_POST['apellido'];
 			$nick = $_POST['nick'];
 			$pass = $_POST['pass'];
+			$estado = $_POST['estado'];
+			$ciudad = $_POST['ciudad'];
+			$calle = $_POST['calle'];
+			$colonia = $_POST['colonia'];
+			$numcasa = $_POST['numcasa'];
+			$telefono = $_POST['telefono'];
+			$cp = $_POST['cp'];
+			$email = $_POST['email'];
 			$archivo =$nick.$extensionArchivo;
+			
 			//comprobacion
 			require_once 'config.php';
 			$conexion = mysqli_connect(config::$servidor, config::$usuario, 
@@ -44,7 +57,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		//condicion
 		if($contador == 0)
 		{
-			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo')";
+			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo', '2', '$calle', '$colonia', '$numcasa', '$ciudad', '$estado','$telefono', '$cp', '$email')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
 				
 
