@@ -13,7 +13,7 @@
 <body>
 <div id="caja_principal">
 	<?php
-	include('menu.php');
+	include('admin/menu.php');
 	?>
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">    
