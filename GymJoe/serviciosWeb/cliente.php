@@ -9,9 +9,15 @@
     if ($error) {
         echo "<h2>Error:</h2>" . $error;
     }
-      
-    $result = $cliente->call("getDatos", $_POST['cantidad']);
-      
+      //$parametro1 = $_POST['cantidad'];    
+    $result = $cliente->call("getDatos");
+
+//for($i=0;$i<count($result);$i++)
+//{
+        $nombre=$result[0];
+        $imagen=$result[1];
+        $descripcion=$result[2]; 
+        $precio=$result[3];   
 if($result == null)
    echo "Datos nulos!";
 else{
@@ -25,9 +31,13 @@ else{
             echo "<h2>Error:</h2>" . $error;
         }
         else {
-            echo "<h2>Datos</h2>";
-            echo "$result";
+            echo "<div style='display:inline-block;'>
+            <a href='../productos.php'><img src='../fotos/productos/".$imagen."' style='height=100%; width=100%'/></a>
+            <p>".$nombre."</p>
+            <p>".$descripcion."</p>
+            </div>";
             }                        
         }
-    }  
+    }
+  //  }  
 ?>

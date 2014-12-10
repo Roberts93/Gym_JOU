@@ -60,7 +60,7 @@ include('menu.php');
 else{
 ?>
 	<div data-alert class="alert-box alert round">
-  	 No se ha podido registrar el usuario  
+  	 No se ha podido registrar el usuario  <b>nick repetido</b>
 	</div>
 <?php
 }

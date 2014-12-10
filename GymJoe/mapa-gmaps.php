@@ -6,11 +6,12 @@
 <meta name="Description" content="Mapa elemental de Google Maps para usarlo desde la PC, que se muestra a todo lo ancho y alto del navegador e incluye un cuadro de b&#250;squeda.">
 <meta name ="author" content ="Norfi Carrodeguas">
 <style type="text/css" media="screen">
-<!--
+
 html,body{height:100%;margin:0;padding:0;}
 #map{height:92.5%;}
--->
+
 </style>	
+
 </head>
 <body>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es&callback=iniciar"></script>

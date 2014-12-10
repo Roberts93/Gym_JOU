@@ -182,7 +182,7 @@
 <div id="r2">
 	<hr>
 </div>
-<h1  id="quien" style="font-family: Bastion; color: black; margin-left:7%; margin-top: -6%; pading: 0px; ">RUTINAS</h1>
+<h1  id="quien" style="font-family: Bastion; color: black; margin-left:7%; margin-top: -5%; pading: 0px; ">RUTINAS</h1>
 	<hr width="90%" height="7%" color="blue" style="margin-top: -3.5%;">
 
 						<div id="texto_parrafo">

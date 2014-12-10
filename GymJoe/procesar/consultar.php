@@ -13,7 +13,7 @@ echo "<tr>
 		<td>$fila[2]</td>
 		<td>$fila[3]</td>
 		<td>$fila[4]</td>
-		<td><img src='../GymJoe/fotos/usuarios/$fila[5]' width='100px' heigth='100px'></td>
+		<td><img src='fotos/usuarios/$fila[5]' width='100px' heigth='100px'></td>
 		<td>
 		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
@@ -38,7 +38,7 @@ public function consultarProductos(){
 				<td>$fila[4]</td>
 				<td>$fila[5]</td>
 				<td>$fila[6]</td>
-				<td><img src='../GymJoe/fotos/productos/$fila[7]' width='100px' heigth='100px'></td>
+				<td><img src='fotos/productos/$fila[7]' width='100px' heigth='100px'></td>
 				<td>$fila[8]</td>
 				<td>
 				<a href='javascript:void(0)' onclick='mensaje2(".$fila[0].")'>
@@ -56,7 +56,7 @@ public function consultarquema(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -76,7 +76,7 @@ public function consultaraumen(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -96,7 +96,7 @@ public function consultarnos(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -116,7 +116,7 @@ public function consultarglu(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -136,7 +136,7 @@ public function consultarcrea(){
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
 		<figure id='prod'>
-		<img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
@@ -158,7 +158,7 @@ if(isset($_POST['nombre'])){
                     while ($fila = mysqli_fetch_array($consulta)) {             
                     echo "
                     <figure id='prod'>
-                    <img src='../GymJoe/fotos/productos/$fila[7]' width='60%' heigth='60%'/>
+                    <img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
                     <figcaption>
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>

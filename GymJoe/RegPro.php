@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="js/Validar.js"></script> 
 </head>
 <body>
 	<div id="caja_principal">
@@ -15,7 +16,8 @@
 			include('menu.php');			
 		?>
 		<hr width="100%" height="100" color="#ccc">
-<hr id="hr_separador" width="100%" height="100" color="blue">
+
+?<hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="panel2">
 <h3>Registro de Productos</h3>
 
@@ -23,10 +25,10 @@
 	<input type="hidden" name="tabla" value="productos">
 
 	<label>		
-			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
-			<input type="text" id="nick" name="marca" placeholder="Marca" required>
-			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" required>
-			<input type="text" id="nick" name="precio_prov" 	placeholder="Precio del Proveedor" required>
+			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="marca" placeholder="Marca" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" required onkeypress="return txNumerosDec(event,this);">
+			<input type="text" id="nick" name="precio_prov" 	placeholder="Precio del Proveedor" required onkeypress="return txNumerosDec(event,this);">
 			<input type="text" id="nick" name="tam" 	placeholder="Tamaño" required>
 			<select id="nick" name="tipo">
 			<option value="Aumenta Masa">Aumenta Masa</option>
@@ -62,7 +64,7 @@
 else{
 ?>
 	<div data-alert class="alert-box alert round">
-  	 No se ha podido registrar el producto  
+  	 No se ha podido registrar el producto <b>nombre repetido</b>
 	</div>
 <?php
 }

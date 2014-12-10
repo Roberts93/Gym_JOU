@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/productos.css">
     <link rel="stylesheet" type="text/css" href="css/pestana.css"/>
     <script type="text/javascript" src="js/cambiarPestanna.js"></script>
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>   
+    <script type="text/javascript" src="js/Validar.js"></script> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
     <meta charset="UTF-8"/>    
 </head>
@@ -33,7 +34,8 @@
                     <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Glutamina</a></li>
                     <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
                     <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
-                    <input type="text" id="nick" name="nombre" placeholder="Buscar"></a><input type="submit" value="Buscar" name"bus" id="bus"/>
+                 
+                    <input type="text" id="nick" name="nombre" placeholder="Buscar" onkeypress="txLetras()"></a><input type="submit" value="Buscar" name"bus" id="bus"  />
                     </li>                    
                 </ul>
             </div>

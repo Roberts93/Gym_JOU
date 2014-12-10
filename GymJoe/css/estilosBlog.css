@@ -10,6 +10,16 @@ and open the template in the editor.
 body{
     background-color: black;
 }
+#fechas{
+    color:black;
+    background-color: blue;
+}
+#informacion{
+
+    color: black;
+    font-style: normal; 
+    font-size: inherit;
+}
 #ImagenPrincipal{
 margin: 0%;
 margin-top: 8%;
@@ -17,6 +27,13 @@ background: white;
 border: 3px solid ;
 width: 99.5%;
 height: 53%;
+}
+#cuadroEntradas{
+margin-top: 0%;
+width: 50%;
+height: 140%;
+border: 3px solid blue;
+
 }
 #tamaImagen{
 width: 99.9%;
