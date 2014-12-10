@@ -25,14 +25,13 @@
 <div id="fondo">
 <div class="multiple-items">
 	<div><img src="img/Carrusel_Instalaciones/Instalaciones.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/1.jpg" class="tam_imagen"></div>
-    <div><img src="img/Carrusel_Instalaciones/dos.jpg" class="tam_imagen"></div>
-
-	<div><img src="img/Carrusel_Instalaciones/tres.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/cuatro.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/cinco.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/seis.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/siete.jpg" class="tam_imagen" ></div>
+	<div><img src="img/Carrusel_Instalaciones/2.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/3.jpg" class="tam_imagen" ></div>
+	<div><img src="img/Carrusel_Instalaciones/4.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/5.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/6.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/7.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Instalaciones/8.jpg" class="tam_imagen" ></div>
 	</div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
      <script rel="text/javascript" src="slick-master/slick/slick.js"></script>
@@ -48,8 +47,8 @@
 
 
 <div id="info">
-<p id="CLetra">¿Quieres entrenar en las mejores instalaciones?</p>
-<p id="CLetra"> GYM JOE cuenta con las mejores instalaciones, donde puedes desarrollar  tus capacidades al maximo.</p>
+<p id="CLetra">¿Quieres entrenar en las mejores intalaciones?</p>
+<p id="CLetra"> Gym Joe cuenta con las mejores instalaciones para que puedas desarrollar  tus capacidades al maximo</p>
 <p id="CLetra">Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
 
 
@@ -75,7 +74,7 @@
 
 
 <div class="poci">
-<img src="img/pesa2.jpg"  width="520" height="400" controls>
+<img src="img/pesa2.jpg"  width="500" height="400" controls>
 <figcaption><b>Pesas</b></figcaption>
 </div>
 
@@ -109,7 +108,6 @@
 <figcaption><b>Salon de baile</b></figcaption>
 </div>
 
-
 <div id="tama8">
 <img src="img/baile.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
@@ -119,22 +117,11 @@
 <img src="img/bailee.jpg" width="300" height="180" controls>
 <figcaption><b></b></figcaption>
 </div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
 </div>
-</div>
-<?php
+
+    </div>
+    <?php
     include('pie.php');
     ?>
-</body>
+    </body>
 </html>

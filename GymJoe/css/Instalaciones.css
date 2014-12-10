@@ -58,7 +58,8 @@ opacity: .9;
     vertical-align: middle;
 }
 
-.poci{   
+.poci{
+    
      margin-left: 5%;
      margin-bottom: 4%;
      color: black;
@@ -66,14 +67,14 @@ opacity: .9;
      font-size: 12px;
      text-align: center;
      width: 18.5%;
-      margin: 9%;
+      margin: 3%;
       margin-left: 9%;
 }
 
 #tama2{
   border: 2px solid yellow;
     position:relative;
-    top: -516px;
+    top: -450px;
       float:right;
       margin-right: 120px;
 }
@@ -83,7 +84,7 @@ opacity: .9;
     float:right;
     margin-right: -305px;
     position: relative;
-    top: -320px;
+    top: -240px;
 }
 
 #tama4{
@@ -91,7 +92,7 @@ opacity: .9;
     float: right;
     margin-right: 120px;
     position: relative;
-    top: -520px;
+    top: -450px;
 }
 
 #tama5{
@@ -99,7 +100,7 @@ opacity: .9;
     float:right;
     margin-right: -305px;
     position: relative;
-    top: -320px;
+    top: -240px;
     margin-bottom: 30px;
 }
 
@@ -108,7 +109,7 @@ opacity: .9;
     float: right;
     margin-right: 120px;
     position: relative;
-    top: -520px;
+    top: -450px;
 }
 
 #tama7{
@@ -116,7 +117,7 @@ opacity: .9;
     float:right;
     margin-right: -305px;
     position: relative;
-    top: -320px;
+    top: -240px;
     margin-bottom: 30px;
 }
 
@@ -154,32 +155,23 @@ float:right;margin-right:300px;
 
 }
 
-
-
-
-
-#hola{
-border: 5px solid blue;
-background: yellow;
-
-}
-
-
 #tama8{
 border: 2px solid blue;
     float:right;
-    margin-right: 120px;
+    margin-right: 115px;
     position: relative;
-    top: -520px;
+    top: -440px;
     margin-bottom: 30px;
+
 }
 
-
 #tama9{
+
 border: 2px solid blue;
     float:right;
-    margin-right: -306px;
+    margin-right: -305px;
     position: relative;
-    top: -320px;
+    top: -235px;
     margin-bottom: 30px;
+
 }

@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+include_once 'procesar/config.php';
+if(isset($_SESSION['carrito']))
+{
+
+}
+else{
+    if(isse)
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,8 +47,9 @@
                     <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
                     <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
                  
-                    <input type="text" id="nick" name="nombre" placeholder="Buscar" onkeypress="txLetras()"></a><input type="submit" value="Buscar" name"bus" id="bus"  />
+                    <input type="text" id="nick" name="nombre" placeholder="Buscar" onkeypress="txLetras()"><input type="submit" value="Buscar" name"bus" id="bus"/>
                     </li>                    
+                    <li id="pestana7" style="width: 4.5%; position: relative; bottom: 25px;"><a href='javascript:cambiarPestanna(pestanas,pestana7);'><img src="img/carrito/carrito.jpg" width="70"></a></li>
                 </ul>
             </div>
             
@@ -84,6 +97,34 @@
                         $conb= new consultar();
                         $conb-> consultarbus();
                     ?>
+                </div>
+                <div id="cpestana7">
+                    <?php
+                    $total=0;
+                    if(isset($_SESSION['carrito'])){
+                        $datos=$_SESSION['carrito'];                        
+                        for ($i=0; $i < count($datos); $i++) { 
+                            ?>
+                    <div class="producto">
+                        <center>
+                            <img src="fotos/productos/<?php echo $datos[$i]['Imagen'];?>"><br>
+                            <span><?php echo $datos[$i]['Nombre'];?></span><br>
+                            <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
+                            <span>Cantidad: <input type"text" value="<?php echo $datos[$i]['Cantidad'];?>"></span><br>
+                            <span>Precio: <?php echo $datos[$i]['Nombre']*$datos[$i]['Cantidad'];?></span><br>
+                        </center>
+                    </div>
+                            <?php
+                            $total=($datos[$i]['Nombre']*$datos[$i]['Cantidad'])+$total;
+                        }
+                    }
+                    else{
+                        ?>
+                        <center><h2 style="color:black;">El carrito esta vacío</h2></center><?php
+                    }
+                    echo "<center><h2>Total: ".$total."</h2></center>";
+                    ?>
+                    <center><a href="javascript:cambiarPestanna(pestanas,pestana1);">Ver Catalogo</a></center>
                 </div>
             </div>
         </form>

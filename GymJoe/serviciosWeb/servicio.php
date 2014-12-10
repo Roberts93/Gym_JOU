@@ -10,7 +10,7 @@
               array_push($datos, $fila[1]);
               array_push($datos, $fila[7]);
               array_push($datos, $fila[8]);
-              array_push($datos, $fila[3]);
+              array_push($datos, $fila[3]);              
           }
           mysqli_close($conexion);
           mysqli_free_result($resultado);

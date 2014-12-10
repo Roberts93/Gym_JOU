@@ -32,7 +32,7 @@ else{
         }
         else {
             echo "<div style='display:inline-block;'>
-            <a href='../productos.php'><img src='../fotos/productos/".$imagen."' style='height=100%; width=100%'/></a>
+            <a href='../productos.php'><img src='../fotos/productos/".$imagen."' style='height=100%; width=100%'/></a
             <p>".$nombre."</p>
             <p>".$descripcion."</p>
             </div>";

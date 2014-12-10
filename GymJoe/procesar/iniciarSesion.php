@@ -15,20 +15,14 @@ $dato=mysqli_fetch_array($cons);
 $usuario=$dato[3];
 $cont=$dato[4];
 $img=$dato[5];
-$privilegio=$dato[6];
 $cont2=md5($cont);
     if($nick==$usuario && $pass==$cont){
         $_SESSION['usuario']=$usuario;
         $_SESSION['contra']=$img;
-     	if($privilegio==1){
-     		header('location: ../usuario/panel.php');
-     	}
-     	if($privilegio==2){
- 			header('location: ../usuario/index.php');
-
-     	}
+     	
       
         //echo "El usuario existe";
+        header('location: ../usuario/index.php');
        }else{
        	$resultadoRetorno=1;
        	header('Location: ../login.php?res='.$resultadoRetorno);
