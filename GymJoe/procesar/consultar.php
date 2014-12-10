@@ -61,7 +61,7 @@ public function consultarquema(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
+			  <img src='img/carrito/agregar.png' width='10%'/>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -75,13 +75,13 @@ public function consultaraumen(){
 	$consulta = mysqli_query($conexion, "select * from productos where tipo='Aumenta Masa'");
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
-		<figure id='prod'>
+		<figure id='prod' style='border: 1px solid red;'>
 		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
+			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -101,7 +101,7 @@ public function consultarnos(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
+			  <img src='img/carrito/agregar.png'/>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -121,7 +121,7 @@ public function consultarglu(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
+			  <img src='img/carrito/agregar.png'/>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -141,7 +141,7 @@ public function consultarcrea(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <button class='botoncito'>Agregar</button>
+			  <img src='img/carrito/agregar.png'/>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -163,7 +163,7 @@ if(isset($_POST['nombre'])){
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>
                     <p>$fila[3]</p>             
-                    <button class='botoncito'>Agregar</button>
+                    <img src='img/carrito/agregar.png'/>
                     </figcaption>
                     </figure>
                     ";                  

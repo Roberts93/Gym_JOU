@@ -109,12 +109,12 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		require_once 'config.php';
 			$conexion = mysqli_connect(config::$servidor, config::$usuario, 
 			config::$password, config::$baseDeDatos );
-			$consulta="select * from usuario";
+			$consulta="select * from productos";
 			$resultado = mysqli_query($conexion, $consulta);
 
 			while($fila=mysqli_fetch_array($resultado))
 			{
-				if($fila[3] == $nick)
+				if($fila[1] == $nombre)
 				{
 					$contador++;
 				}
@@ -132,12 +132,12 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		$paginaRetorno = 'regpro.php';
 	}
 	else{
-		$paginaRetorno = 'regpro.php'
+		$paginaRetorno = 'regpro.php';
 	}
 }else{
 	die('Error en datos: ERROR 0xE');
-}
-	}
+}}
+	
 
 
 	if($tabla == 'examenes'){

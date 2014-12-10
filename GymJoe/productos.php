@@ -1,14 +1,65 @@
 <?php
 session_start();
 
-include_once 'procesar/config.php';
-if(isset($_SESSION['carrito']))
-{
+    include 'procesar/config.php';
+    if(isset($_SESSION['carrito'])){
+        if(isset($_GET['id'])){
+                    $arreglo=$_SESSION['carrito'];
+                    $encontro=false;
+                    $numero=0;
+                    for($i=0;$i<count($arreglo);$i++){
+                        if($arreglo[$i]['Id']==$_GET['id']){
+                            $encontro=true;
+                            $numero=$i;
+                        }
+                    }
+                    if($encontro==true){
+                        $arreglo[$numero]['Cantidad']=$arreglo[$numero]['Cantidad']+1;
+                        $_SESSION['carrito']=$arreglo;
+                    }else{
+                        $nombre="";
+                        $precio=0;
+                        $imagen="";
+                        $re=mysql_query("select * from productos where id_producto=".$_GET['id']);
+                        while ($f=mysql_fetch_array($re)) {
+                            $nombre=$f['nombre'];
+                            $precio=$f['precio'];
+                            $imagen=$f['imagen'];
+                        }
+                        $datosNuevos=array('Id'=>$_GET['id'],
+                                        'Nombre'=>$nombre,
+                                        'Precio'=>$precio,
+                                        'Imagen'=>$imagen,
+                                        'Cantidad'=>1);
 
-}
-else{
-    if(isse)
-}
+                        array_push($arreglo, $datosNuevos);
+                        $_SESSION['carrito']=$arreglo;
+
+                    }
+        }
+
+
+
+
+    }else{
+        if(isset($_GET['id'])){
+            $nombre="";
+            $precio=0;
+            $imagen="";
+            $re=mysql_query("select * from productos where id_producto=".$_GET['id']);
+            while ($f=mysql_fetch_array($re)) {
+                $nombre=$f['nombre'];
+                $precio=$f['precio'];
+                $imagen=$f['imagen'];
+            }
+            $arreglo[]=array('Id'=>$_GET['id'],
+                            'Nombre'=>$nombre,
+                            'Precio'=>$precio,
+                            'Imagen'=>$imagen,
+                            'Cantidad'=>1);
+            $_SESSION['carrito']=$arreglo;
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,24 +156,32 @@ else{
                         $datos=$_SESSION['carrito'];                        
                         for ($i=0; $i < count($datos); $i++) { 
                             ?>
-                    <div class="producto">
-                        <center>
-                            <img src="fotos/productos/<?php echo $datos[$i]['Imagen'];?>"><br>
-                            <span><?php echo $datos[$i]['Nombre'];?></span><br>
-                            <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
-                            <span>Cantidad: <input type"text" value="<?php echo $datos[$i]['Cantidad'];?>"></span><br>
-                            <span>Precio: <?php echo $datos[$i]['Nombre']*$datos[$i]['Cantidad'];?></span><br>
-                        </center>
-                    </div>
+                    <figure id="prod">
+                    <center>
+                        <img src="img/productos/<?php echo $datos[$i]['Imagen'];?>"><br>
+                        <figcaption>
+                        <span ><?php echo $datos[$i]['Nombre'];?></span><br>
+                        <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
+                        <span>Cantidad: 
+                            <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"
+                            data-precio="<?php echo $datos[$i]['Precio'];?>"
+                            data-id="<?php echo $datos[$i]['Id'];?>"
+                            class="cantidad">
+                        </span><br>
+                        <span class="subtotal">Subtotal:<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
+                        <a href="#" class="eliminar" data-id="<?php echo $datos[$i]['Id']?>">Eliminar</a>
+                        </figcaption>
+                    </center>
+                </figure>
                             <?php
-                            $total=($datos[$i]['Nombre']*$datos[$i]['Cantidad'])+$total;
+                            $total=($datos[$i]['Cantidad']*$datos[$i]['Precio'])+$total;
                         }
                     }
                     else{
                         ?>
                         <center><h2 style="color:black;">El carrito esta vacío</h2></center><?php
                     }
-                    echo "<center><h2>Total: ".$total."</h2></center>";
+                    echo '<center><h2 id="total">Total: '.$total.'</h2></center>';
                     ?>
                     <center><a href="javascript:cambiarPestanna(pestanas,pestana1);">Ver Catalogo</a></center>
                 </div>
