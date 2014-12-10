@@ -22,12 +22,7 @@
 </div>        
  <nav class="menuizq">
             <h4>Configuración</h4>
-                <ul>
-                    <li><a href="regpro.php">Registrar Productos</a></li>
-                    <li><a href="conproducto.php">Consultar Productos</a></li>
-                    <li><a href="conusuario.php">Consultar Usuarios</a></li>  
-                    <li><a href="regusuarios.php">Registrar Usuarios</a></li>                    
-                </ul>               
+                           
 </nav>
 <div class="panel2">
 <h3>Configuración</h3>

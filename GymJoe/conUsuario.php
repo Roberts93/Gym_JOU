@@ -57,8 +57,6 @@ $con->consultarUsuarios();
 </div>	
 </div>
 </div>
-<?php
-include('pie.php');
-?>
+
 </body>
 </html>

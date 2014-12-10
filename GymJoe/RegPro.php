@@ -49,7 +49,7 @@
 			<input type="submit" class="small round button" value="Guardar">
 			<!--
 			<button class="small round button">Guardar Datos</button>  -->
-		<a href="productos.php" id="botoncito"> Cancelar</a>
+		<a href="panel.php" id="botoncito"> Cancelar</a>
       </form>
       <?php
     if(isset($_GET['res'])){
