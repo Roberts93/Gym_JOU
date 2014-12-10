@@ -1,15 +1,14 @@
 .multiple-items{
-	margin-left:53px;
+	margin-left:0px;
 	margin-top: 0px;
-	width: 93%;
-	height: 51%;
+	width: 100%;
+	height: 41%;
 	display:inline-block;
 	text-align: center;
 	border:solid #ccc;
-
 }
 
 .tam_imagen{
-width: 97%;
+width: 100%;
 height: 100%;
 }

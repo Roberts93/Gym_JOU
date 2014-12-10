@@ -1,5 +1,6 @@
 <head>
     <title>Gym Joe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/estructura.css">
     <link rel="stylesheet" type="text/css" href="textos.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
@@ -8,9 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/instalaciones.css">
     <link rel="stylesheet" href="slick-master/slick/slick.css">
 	<link rel="stylesheet" href="css/estiloCarrusel_Instalaciones.css">
-
-
-
 
 </head>
 <body>
@@ -23,9 +21,7 @@
     <hr width="100%" height="100" color="#ccc">
     <hr id="sep" width="100%" height="100" color="blue">
 
-
-    </div>
-
+    
 <div id="fondo">
 <div class="multiple-items">
 	<div><img src="img/Carrusel_Instalaciones/Instalaciones.jpg" class="tam_imagen"></div>
@@ -36,10 +32,7 @@
 	<div><img src="img/Carrusel_Instalaciones/6.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/7.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Instalaciones/8.jpg" class="tam_imagen" ></div>
-	
-	
-	
-</div>
+	</div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
      <script rel="text/javascript" src="slick-master/slick/slick.js"></script>
 	<script type="text/javascript">
@@ -48,17 +41,19 @@
  // slidesToShow: 4,
  // slidesToScroll: 4
 });
-
 </script>
 </div>
 
 
 
+<div id="info">
+<p id="CLetra">¿Quieres entrenar en las mejores intalaciones?</p>
+<p id="CLetra"> Gym Joe cuenta con las mejores instalaciones para que puedas desarrollar  tus capacidades al maximo</p>
+<p id="CLetra">Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
 
 
-</header>
-<hr>
-<br>
+</div>
+
 
 
 <div class="poci">
@@ -123,11 +118,10 @@
 <figcaption><b></b></figcaption>
 </div>
 </div>
-    
-    <hr>
+
+    </div>
     <?php
     include('pie.php');
     ?>
-    
-</body>
+    </body>
 </html>
