@@ -63,25 +63,25 @@
 						<div class="">
 							<ul>
 						    	<li>
-						    		<IMG SRC="img/CarrucelPrincipal/GymJoe.png" id="tam_imagen">
+						    		<IMG SRC="fotos/imagenes/iniciocarrusel1.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/20.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel2.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/21.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel3.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/22.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel4.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/23.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel5.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/24.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel6.png" id="tam_imagen">
 						    		</li>					
 						    	<li>
-									<IMG SRC="img/CarrucelPrincipal/25.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel7.png" id="tam_imagen">
 						    		</li>		
 
 						    	</li>
@@ -115,7 +115,7 @@ GYM JOE tiene su sede en Ciudad Altamirano, Guerrero, no obstante somos una Gymn
 </div>
 
 	<div align="center">
-		<img align='center' style="float" src="img/portada.png" id="img" alt="" controls>
+		<img align='center' style="float" src="fotos/imagenes/iniciocuerpo.png" id="img" alt="" controls>
 	</div>
 
 

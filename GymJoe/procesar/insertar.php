@@ -85,7 +85,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 			$descripcion = $_POST['des'];
 			$seccion = $_POST['seccion'];
 			$categoria = $_POST['categoria'];			
-			$archivo =$categoria.$extensionArchivo;
+			$archivo =$seccion.$categoria.$extensionArchivo;
 			$sql = $sql."'0','$archivo','$descripcion','$seccion', '$categoria')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/imagenes/'.$archivo);
 				

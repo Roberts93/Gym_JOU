@@ -42,7 +42,7 @@
 		
 
 	<div id="ImagenPrincipal">
-	<img  style="float" src="img/Rutinas.jpg" id="tamaImagen" alt="" controls>		
+	<img  style="float" src="fotos/imagenes/rutinasbanner.jpg" id="tamaImagen" alt="" controls>		
 	</div>
 
     <div class="caja_arriba">

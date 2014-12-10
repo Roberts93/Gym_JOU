@@ -22,15 +22,15 @@
     
 <div id="fondo">
 <div class="multiple-items">
-	<div><img src="img/Carrusel_Instalaciones/Instalaciones.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/1.jpg" class="tam_imagen"></div>
-    <div><img src="img/Carrusel_Instalaciones/dos.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel1.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel2.jpg" class="tam_imagen"></div>
+    <div><img src="fotos/imagenes/instalacionescarrusel3.jpg" class="tam_imagen"></div>
 
-	<div><img src="img/Carrusel_Instalaciones/tres.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/cuatro.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/cinco.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/seis.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Instalaciones/siete.jpg" class="tam_imagen" ></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel4.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel5.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel6.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel7.jpg" class="tam_imagen"></div>
+	<div><img src="fotos/imagenes/instalacionescarrusel8.jpg" class="tam_imagen" ></div>
 	</div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
      <script rel="text/javascript" src="slick-master/slick/slick.js"></script>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-    include 'procesar/config.php';
+    include_once 'procesar/config.php';
     if(isset($_SESSION['carrito'])){
         if(isset($_GET['id'])){
                     $arreglo=$_SESSION['carrito'];
@@ -75,6 +75,30 @@ session_start();
     <script type="text/javascript" src="js/Validar.js"></script> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
     <meta charset="UTF-8"/>    
+    <?php
+    $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
+    $consulta = mysqli_query($conexion, "select * from usuario");
+
+while($fila = mysqli_fetch_array($consulta)){
+/*echo "<tr>
+        <td>$fila[0]</td>
+        <td>$fila[1]</td>
+        <td>$fila[2]</td>
+        <td>$fila[3]</td>
+        <td>$fila[4]</td>
+        <td><img src='fotos/usuarios/$fila[5]' width='100px' heigth='100px'></td>
+        <td>
+        <a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
+        <img class='imagen' src='img/usuario_Borrar.png'></a>
+        <a href='procesar/actualizar.php?id_usuario=$fila[0]&nombre=$fila[1]&apellido=$fila[2]&nick=$fila[3]&password=$fila[4]&imagen=".$fila[5]."'>
+        <img class='imagen' src='img/usuario_editar.png'></a>
+        </td>   
+    </tr>";
+    */
+}
+mysqli_close($conexion);
+mysqli_free_result($consulta);
+    ?>
 </head>
 <body>
 <div id="caja_principal">
@@ -84,7 +108,7 @@ session_start();
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">    
 <div id="ImagenPrincipal">
-  <img  style="float" src="img/productos/banner-productos.jpg" id="tamaImagen" alt="" controls>    
+  <img  style="float" src="fotos/imagenes/productosbanner.jpg" id="tamaImagen" alt="" controls>    
 </div>        
   <section id="max">  
     <form class="contenedor" action="" method="post">

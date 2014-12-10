@@ -75,7 +75,7 @@ public function consultaraumen(){
 	$consulta = mysqli_query($conexion, "select * from productos where tipo='Aumenta Masa'");
 	while ($fila = mysqli_fetch_array($consulta)) {				
 		echo "
-		<figure id='prod' style='border: 1px solid red;'>
+		<figure id='prod'>
 		<img src='fotos/productos/$fila[7]' width='60%' heigth='60%'/>
 			  <figcaption>
 			  <p>$fila[1]</p>
