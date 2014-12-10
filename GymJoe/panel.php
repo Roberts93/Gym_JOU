@@ -13,7 +13,7 @@
 <body>
 <div id="caja_principal">
 	<?php
-	include('menu.php');
+	include('Admin/menu.php');
 	?>
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">    
@@ -25,7 +25,8 @@
                 <ul>
                     <li><a href="regpro.php">Registrar Productos</a></li>
                     <li><a href="conproducto.php">Consultar Productos</a></li>
-                    <li><a href="conusuario.php">Consultar Usuarios</a></li>                    
+                    <li><a href="conusuario.php">Consultar Usuarios</a></li>  
+                    <li><a href="regusuarios.php">Registrar Usuarios</a></li>                    
                 </ul>               
 </nav>
 <div class="panel2">

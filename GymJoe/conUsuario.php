@@ -20,7 +20,7 @@
 <body>
 <div id="caja_principal">
 <?php
-include('menu.php');
+include('Admin/menu.php');
 ?>	
 <hr width="100%" height="100" color="red">
 <hr id="sep" width="100%" height="100" color="blue">

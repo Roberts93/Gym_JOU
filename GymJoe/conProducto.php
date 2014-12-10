@@ -22,7 +22,7 @@
 <body>
 <div id="caja_principal">
 <?php
-include('menu.php');
+include('Admin/menu.php');
 ?>	
 
 
