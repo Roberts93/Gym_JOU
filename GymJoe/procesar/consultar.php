@@ -61,7 +61,7 @@ public function consultarquema(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -81,7 +81,7 @@ public function consultaraumen(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -101,7 +101,7 @@ public function consultarnos(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -121,7 +121,7 @@ public function consultarglu(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -141,7 +141,7 @@ public function consultarcrea(){
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
 			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -163,7 +163,7 @@ if(isset($_POST['nombre'])){
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>
                     <p>$fila[3]</p>             
-                    <center><a href='productos.php?id=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+                    <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
                     </figcaption>
                     </figure>
                     ";                  

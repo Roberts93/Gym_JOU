@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/menu.css"/>
 	<link rel="stylesheet" type="text/css" href="css/pie_pagina.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
-		<script type="text/javascript" src="js/jquery-1.5.2.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.5.2.min.js" ></script>		
 						<script src="js/jcarousellite_1.0.1c5.js" type="text/javascript"></script>
 						<script type="text/javascript">
 						$(function() {
@@ -83,8 +83,6 @@
 						    	<li>
 									<IMG SRC="fotos/imagenes/iniciocarrusel7.png" id="tam_imagen">
 						    		</li>		
-
-						    	</li>
 							</ul>
 						</div>
 							

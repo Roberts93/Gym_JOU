@@ -2,13 +2,14 @@
 session_start();
 
     include_once 'procesar/config.php';
+    $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
     if(isset($_SESSION['carrito'])){
-        if(isset($_GET['id'])){
+        if(isset($_GET['res'])){
                     $arreglo=$_SESSION['carrito'];
                     $encontro=false;
                     $numero=0;
                     for($i=0;$i<count($arreglo);$i++){
-                        if($arreglo[$i]['Id']==$_GET['id']){
+                        if($arreglo[$i]['Id']==$_GET['res']){
                             $encontro=true;
                             $numero=$i;
                         }
@@ -20,19 +21,20 @@ session_start();
                         $nombre="";
                         $precio=0;
                         $imagen="";
-                        $re=mysql_query("select * from productos where id_producto=".$_GET['id']);
-                        while ($f=mysql_fetch_array($re)) {
-                            $nombre=$f['nombre'];
-                            $precio=$f['precio'];
-                            $imagen=$f['imagen'];
+                        $consulta="select * from productos where id_producto=".$_GET['res'];
+                        $re=mysqli_query($conexion, $consulta);
+                        while ($f=mysqli_fetch_array($re)) {
+                            $nombre=$f[1];
+                            $precio=$f[3];
+                            $imagen=$f[7];
                         }
-                        $datosNuevos=array('Id'=>$_GET['id'],
+                        $datosNuevos=array('Id'=>$_GET['res'],
                                         'Nombre'=>$nombre,
                                         'Precio'=>$precio,
                                         'Imagen'=>$imagen,
                                         'Cantidad'=>1);
 
-                        array_push($arreglo, $datosNuevos);
+                        array_push($arreglo, $datosNuevos);                        
                         $_SESSION['carrito']=$arreglo;
 
                     }
@@ -42,17 +44,19 @@ session_start();
 
 
     }else{
-        if(isset($_GET['id'])){
+        if(isset($_GET['res'])){
             $nombre="";
             $precio=0;
             $imagen="";
-            $re=mysql_query("select * from productos where id_producto=".$_GET['id']);
-            while ($f=mysql_fetch_array($re)) {
-                $nombre=$f['nombre'];
-                $precio=$f['precio'];
-                $imagen=$f['imagen'];
+            $consulta="select * from productos where id_producto=".$_GET['res'];
+            $re=mysqli_query($conexion, $consulta);
+            while($f = mysqli_fetch_array($re))
+            {
+                $nombre=$f[1];
+                $precio=$f[3];
+                $imagen=$f[7];
             }
-            $arreglo[]=array('Id'=>$_GET['id'],
+            $arreglo[]=array('Id'=>$_GET['res'],
                             'Nombre'=>$nombre,
                             'Precio'=>$precio,
                             'Imagen'=>$imagen,
@@ -73,32 +77,9 @@ session_start();
     <script type="text/javascript" src="js/cambiarPestanna.js"></script>
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>   
     <script type="text/javascript" src="js/Validar.js"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
-    <meta charset="UTF-8"/>    
-    <?php
-    $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-    $consulta = mysqli_query($conexion, "select * from usuario");
-
-while($fila = mysqli_fetch_array($consulta)){
-/*echo "<tr>
-        <td>$fila[0]</td>
-        <td>$fila[1]</td>
-        <td>$fila[2]</td>
-        <td>$fila[3]</td>
-        <td>$fila[4]</td>
-        <td><img src='fotos/usuarios/$fila[5]' width='100px' heigth='100px'></td>
-        <td>
-        <a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
-        <img class='imagen' src='img/usuario_Borrar.png'></a>
-        <a href='procesar/actualizar.php?id_usuario=$fila[0]&nombre=$fila[1]&apellido=$fila[2]&nick=$fila[3]&password=$fila[4]&imagen=".$fila[5]."'>
-        <img class='imagen' src='img/usuario_editar.png'></a>
-        </td>   
-    </tr>";
-    */
-}
-mysqli_close($conexion);
-mysqli_free_result($consulta);
-    ?>
+    <meta charset="UTF-8"/>        
 </head>
 <body>
 <div id="caja_principal">
@@ -108,11 +89,10 @@ mysqli_free_result($consulta);
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">    
 <div id="ImagenPrincipal">
-  <img  style="float" src="fotos/imagenes/productosbanner.jpg" id="tamaImagen" alt="" controls>    
-  </img>
+  <img  style="float" src="fotos/imagenes/productosbanner.jpg" id="tamaImagen" alt="" controls>      
 </div>        
   <section id="max">  
-    <form class="contenedor" action="" method="post">
+  <div class="contenedor">
             <div class="titulo">Productos</div>
             <div id="pestanas">
                 <ul id="listapro">
@@ -187,12 +167,7 @@ mysqli_free_result($consulta);
                         <figcaption>
                         <span ><?php echo $datos[$i]['Nombre'];?></span><br>
                         <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
-                        <span>Cantidad: 
-                            <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"
-                            data-precio="<?php echo $datos[$i]['Precio'];?>"
-                            data-id="<?php echo $datos[$i]['Id'];?>"
-                            class="cantidad">
-                        </span><br>
+                        <span>Cantidad: <?php echo $datos[$i]['Cantidad'];?></span><br>
                         <span class="subtotal">Subtotal:<?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
                         <a href="#" class="eliminar" data-id="<?php echo $datos[$i]['Id']?>">Eliminar</a>
                         </figcaption>
@@ -206,12 +181,18 @@ mysqli_free_result($consulta);
                         ?>
                         <center><h2 style="color:black;">El carrito esta vacío</h2></center><?php
                     }
-                    echo '<center><h2 id="total">Total: '.$total.'</h2></center>';
+                    echo '<center><h2 id="total" style="color:black;">Total: '.$total.'</h2></center>';
+                    if($total!=0)
+                    {
+                    echo '<center><a href="../compras/compras.php" class="aceptar">Comprar</a></center>';
+                    }
+                    mysqli_close($conexion);
                     ?>
+                    <br>                    
                     <center><a href="javascript:cambiarPestanna(pestanas,pestana1);">Ver Catalogo</a></center>
                 </div>
             </div>
-        </form>
+            </div>    
   </section>
   </div>  
 
