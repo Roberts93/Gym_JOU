@@ -43,19 +43,12 @@
 <?php
 session_start();
 
-    $idp=$_GET['id_producto'];
-    $nom=$_GET['nombre'];
-    $mar=$_GET['marca'];
-    $pre_pu=$_GET['precio_publico'];
-    $pre_pro=$_GET['precio_proveedor'];
-    $tama=$_GET['tamano'];  
-    $tipo=$_GET['tipo'];
-    $imagen=$_GET['img'];
-    $desc=$_GET['descripcion'];
+    $idp=$_GET['res'];
+   
     require_once 'config.php';
 
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$consulta = mysqli_query($conexion, "select * from productos where id_producto='".$idp."' and nombre='".$nom."' and marca='".$mar."' and precio_publico='".$pre_pu."' and precio_proveedor='".$pre_pro."' and tamano='".$tama."' and tipo='".$tipo."' and img='".$imagen."' and descripcion='".$desc."' ");
+$consulta = mysqli_query($conexion, "select * from productos where id_producto='".$idp."' ");
 
 
 echo "

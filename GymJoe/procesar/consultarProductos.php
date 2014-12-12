@@ -20,7 +20,7 @@ echo "<tr>
 		<a href='javascript:void(0)' onclick='mensaje2(".$fila[0].")'>
 		<img class='imagen' src='img/eli3.png'></a>
 
-		<a href='procesar/actualizarProductos.php?id_producto=$fila[0]&nombre=$fila[1]&marca=$fila[2]&precio_publico=$fila[3]&precio_proveedor=$fila[4]&tamano=$fila[5]&tipo=$fila[6]&img=".$fila[7]."&descripcion=$fila[8]'>
+		<a href='procesar/actualizarProductos.php?res=$fila[0]'>
 		<img class='imagen' src='img/mod.png'></a>
 		</td>	
 	</tr>";
