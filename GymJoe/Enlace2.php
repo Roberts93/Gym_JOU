@@ -40,7 +40,7 @@ No cometas el mismo error que la mayoría de gente; realiza las sentadillas con 
 <li>Abdomen</li>
 <li> Tonifica tus Brazos</li>
 <li>Luce una figura envidiable</li>
-<li>Ejercicio Lento & Controlado</li>
+<li>Ejercicio Lento &amp; Controlado</li>
 </ul>
 </div>
 

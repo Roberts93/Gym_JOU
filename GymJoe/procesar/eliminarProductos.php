@@ -2,7 +2,7 @@
 require_once 'config.php';
 
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$id=$_GET['id_producto'];
+$id=$_GET['res'];
 $elimina = mysqli_query($conexion, "delete from productos where id_producto=$id");
 
 

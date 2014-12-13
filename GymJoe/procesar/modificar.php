@@ -19,7 +19,7 @@ echo '
 
 <html>
 <head>
-<meta http-equiv="REFRESH" content="0;url=../conusuario.php">
+<meta http-equiv="REFRESH" content="0;url=../conUsuario.php">
 </head>
 </html>
 ';

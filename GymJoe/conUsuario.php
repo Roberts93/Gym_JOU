@@ -12,7 +12,7 @@
     function mensaje(id){
     	var res=confirm("¿Está seguro de eliminar este registro?");
     	if(res==true){
-    		window.location="procesar/eliminar.php?id_usuario="+id;
+    		window.location="procesar/eliminar.php?res="+id;
     	}
     }
     </script>

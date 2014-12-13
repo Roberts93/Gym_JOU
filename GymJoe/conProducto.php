@@ -13,7 +13,7 @@
     function mensaje2(id){
     	var res=confirm("¿Está seguro de eliminar este registro de Productos?");
     	if(res==true){
-    		window.location="procesar/eliminarProductos.php?id_producto="+id;
+    		window.location="procesar/eliminarProductos.php?res="+id;
     	}
     }
     </script>

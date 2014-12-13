@@ -1,8 +1,8 @@
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="..\css\estructura.css">
-    <link rel="stylesheet" type="text/css" href="..\css\menu.css">
-    <link rel="stylesheet" type="text/css" href="..\css\pie_pagina.css">
-    <link rel="stylesheet" type="text/css" href="..\css\css\diseño_Tabla.css">
+	<link rel="stylesheet" type="text/css" href="../css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/pie_pagina.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/diseño_Tabla.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
  <body>
  <div id="caja_principal2">
@@ -16,7 +16,7 @@
                     <li id="elementos_menu"><a  href="../Rutinas.php">Rutinas |</a></li>
                     <li id="elementos_menu"><a  href="../instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="../ConectaBlog.php">Blog |</a></li>
-                    <li id="elementos_menu"><a href="../promociones.php">Promociones |</a></li>
+                    <li id="elementos_menu"><a href="../Promociones.php">Promociones |</a></li>
                     <li id="elementos_menu"><a href="../login.php">Iniciar Sesion |</a></li>
                     <li id="elementos_menu"><a href="../panel.php">Panel de Control</a></li>
                     </ul>
@@ -42,13 +42,7 @@
 <?php
 session_start();
 
-<<<<<<< HEAD
-    $idu=$_GET['id_usuario'];
-
-=======
-    $idu=$_GET['re'];
-    
->>>>>>> c67db35f5ae81a870eed3a9e96f6db562ccfa463
+    $idu=$_GET['re'];    
   
     require_once 'config.php';
 
@@ -115,7 +109,7 @@ mysqli_free_result($consulta);
                 <hr id="separador">
                 <p id="texto_pie"><a href="../instalaciones.php">Instalaciones</a></p>
                 <hr id="separador">
-                <p id="texto_pie"><a href="../blog.php">Blog</a></p>
+                <p id="texto_pie"><a href="../ConectaBlog.php">Blog</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="../Promociones.php">Promociones</a></p>
             </div>

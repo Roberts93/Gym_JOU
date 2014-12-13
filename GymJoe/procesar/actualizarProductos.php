@@ -1,8 +1,8 @@
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="..\css\estructura.css">
-    <link rel="stylesheet" type="text/css" href="..\css\menu.css">
-    <link rel="stylesheet" type="text/css" href="..\css\pie_pagina.css">
-    <link rel="stylesheet" type="text/css" href="..\css\css\diseño_Tabla.css">
+	<link rel="stylesheet" type="text/css" href="../css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/pie_pagina.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/diseño_Tabla.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
 <body>
  <div id="caja_principal2">
@@ -16,7 +16,7 @@
                     <li id="elementos_menu"><a  href="../Rutinas.php">Rutinas |</a></li>
                     <li id="elementos_menu"><a  href="../instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="../ConectaBlog.php">Blog |</a></li>
-                    <li id="elementos_menu"><a href="../promociones.php">Promociones |</a></li>
+                    <li id="elementos_menu"><a href="../Promociones.php">Promociones |</a></li>
                     <li id="elementos_menu"><a href="../login.php">Iniciar Sesion |</a></li>
                     <li id="elementos_menu"><a href="../panel.php">Panel de Control</a></li>
                     </ul>
@@ -67,7 +67,7 @@ echo "
 
 while($fila = mysqli_fetch_array($consulta)){
 	echo "<tr>
-	<form action='modificarproductos.php' method='post' enctype='multipart/form-data'>
+	<form action='modificarProductos.php' method='post' enctype='multipart/form-data'>
 		<td><input type='text' name='id' value='$fila[0]' readonly></td>
 		<td><input type='text' name='nombre' value='$fila[1]'></td>
 		<td><input type='text' name='marca' value='$fila[2]'></td>
@@ -117,7 +117,7 @@ mysqli_free_result($consulta);
                 <hr id="separador">
                 <p id="texto_pie"><a href="../instalaciones.php">Instalaciones</a></p>
                 <hr id="separador">
-                <p id="texto_pie"><a href="../blog.php">Blog</a></p>
+                <p id="texto_pie"><a href="../ConectaBlog.php">Blog</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="../Promociones.php">Promociones</a></p>
             </div>

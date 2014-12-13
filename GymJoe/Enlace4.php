@@ -48,7 +48,7 @@ De esta forma, logrará reducir la flacidez de sus brazos, lucir unos hombros fi
 <li>Abdomen</li>
 <li> Tonifica tus Brazos</li>
 <li>Luce una figura envidiable</li>
-<li>Ejercicio Lento & Controlado</li>
+<li>Ejercicio Lento &amp; Controlado</li>
 </ul>
 </div>
 

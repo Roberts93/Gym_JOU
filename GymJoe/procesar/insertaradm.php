@@ -143,10 +143,10 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		$sql = $sql."'0','$nombre','$marca','$precio_publico','$precio_proveedor','$tamaño','$tipo','$archivo','$descripcion')";
 		move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/productos/'.$archivo);
 
-		$paginaRetorno = 'regpro.php';
+		$paginaRetorno = 'RegPro.php';
 	}
 	else{
-		$paginaRetorno = 'regpro.php';
+		$paginaRetorno = 'RegPro.php';
 	}
 }else{
 	die('Error en datos: ERROR 0xE');
