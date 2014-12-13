@@ -17,7 +17,11 @@ echo "<tr>
 		<td>
 		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
+<<<<<<< HEAD
 		<a href='procesar/actualizar.php?idu=$fila[0]'>
+=======
+		<a href='procesar/actualizar.php?re=$fila[0]'>
+>>>>>>> c67db35f5ae81a870eed3a9e96f6db562ccfa463
 		<img class='imagen' src='img/usuario_editar.png'></a>
 		</td>	
 	</tr>";

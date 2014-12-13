@@ -42,8 +42,13 @@
 <?php
 session_start();
 
+<<<<<<< HEAD
     $idu=$_GET['id_usuario'];
 
+=======
+    $idu=$_GET['re'];
+    
+>>>>>>> c67db35f5ae81a870eed3a9e96f6db562ccfa463
   
     require_once 'config.php';
 
@@ -85,11 +90,11 @@ echo "<tr><form action='modificar.php' method='post' enctype='multipart/form-dat
 	</tr>";	
 }
 echo "</table>";
-$_SESSION['nick'] = $nick;
+//$_SESSION['nick'] = $nick;
 mysqli_close($conexion);
 mysqli_free_result($consulta);
 ?>
-
+/
 </tbody>
 
 </div>	
