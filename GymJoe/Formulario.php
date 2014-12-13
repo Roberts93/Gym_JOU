@@ -7,6 +7,19 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript">
+
+	function validar(email){
+    	if (email.value.search(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/)==-1) {
+     	 alert("ingresa el correo correctamente");
+     	 return false;
+
+
+
+    }
+  }
+
+    </script>
 </head>
 <body>
 
@@ -35,7 +48,7 @@ include('menu.php');
 			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
 			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
 			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" onblur="validateEmail(this);" required>
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" onclick="validateEmail(this);" required>
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
