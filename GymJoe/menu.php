@@ -14,7 +14,18 @@
                     <li id="elementos_menu"><a  href="instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="ConectaBlog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="Promociones.php">Promociones |</a></li>
-                    <li id="elementos_menu"><a href="login.php">Iniciar Sesion |</a></li>
+                    <?php
+                    if(isset($_SESSION['usuario'])){
+                    ?>
+                    <li id="elementos_menu"><a href="procesar/cerrarsesion.php">Cerrar Sesión |</a></li>
+                    <?php                    
+                    }
+                    else{
+                        ?>
+                        <li id="elementos_menu"><a href="login.php">Iniciar Sesion |</a></li>
+                        <?php
+                    }                    
+                    ?>
                     </ul>
                 </div>
 			</div>

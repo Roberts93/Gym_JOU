@@ -99,7 +99,12 @@ else{
 	</div>	
 </body>
 <?php
+if($_SESSION['privilegios']==2){
+header('Location: index.php');    
+}
+else{
 header('Location: login.php');
+}
 ?>
 </html>
 		<?php
@@ -125,7 +130,12 @@ else{
 	</div>	
 </body>
 <?php
+if($_SESSION['privilegios']==2){
+header('Location: index.php');    
+}
+else{
 header('Location: login.php');
+}
 ?>
 </html>
 	<?php
