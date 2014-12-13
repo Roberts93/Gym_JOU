@@ -26,7 +26,7 @@ function cambiarPestanna(pestannas,pestanna) {
         // y aumenta el padding para que tape el borde superior del contenido que
         // esta juesto debajo y se vea de este modo que esta seleccionada.
         $(cpestanna).css('display','');
-        $(pestanna).css('padding-bottom','2px'); 
+        $(pestanna).css('padding-bottom','7px'); 
     });
 
 }

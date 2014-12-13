@@ -1,9 +1,10 @@
 .contenedor{
-    width: 1080px;
+    width: 90%;
     margin: auto;    
     padding: 20px 15px 50px 50px;
     border-radius: 10px;
-    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);    
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);  
+    border:1px solid #ccc;  
 }
 
 
@@ -12,8 +13,6 @@
     font-size: 3ex;
     font-weight: bold;        
 }
-
-
 
 #pestanas ul{
     margin-left: -40px;        
@@ -37,16 +36,28 @@
     clear: both;      
     border-radius: 5px;
     border-top-left-radius: 0px;    
-    width: 1025px;    
+    width: 1025px; 
+    border:1px solid #ccc;  
+    padding: 20px 0px 20px 20px; 
+    position: relative;
+    bottom: 35px;
 }
 
-#contenidopestanas div{
-  padding: 20px 0px 20px 20px;
-}
-.pestan{
-    border: 1px solid #ccc;
-    font-family: sans-serif;
-    font-size: 15px;
-    color: black;   
+
+#pestana1,#pestana2,#pestana3,#pestana4,#pestana5,#pestana2,#pestana6{
+ border: 1px solid #ccc;   
+ font-size: 18px;
+ font-family: sans-serif;
+ background:linear-gradient(#0099ff, #0066ff);
 
 }
+
+#pestana1:hover,#pestana2:hover,#pestana3:hover,#pestana4:hover,#pestana5:hover,#pestana6:hover{
+background:#666666;
+
+}
+
+.tex{
+    color: white;
+}
+

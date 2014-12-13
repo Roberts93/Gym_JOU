@@ -96,12 +96,12 @@ session_start();
             <div class="titulo">Productos</div>
             <div id="pestanas">
                 <ul id="listapro">
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Aumenta Masa</a></li>
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Quema Grasa</a></li>
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>NOS</a></li>
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Glutamina</a></li>
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Creatina</a></li>
-                    <li class="pestan"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
+                    <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);' class="tex">Aumenta Masa</a></li>
+                    <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);' class="tex">Quema Grasa</a></li>
+                    <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);' class="tex">NOS</a></li>
+                    <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);' class="tex">Glutamina</a></li>
+                    <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);' class="tex">Creatina</a></li>
+                    <li id="pestana6"><a href='javascript:cambiarPestanna(pestanas,pestana6);'>
                  
                     <input type="text" id="nick" name="nombre" placeholder="Buscar" onkeypress="txLetras()"><input type="submit" value="Buscar" name"bus" id="bus"/>
                     </li>                    
