@@ -7,19 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
-    <script type="text/javascript">
-
-	function validar(email){
-    	if (email.value.search(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/)==-1) {
-     	 alert("ingresa el correo correctamente");
-     	 return false;
-
-
-
-    }
-  }
-
-    </script>
+      <script type="text/javascript" src="js/Validar.js"></script> 
+  
 </head>
 <body>
 
@@ -37,18 +26,18 @@ include('menu.php');
 	<input type="hidden" name="tabla" value="usuario">
 
 	<label>			
-			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
-			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
-			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
-			<input type="password" id="password" name="pass" placeholder="Contraseña" required>
-			<input type="text" id="nick" name="estado" placeholder="Estado" required>
-			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" required>
-			<input type="text" id="nick" name="calle" placeholder="Calle" required>
-			<input type="text" id="nick" name="colonia" placeholder="Colonia" required>
-			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
-			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
-			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" onclick="validateEmail(this);" required>
+			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="apellido" placeholder="Apellido" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" maxlength="45" required >
+			<input type="password" id="password" name="pass" placeholder="Contraseña" maxlength="45" required>
+			<input type="text" id="nick" name="estado" placeholder="Estado" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="calle" placeholder="Calle" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="colonia" placeholder="Colonia" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" maxlength="11" required onkeypress="txNumeros()">
+			<input type="text" id="nick" name="telefono" placeholder="Telefono"  maxlength="11" required onkeypress="txNumeros()" >
+			<input type="text" id="nick" name="cp" placeholder="Codigo postal" maxlength="5" onclick="return validar" required onkeypress="txNumeros()">
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="45" onclick="validateEmail(this);" required >
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
