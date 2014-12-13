@@ -11,17 +11,17 @@ $consulta = "SELECT * FROM usuario WHERE nick='".mysql_real_escape_string($nick)
 $cons=mysqli_query($conexion,$consulta)
 or die("Error: ".  mysqli_error($conexion));
 
-$dato=mysqli_fetch_array($cons);
-$usuario=$dato[3];
-$cont=$dato[4];
-$img=$dato[5];
-$privilegio=$dato[6];
-$cont2=md5($cont);
-    if($nick==$usuario && $pass==$cont){
-        $_SESSION['usuario']=$usuario;
-        $_SESSION['contra']=$img;
+while ($fila = mysqli_fetch_array($cons)) {
+  $usuariobase = $fila[3];
+  $passbase = $fila[4];
+  $privilegio = $fila[6];
+
+    if($nick==$usuariobase && $pass==$passbase){
+        $_SESSION['usuario']=$nick;
+        $_SESSION['contra']=$pass;
      	if($privilegio==1){
-     		header('location: ../panel.php');
+     		header('location: ../panel.php');        
+        $_SESSION['privilegios']=$privilegio;
      	}
      	if($privilegio==2){
  			header('location: ../usuario/index.php');
@@ -32,6 +32,7 @@ $cont2=md5($cont);
        }else{
        	$resultadoRetorno=1;
        	header('Location: ../login.php?res='.$resultadoRetorno);
+}
 }
 
  mysqli_close($conexion);  

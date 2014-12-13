@@ -10,7 +10,7 @@
                 <hr id="separador">
                 <p id="texto_pie"><a href="instalaciones.php">Instalaciones</a></p>
                 <hr id="separador">
-                <p id="texto_pie"><a href="blog.php">Blog</a></p>
+                <p id="texto_pie"><a href="ConectaBlog.php">Blog</a></p>
                 <hr id="separador">
                 <p id="texto_pie"><a href="Promociones.php">Promociones</a></p>
             </div>
@@ -32,8 +32,6 @@
                 <hr id="separador">
                 <p id="texto_pie">Direccion: Fray Juan Bautista 1009, Col. Linda Vista.</p>
                 <hr id="separador"> 
-                <p id="texto_pie">Correo Electronico: gymjoe@gmail.com</p>
-                
+                <p id="texto_pie">Correo Electronico: gymjoe@gmail.com</p>        
             </div>
-
 	</div>

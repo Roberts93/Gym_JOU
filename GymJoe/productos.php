@@ -184,7 +184,7 @@ session_start();
                     echo '<center><h2 id="total" style="color:black;">Total: '.$total.'</h2></center>';
                     if($total!=0)
                     {
-                    echo '<center><a href="../compras/compras.php" class="aceptar">Comprar</a></center>';
+                    echo '<center><a href="compras.php" class="aceptar">Comprar</a></center>';
                     }
                     mysqli_close($conexion);
                     ?>

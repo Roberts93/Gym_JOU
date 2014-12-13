@@ -37,14 +37,14 @@ include('menu.php');
 			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" maxlength="11" required onkeypress="txNumeros()">
 			<input type="text" id="nick" name="telefono" placeholder="Telefono"  maxlength="11" required onkeypress="txNumeros()" >
 			<input type="text" id="nick" name="cp" placeholder="Codigo postal" maxlength="5" onclick="return validar" required onkeypress="txNumeros()">
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="45" onclick="validateEmail(this);" required >
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="45" required >
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
 		</label>
 		
 			</label>
-			<input type="submit" class="small round button" value="Guardar" onclick="return validar(email)">
+			<input type="submit" class="small round button" value="Guardar" onclick="return validarEmail(email)">
 			<!--
 			<button class="small round button">Guardar Datos</button>  -->
 		<a href="login.php" id="botoncito"> Cancelar</a>
