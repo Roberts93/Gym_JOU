@@ -42,18 +42,13 @@
 <?php
 session_start();
 
-    $idu=$_GET['id_usuario'];
-    $nom=$_GET['nombre'];
-    $ape=$_GET['apellido'];
-    $nick=$_GET['nick'];
-    $pass=$_GET['password'];
-    $imagen=$_GET['imagen'];
-
+    $idu=$_GET['re'];
+    
   
     require_once 'config.php';
 
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$consulta = mysqli_query($conexion, "select * from usuario where id_usuario='".$idu."' and nombre='".$nom."' and apellido='".$ape."' and nick='".$nick."' and password='".$pass."' and img='".$imagen."'");
+$consulta = mysqli_query($conexion, "select * from usuario where id_usuario='".$idu."'");
 
 
 echo "
@@ -90,11 +85,11 @@ echo "<tr><form action='modificar.php' method='post' enctype='multipart/form-dat
 	</tr>";	
 }
 echo "</table>";
-$_SESSION['nick'] = $nick;
+//$_SESSION['nick'] = $nick;
 mysqli_close($conexion);
 mysqli_free_result($consulta);
 ?>
-
+/
 </tbody>
 
 </div>	
