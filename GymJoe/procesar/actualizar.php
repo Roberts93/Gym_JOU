@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
     <link rel="stylesheet" type="text/css" href="../css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="../css/css/diseño_Tabla.css">
+    <script type="text/javascript" src="../js/Validar.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
  <body>
  <div id="caja_principal2">
@@ -69,11 +70,11 @@ echo "
 while($fila = mysqli_fetch_array($consulta)){
 echo "<tr><form action='modificar.php' method='post' enctype='multipart/form-data'>
 		<td>$fila[0]</td>
-		<td><input type='text' name='nombre' value='$fila[1]'></td>
-		<td><input type='text' name='apellido' value='$fila[2]'></td>
-		<td><input type='text' name='nick' value='$fila[3]'></td>
-		<td><input type='text' name='pass' value='$fila[4]'></td>
-		<td><input type='file' name='img' value='$fila[5]' accept='image/*'></td></tr>		
+		<td><input type='text' name='nombre' maxlength='45' required onkeypress='txLetras()' value='$fila[1]'></td>
+		<td><input type='text' name='apellido' maxlength='45' required onkeypress='txLetras()' value='$fila[2]'></td>
+		<td><input type='text' name='nick' maxlength='45' value='$fila[3]'></td>
+		<td><input type='text' name='pass' maxlength='45' value='$fila[4]'></td>
+		<td><input type='file' name='img' maxlength='200' value='$fila[5]' accept='image/*'></td></tr>		
 
 <th>Operaciones</th>
 	
