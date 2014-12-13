@@ -1,0 +1,32 @@
+
+#completo{
+	border: 2px solid red;
+	height: 90%;
+	width: 100%;
+	background: white;
+	
+}
+
+#caja{
+
+	border: 1px solid #CCCCCC;
+	width: 40%;
+	height: 75%;
+	background: #E9E9E9;
+}
+
+#contrasena{
+
+	border: 2px solid green;
+	width: 250px;
+	height: 25px;
+}
+
+#sepa{
+	width: 90%;
+	height: 100%;
+}
+
+#principal{
+	height: 90%;
+}
