@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <html>
 <head>
 <title>Inicio</title>
@@ -44,6 +48,10 @@
 							<?php 
 								include('menu.php');
 							?>
+
+							
+							<br><br><br>
+
 							<hr width="100%" height="100" color="#ccc">
 							<hr id="sep" width="100%" height="100" color="blue">
 						<div id="slidebox">
@@ -87,10 +95,27 @@
 							</ul>
 						</div>							
 						</div>
+						<br>
+						<br>
 
+						<?php
+			if(isset($_SESSION['privilegios'])){
+				if($_SESSION['privilegios']==1){
+						echo '<h1 id="titulosusr">Bienvenido Administrador: '.$_SESSION["usuario"].'</h1>';
+					}else{
+						if($_SESSION['privilegios']==2){ 
+						echo "<h1 id='titulosusr'>Bienvenido ".$_SESSION['usuario']."</h1>";
+						}
+				}
+}	
+				
+
+	?>
 						
-	<h1  id="quien" style="font-family: Bastion; color: black; margin-left:7%; margin-top: 5%; pading: 0px; ">QUIENES SOMOS</h1>
+	<h1  class="titulos" style="font-family: Bastion; color: black; margin-left:7%; margin-top: 5%; pading: 0px; ">QUIENES SOMOS</h1>
 	<hr width="90%" height="7%" color="blue">
+
+	
 
 						<div id="texto_parrafo">
 	<p>

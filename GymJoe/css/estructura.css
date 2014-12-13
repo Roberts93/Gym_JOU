@@ -150,3 +150,45 @@ height: 100%;
 	text-shadow: rgb(0,0,150) 3px 3px 6px;
 	margin-left: 0%;
 }
+#texto_usuario{
+	font-size: 24px;
+	font-color: black;
+	float: right;
+	position: relative;
+	top: 8px;
+	margin-right: 15px;
+	vertical-align: middle;
+	font-family: sans-serif;
+}
+
+#ig_per{
+	border-radius: 2px 2px 2px 2px;
+	margin-top: 8px;
+	float: right;
+	margin-right: 7px;
+
+}
+
+#texto_usuario a:visited{
+ color: white;
+ text-decoration: none;
+
+}
+
+
+#titulosusr{
+	color: black;
+	font-size: 60px;
+	font-family: sans-serif;
+	text-align: center;
+
+}
+
+.titulos{
+	color: black;
+	font-size: 30px;
+	font-family: monospace;
+	position: relative;
+	left: 40px;
+
+}

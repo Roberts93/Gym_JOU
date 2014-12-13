@@ -11,30 +11,29 @@ $consulta = "SELECT * FROM usuario WHERE nick='".mysql_real_escape_string($nick)
 $cons=mysqli_query($conexion,$consulta)
 or die("Error: ".  mysqli_error($conexion));
 
-while ($fila = mysqli_fetch_array($cons)) {
-  $usuariobase = $fila[3];
-  $passbase = $fila[4];
-  $privilegio = $fila[6];
-  $img=$fila[5];
+$dato=mysqli_fetch_array($cons);
+$usuario=$dato[3];
+$cont=$dato[4];
+$img=$dato[5];
+$privilegio=$dato[6];
 
-    if($nick==$usuariobase && $pass==$passbase){
+    if($nick==$usuario && $pass==$cont){
         $_SESSION['usuario']=$nick;
         $_SESSION['contra']=$pass;
         $_SESSION['imagen']=$img;
-     	if($privilegio==1){
-     		header('location: ../panel.php');        
+      if($privilegio==1){
         $_SESSION['privilegios']=$privilegio;
-     	}
-     	if($privilegio==2){
- 			header('location: ../usuario/index.php');
-
-     	}
+        header('location: ../panel.php');
+      }
+      if($privilegio==2){
+        $_SESSION['privilegios']=$privilegio;
+        header('location: ../index.php');
+      }
       
         //echo "El usuario existe";
        }else{
-       	$resultadoRetorno=1;
-       	header('Location: ../login.php?res='.$resultadoRetorno);
-}
+        $resultadoRetorno=1;
+        header('Location: ../login.php?res='.$resultadoRetorno);
 }
 
  mysqli_close($conexion);  
