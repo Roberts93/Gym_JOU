@@ -2,7 +2,7 @@
 			<div id="barra_navegacion">
 			<div id="elementosmenu">
 				<IMG SRC="img/logo5.png" width="250" height="50">
-                                <?php
+        <?php
                                
         session_start();
         echo '<a href="index.php" id="texto_usuario">'.$_SESSION['usuario']."</a><img src=".$_SESSION['contra'].' width="30px" height="30px" id="ig_per">';

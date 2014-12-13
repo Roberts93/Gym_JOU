@@ -136,6 +136,7 @@ height: 100%;
 	font-size: 18px;
 	font-family: Berlin Sans FB Demi;
 	margin: 5%;
+	margin-top: -.5%;
 	text-align: justify;
 	text-shadow: rgb(0,0,15) 1px 1px 1px;
 }

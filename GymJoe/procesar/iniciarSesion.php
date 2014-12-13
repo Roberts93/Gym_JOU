@@ -15,10 +15,12 @@ while ($fila = mysqli_fetch_array($cons)) {
   $usuariobase = $fila[3];
   $passbase = $fila[4];
   $privilegio = $fila[6];
+  $img=$fila[5];
 
     if($nick==$usuariobase && $pass==$passbase){
         $_SESSION['usuario']=$nick;
         $_SESSION['contra']=$pass;
+        $_SESSION['imagen']=$img;
      	if($privilegio==1){
      		header('location: ../panel.php');        
         $_SESSION['privilegios']=$privilegio;

@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(isset($_SESSION['privilegios'])){
+	if($_SESSION['privilegios'] == 1){
+?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -67,3 +72,57 @@ $con->consultarProductos();
 
 </body>
 </html>
+<?php
+	}
+	else{
+		?>
+		<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Inexistente</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
+    <link rel="stylesheet" type="text/css" href="css/css/login.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="js/Validar.js"></script> 
+</head>
+<body>
+	<div id="caja_principal">
+		<h1 style="color: black;">Lo Sentimos Está Pagina No Existe</h1>
+	</div>	
+</body>
+<?php
+header('Location: login.php');
+?>
+</html>
+		<?php
+	}
+}
+else{
+	?>
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina Inexistente</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
+    <link rel="stylesheet" type="text/css" href="css/css/login.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="js/Validar.js"></script> 
+</head>
+<body>
+	<div id="caja_principal">
+		<h1 style="color: black;">Lo Sentimos Está Pagina No Existe</h1>
+	</div>	
+</body>
+<?php
+header('Location: login.php');
+?>
+</html>
+	<?php
+}
+?>

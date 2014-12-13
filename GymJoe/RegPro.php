@@ -101,6 +101,9 @@ else{
 		<h1>Lo Sentimos Está Pagina No Existe</h1>
 	</div>	
 </body>
+<?php
+header('Location: login.php');
+?>
 </html>
 			<?php
 		}
@@ -125,6 +128,9 @@ else{
 		<h1 style="color: black;">Lo Sentimos Está Pagina No Existe</h1>
 	</div>	
 </body>
+<?php
+header('Location: login.php');
+?>
 </html>
 	<?php
 }
