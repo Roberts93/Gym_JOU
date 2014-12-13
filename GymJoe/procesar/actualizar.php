@@ -43,17 +43,12 @@
 session_start();
 
     $idu=$_GET['id_usuario'];
-    $nom=$_GET['nombre'];
-    $ape=$_GET['apellido'];
-    $nick=$_GET['nick'];
-    $pass=$_GET['password'];
-    $imagen=$_GET['imagen'];
 
   
     require_once 'config.php';
 
 $conexion =  mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$consulta = mysqli_query($conexion, "select * from usuario where id_usuario='".$idu."' and nombre='".$nom."' and apellido='".$ape."' and nick='".$nick."' and password='".$pass."' and img='".$imagen."'");
+$consulta = mysqli_query($conexion, "select * from usuario where id_usuario='".$idu."'");
 
 
 echo "

@@ -17,7 +17,7 @@ echo "<tr>
 		<td>
 		<a href='javascript:void(0)' onclick='mensaje(".$fila[0].")'>
 		<img class='imagen' src='img/usuario_Borrar.png'></a>
-		<a href='procesar/actualizar.php?id_usuario=$fila[0]&nombre=$fila[1]&apellido=$fila[2]&nick=$fila[3]&password=$fila[4]&imagen=".$fila[5]."'>
+		<a href='procesar/actualizar.php?idu=$fila[0]'>
 		<img class='imagen' src='img/usuario_editar.png'></a>
 		</td>	
 	</tr>";
