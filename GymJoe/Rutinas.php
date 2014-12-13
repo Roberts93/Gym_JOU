@@ -61,13 +61,17 @@
 	<div><img src="img/Carrusel_Rutinas/1.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Rutinas/2.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Rutinas/3.jpg" class="tam_imagen" ></div>
-	<div><img src="img/Carrusel_Rutinas/4.jpg" class="tam_imagen"></div>
+	
 	<div><img src="img/Carrusel_Rutinas/5.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Rutinas/6.jpg" class="tam_imagen"></div>
-	<div><img src="img/Carrusel_Rutinas/7.jpg" class="tam_imagen"></div>
+	
 	<div><img src="img/Carrusel_Rutinas/8.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Rutinas/9.jpg" class="tam_imagen"></div>
 	<div><img src="img/Carrusel_Rutinas/10.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/11.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/12.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/13.jpg" class="tam_imagen"></div>
+	<div><img src="img/Carrusel_Rutinas/14.jpg" class="tam_imagen"></div>
 </div>
 <script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
      <script rel="text/javascript" src="slick-master/slick/slick.js"></script>

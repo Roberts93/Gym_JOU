@@ -63,7 +63,8 @@
 						<div class="">
 							<ul>
 						    	<li>
-						    		<IMG SRC="fotos/imagenes/iniciocarrusel1.png" id="tam_imagen">
+						    	<IMG SRC="fotos/imagenes/iniciocarrusel5.jpg" id="tam_imagen">
+						    		
 						    		</li>
 						    	<li>
 									<IMG SRC="fotos/imagenes/iniciocarrusel2.png" id="tam_imagen">
@@ -75,7 +76,7 @@
 									<IMG SRC="fotos/imagenes/iniciocarrusel4.png" id="tam_imagen">
 						    		</li>
 						    	<li>
-									<IMG SRC="fotos/imagenes/iniciocarrusel5.png" id="tam_imagen">
+									<IMG SRC="fotos/imagenes/iniciocarrusel1.png" id="tam_imagen">
 						    		</li>
 						    	<li>
 									<IMG SRC="fotos/imagenes/iniciocarrusel6.png" id="tam_imagen">
@@ -84,8 +85,7 @@
 									<IMG SRC="fotos/imagenes/iniciocarrusel7.png" id="tam_imagen">
 						    		</li>		
 							</ul>
-						</div>
-							
+						</div>							
 						</div>
 
 						

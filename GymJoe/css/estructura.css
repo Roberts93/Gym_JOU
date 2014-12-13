@@ -12,7 +12,7 @@ body {
 
 #slidebox{
 	position:relative; 
-	border:1px solid yellow; 
+	border:0px solid yellow; 
 	margin:0px auto;
 	overflow:hidden;
 	margin-left: 0%;
@@ -137,7 +137,7 @@ height: 100%;
 	font-family: Berlin Sans FB Demi;
 	margin: 5%;
 	text-align: justify;
-	text-shadow: rgb(0,0,150) 3px 3px 3px;
+	text-shadow: rgb(0,0,15) 1px 1px 1px;
 }
 
 #texto_parrafo2{
