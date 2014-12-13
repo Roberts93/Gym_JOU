@@ -4,9 +4,9 @@ require_once 'config.php';
 session_start();
 $resultadoRetorno=0;
 $nick = $_POST['nick'];
-$pass = $_POST['pass'];
+$pass = md5($_POST['pass']);
 $conexion = mysqli_connect(config::$servidor, config::$usuario, config::$password, config::$baseDeDatos);
-$consulta = "SELECT * FROM usuario WHERE nick='".mysql_real_escape_string($nick)."' AND password='".mysql_real_escape_string($_POST['pass'])."'";
+$consulta = "SELECT * FROM usuario WHERE nick='".mysql_real_escape_string($nick)."' AND password='".mysql_real_escape_string($pass)."'";
 
 $cons=mysqli_query($conexion,$consulta)
 or die("Error: ".  mysqli_error($conexion));

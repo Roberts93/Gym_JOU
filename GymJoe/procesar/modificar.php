@@ -11,8 +11,8 @@ $nick=$_POST['nick'];
 $pass=$_POST['pass'];
 $archivo =$nick.$extensionArchivo;
 $nickantiguo=$_SESSION['nick'];
-$modifica = mysqli_query($conexion, "update usuario set nombre='".$nombre."', apellido='".$apellido."', nick='".$nick."', password=password('".$pass."'), img='".$archivo."' where nick='".$nickantiguo."'");
-
+$modifica = mysqli_query($conexion, "update usuario set nombre='".$nombre."', apellido='".$apellido."', nick='".$nick."', password=md5('".$pass."'), img='".$archivo."' where nick='".$nickantiguo."'");
+move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
 mysqli_close($conexion);
 
 echo '

@@ -25,8 +25,6 @@
                            
 </nav>
 <div class="panel2">
-<h3>Configuración</h3>
-
     <form method="post" enctype="multipart/form-data" action="procesar/insertar.php">
     <input type="hidden" name="tabla" value="imagenes">
 
