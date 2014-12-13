@@ -35,14 +35,14 @@ include('menu.php');
 			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
 			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
 			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" required>
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" onblur="validateEmail(this);" required>
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
 		</label>
 		
 			</label>
-			<input type="submit" class="small round button" value="Guardar">
+			<input type="submit" class="small round button" value="Guardar" onclick="return validar(email)">
 			<!--
 			<button class="small round button">Guardar Datos</button>  -->
 		<a href="login.php" id="botoncito"> Cancelar</a>

@@ -23,4 +23,12 @@ function txNumeros() {
 						}
 
 
-                    
+function validar(email){
+    if (email.value.search(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/)==-1) {
+      alert("ingresa el correo correctamente");
+      return false;
+
+
+
+    };
+  }                   
