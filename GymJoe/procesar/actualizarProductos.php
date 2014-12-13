@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
     <link rel="stylesheet" type="text/css" href="../css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="../css/css/diseño_Tabla.css">
+    <script type="text/javascript" src="../js/Validar.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
 <body>
  <div id="caja_principal2">
@@ -68,11 +69,11 @@ echo "
 while($fila = mysqli_fetch_array($consulta)){
 	echo "<tr>
 	<form action='modificarProductos.php' method='post' enctype='multipart/form-data'>
-		<td><input type='text' name='id' value='$fila[0]' readonly></td>
-		<td><input type='text' name='nombre' value='$fila[1]'></td>
-		<td><input type='text' name='marca' value='$fila[2]'></td>
-		<td><input type='text' name='precio_publi' value='$fila[3]'></td>
-		<td><input type='text' name='precio_prov' value='$fila[4]'></td></tr>
+		<td><input type='text' name='id' maxlength='11' value='$fila[0]' readonly></td>
+		<td><input type='text' name='nombre' maxlength='120' required onkeypress='txLetras()' value='$fila[1]'></td>
+		<td><input type='text' name='marca' maxlength='45' required onkeypress='txLetras()' value='$fila[2]'></td>
+		<td><input type='text' name='precio_publi' maxlength='10,0' required onkeypress='txNumerosDec()' value='$fila[3]'></td>
+		<td><input type='text' name='precio_prov' maxlength='10,0' required onkeypress='txNumerosDec()' value='$fila[4]'></td></tr>
 		
 
 			
@@ -83,10 +84,10 @@ while($fila = mysqli_fetch_array($consulta)){
 		<th>Operaciones</th>
 	
 		<tr>
-		<td><input type='text' name='tam' value='$fila[5]'> </td>
-		<td><input type='text' name='tipo' value='$fila[6]'></td>
-		<td><input type='file' name='img' value='$fila[7]' accept='image/*'></td>		
-		<td><input type='text' name='des' value='$fila[8]'></td>
+		<td><input type='text' name='tam' maxlength='45' value='$fila[5]'> </td>
+		<td><input type='text' name='tipo' maxlength='45' value='$fila[6]'></td>
+		<td><input type='file' name='img' maxlength='200' value='$fila[7]' a maxlength='45'ccept='image/*'></td>		
+		<td><input type='text' name='des' maxlength='200' value='$fila[8]'></td>
 		<td><input type='submit' value='actualizar'/></td>
 		<input type='hidden' name='tabla' value='actualizar'/>
 		</form>

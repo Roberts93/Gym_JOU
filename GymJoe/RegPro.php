@@ -31,11 +31,11 @@ session_start();
 	<input type="hidden" name="tabla" value="productos">
 
 	<label>		
-			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required onkeypress="txLetras()">
-			<input type="text" id="nick" name="marca" placeholder="Marca" required onkeypress="txLetras()">
-			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" required onkeypress="return txNumerosDec(event,this);">
-			<input type="text" id="nick" name="precio_prov" 	placeholder="Precio del Proveedor" required onkeypress="return txNumerosDec(event,this);">
-			<input type="text" id="nick" name="tam" 	placeholder="Tamaño" required>
+			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" maxlength="120" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="marca" placeholder="Marca" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="precio_publi" 	placeholder="Precio al Público" maxlength="10,0" required onkeypress="return txNumerosDec(event,this);">
+			<input type="text" id="nick" name="precio_prov" 	placeholder="Precio del Proveedor" maxlength="10,0" required onkeypress="return txNumerosDec(event,this);">
+			<input type="text" id="nick" name="tam" 	placeholder="Tamaño" maxlength="45" required>
 			<select id="nick" name="tipo">
 			<option value="Aumenta Masa">Aumenta Masa</option>
 			<option value="Quema Grasa">Quema Grasa</option>

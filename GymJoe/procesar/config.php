@@ -3,6 +3,6 @@ class config{
 static $servidor = "localhost";
 static $usuario = "root";
 static $password = "";
-static $baseDeDatos = "gym";
+static $baseDeDatos = "gym_joe";
 }
  ?>
