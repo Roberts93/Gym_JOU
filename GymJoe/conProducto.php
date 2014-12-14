@@ -27,7 +27,7 @@ if(isset($_SESSION['privilegios'])){
 <body>
 <div id="caja_principal">
 <?php
-include('Admin/menu.php');
+include('menu.php');
 ?>	
 
 
@@ -69,7 +69,9 @@ $con->consultarProductos();
 </div>	
 </div>
 </div>
-
+<?php
+include('pie.php');
+?>
 </body>
 </html>
 <?php

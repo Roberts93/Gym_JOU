@@ -58,16 +58,16 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		//condicion
 		if($contador == 0)
 		{
-			$sql = $sql."'0','$nombre','$apellido','$nick',password('$pass'),'$archivo', '$tipous', '$calle', '$colonia', '$numcasa', '$ciudad', '$estado','$telefono', '$cp', '$email')";
+			$sql = $sql."'0','$nombre','$apellido','$nick','$pass','$archivo', '$tipous', '$calle', '$colonia', '$numcasa', '$ciudad', '$estado','$telefono', '$cp', '$email')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
 				
 
-		$paginaRetorno = 'Formulario.php';
+		$paginaRetorno = 'regusuarios.php';
 			//$paginaRetorno = $archivo;
 	}
 	else{
 		echo "el nombre del nick esta repetido favor de introducir otro";
-				$paginaRetorno = 'Formulario.php';
+				$paginaRetorno = 'regusuarios.php';
 	}
 		}else{
 			die('Error en datos: ERROR 0xU');	

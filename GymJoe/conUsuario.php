@@ -25,7 +25,7 @@ if(isset($_SESSION['privilegios'])){
 <body>
 <div id="caja_principal">
 <?php
-include('Admin/menu.php');
+include('menu.php');
 ?>	
 <hr width="100%" height="100" color="red">
 <hr id="sep" width="100%" height="100" color="blue">
@@ -62,7 +62,9 @@ $con->consultarUsuarios();
 </div>	
 </div>
 </div>
-
+<?php
+include('pie.php');
+?>
 </body>
 </html>
 <?php        

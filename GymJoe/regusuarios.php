@@ -11,6 +11,7 @@ if(isset($_SESSION['privilegios'])){
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link rel="stylesheet" type="text/css" href="css/css/login.css">
+    <script type="text/javascript" src="js/Validar.js"></script> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
 </head>
 <body>
@@ -18,7 +19,7 @@ if(isset($_SESSION['privilegios'])){
 
 <div id="caja_principal">
 <?php
-include('Admin/menu.php');
+include('menu.php');
 ?>	
 <hr width="100%" height="100" color="#ccc">
 <hr id="hr_separador" width="100%" height="100" color="blue">
@@ -29,26 +30,29 @@ include('Admin/menu.php');
 	<input type="hidden" name="tabla" value="usuario">
 
 	<label>			
-			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" required>
-			<input type="text" id="nick" name="apellido" placeholder="Apellido" required>
-			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" required>
-			<input type="text" id="nick" name="tipousuario" 	placeholder="Tipo de usuario" required>
-			<input type="password" id="password" name="pass" placeholder="Contraseña" required>
-			<input type="text" id="nick" name="estado" placeholder="Estado" required>
-			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" required>
-			<input type="text" id="nick" name="calle" placeholder="Calle" required>
-			<input type="text" id="nick" name="colonia" placeholder="Colonia" required>
-			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" required>
-			<input type="text" id="nick" name="telefono" placeholder="Telefono" required>
-			<input type="text" id="nick" name="cp" placeholder="Codigo postal" required>
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" required>
+			<input type="text" id="nick" name="nombre" 	placeholder="Nombre" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="apellido" placeholder="Apellido" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="nick" 	placeholder="Nick Usuario" maxlength="45" required>
+			<select id="nick" name="tipousuario">			
+			<option value="1">Administrador</option>
+			<option value="2">Normal</option>
+			</select>
+			<input type="password" id="password" name="pass" placeholder="Contraseña" maxlength="45" required>
+			<input type="text" id="nick" name="estado" placeholder="Estado" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="calle" placeholder="Calle" maxlength="45" required>
+			<input type="text" id="nick" name="colonia" placeholder="Colonia" maxlength="45" required>
+			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" maxlength="11" required onkeypress="txNumeros()">
+			<input type="text" id="nick" name="telefono" placeholder="Telefono" maxlength="11" required onkeypress="txNumeros()">
+			<input type="text" id="nick" name="cp" placeholder="Codigo postal" maxlength="5" onclick="return validar" required onkeypress="txNumeros()">
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="200" required>
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
 		</label>
 		
 			</label>
-			<input type="submit" class="small round button" value="Guardar">
+			<input type="submit" class="small round button" value="Guardar" onclick="return validarEmail(email)">
 			<!--
 			<button class="small round button">Guardar Datos</button>  -->
 		<a href="panel.php" id="botoncito"> Cancelar</a>
@@ -74,7 +78,9 @@ else{
  ?>
 	</div>
 </div>	
-</div>
+<?php
+include('pie.php');
+?>
   </body>
 </html>
 <?php		

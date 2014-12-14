@@ -1,7 +1,11 @@
 <?php
 session_start();
-?>
-<html lang="en">
+if(isset($_SESSION['usuario'])){
+		header("Location: index.php");
+}
+else{	
+	?>
+	<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Registro de usuario</title>
@@ -57,13 +61,12 @@ include('menu.php');
 	</div>
 </div>	
 </div>
-
-	
-
-
 </div>
 <?php
 include('pie.php');
 ?>
 </body>
 </html>
+	<?php
+}
+?>

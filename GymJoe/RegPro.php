@@ -19,7 +19,7 @@ session_start();
 <body>
 	<div id="caja_principal">
 		<?php
-			include('Admin/menu.php');			
+			include('menu.php');			
 		?>
 		<hr width="100%" height="100" color="#ccc">
 
@@ -77,7 +77,10 @@ else{
 	}
  ?>
 	</div>
-	</div>	
+	</div>
+	<?php
+	include('pie.php');
+	?>	
 </body>
 </html>
 <?php

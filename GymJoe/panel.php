@@ -30,8 +30,8 @@ if(isset($_SESSION['privilegios'])){
             <ul>
                 <li><a href="RegPro.php">Registrar Productos</a></li>
                 <li><a href="regusuarios.php">Registrar Usuarios</a></li>
-                <li><a href="conUsuario.php">Consultar Productos</a></li>
-                <li><a href="conProducto.php">Consultar Usuarios</a></li>
+                <li><a href="conProducto.php">Consultar Productos</a></li>
+                <li><a href="conUsuario.php">Consultar Usuarios</a></li>
             </ul>                           
 </nav>
 <div class="panel2">

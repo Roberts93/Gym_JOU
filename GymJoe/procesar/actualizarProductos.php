@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../css/estructura.css">
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
@@ -9,20 +12,47 @@
  <div id="caja_principal2">
 <header id="cabeza">
 			<div id="barra_navegacion">
-			<div id="elementosmenu">
-				<IMG SRC="../img/logo5.png" width="250" height="50"></IMG>
-			<ul id="lista">
+            <div id="elementosmenu">
+                <IMG SRC="../img/logo5.png" width="250" height="50">
+                <?php
+                if(isset($_SESSION['usuario'])){
+                echo '<a href="../index.php" id="texto_usuario">'.$_SESSION['usuario']."</a>
+                      <img src=''/>";
+            }
+                ?>
+            <ul id="lista">
                     <li id="elementos_menu"><a href="../index.php">Inicio |</a></li>
                     <li id="elementos_menu"><a  href="../productos.php">Productos |</a></li>
                     <li id="elementos_menu"><a  href="../Rutinas.php">Rutinas |</a></li>
                     <li id="elementos_menu"><a  href="../instalaciones.php">Instalaciones |</a></li>
                     <li id="elementos_menu"><a  href="../ConectaBlog.php">Blog |</a></li>
                     <li id="elementos_menu"><a href="../Promociones.php">Promociones |</a></li>
-                    <li id="elementos_menu"><a href="../login.php">Iniciar Sesion |</a></li>
-                    <li id="elementos_menu"><a href="../panel.php">Panel de Control</a></li>
+                    <?php
+                    if(isset($_SESSION['usuario'])){
+                    ?>
+                    <?php
+                    if($_SESSION['privilegios']==1)
+                    {
+                    ?>
+                    <li id="elementos_menu"><a href="../panel.php">Panel |</a></li>                    
+                    <li id="elementos_menu"><a href="cerrarsesion.php">Cerrar Sesión |</a></li>                    
+                    <?php                    
+                    }
+                    else{
+                        ?>
+                        <li id="elementos_menu"><a href="cerrarsesion.php">Cerrar Sesión |</a></li>                    
+                        <?php
+                    }
+                    }
+                    else{
+                        ?>
+                        <li id="elementos_menu"><a href="../login.php">Iniciar Sesion |</a></li>
+                        <?php
+                    }                    
+                    ?>
                     </ul>
                 </div>
-			</div>
+            </div>
 </header>
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue" >
@@ -86,7 +116,7 @@ while($fila = mysqli_fetch_array($consulta)){
 		<tr>
 		<td><input type='text' name='tam' maxlength='45' value='$fila[5]'> </td>
 		<td><input type='text' name='tipo' maxlength='45' value='$fila[6]'></td>
-		<td><input type='file' name='img' maxlength='200' value='$fila[7]' a maxlength='45'ccept='image/*'></td>		
+		<td><input type='file' name='img' maxlength='200' value='$fila[7]'></td>		
 		<td><input type='text' name='des' maxlength='200' value='$fila[8]'></td>
 		<td><input type='submit' value='actualizar'/></td>
 		<input type='hidden' name='tabla' value='actualizar'/>

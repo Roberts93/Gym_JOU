@@ -35,12 +35,12 @@ include('menu.php');
 			<input type="password" id="password" name="pass" placeholder="Contraseña" maxlength="45" required>
 			<input type="text" id="nick" name="estado" placeholder="Estado" maxlength="45" required onkeypress="txLetras()">
 			<input type="text" id="nick" name="ciudad" placeholder="Ciudad" maxlength="45" required onkeypress="txLetras()">
-			<input type="text" id="nick" name="calle" placeholder="Calle" maxlength="45" required onkeypress="txLetras()">
-			<input type="text" id="nick" name="colonia" placeholder="Colonia" maxlength="45" required onkeypress="txLetras()">
+			<input type="text" id="nick" name="calle" placeholder="Calle" maxlength="45" required>
+			<input type="text" id="nick" name="colonia" placeholder="Colonia" maxlength="45" required>
 			<input type="text" id="nick" name="numcasa" placeholder="Numero de casa" maxlength="11" required onkeypress="txNumeros()">
 			<input type="text" id="nick" name="telefono" placeholder="Telefono"  maxlength="11" required onkeypress="txNumeros()" >
 			<input type="text" id="nick" name="cp" placeholder="Codigo postal" maxlength="5" onclick="return validar" required onkeypress="txNumeros()">
-			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="45" required >
+			<input type="text" id="nick" name="email" placeholder="Correo electronico" maxlength="200" required >
 			<label>
 			Foto: 
 			<input type="file" name="img" accept="image/*">
@@ -73,14 +73,6 @@ else{
  ?>
 	</div>
 </div>	
-</div>
-
-
-
-
-
-
-
 <?php
 include('pie.php');
 ?>
