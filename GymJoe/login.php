@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -44,7 +46,6 @@ include('menu.php');
 		</div>
 		</div>
 		<?php
-			session_start();
 			if(isset($_GET['res'])){
 	$resultado = $_GET['res'];	
 	if($resultado==1){

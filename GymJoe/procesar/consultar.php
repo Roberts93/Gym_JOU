@@ -61,8 +61,13 @@ public function consultarquema(){
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <p>$fila[3]</p>
+			  ";
+			  if(isset($_SESSION['usuario']))
+			  {
+			  echo "<center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+			  }
+			  echo "
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -81,8 +86,13 @@ public function consultaraumen(){
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <p>$fila[3]</p>";
+			  if(isset($_SESSION['usuario']))
+			  {
+			  echo "			  			  
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+			  }
+			  echo "			  
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -101,8 +111,14 @@ public function consultarnos(){
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <p>$fila[3]</p>
+			  ";
+			  if(isset($_SESSION['usuario']))
+			  {
+			  echo "
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+			  }
+			  echo "
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -121,8 +137,13 @@ public function consultarglu(){
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <p>$fila[3]</p>";
+			  if(isset($_SESSION['usuario']))
+			  {
+			  echo "			  
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+			  }
+			  echo "
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -141,8 +162,13 @@ public function consultarcrea(){
 			  <figcaption>
 			  <p>$fila[1]</p>
 			  <p>$fila[5]</p>
-			  <p>$fila[3]</p>			  
-			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+			  <p>$fila[3]</p>";
+			  if(isset($_SESSION['usuario']))
+			  {
+			  echo "
+			  <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+			  }
+			  echo "
 			  </figcaption>
 			  </figure>
 			  ";				  
@@ -163,8 +189,13 @@ if(isset($_POST['nombre'])){
                     <figcaption>
                     <p>$fila[1]</p>
                     <p>$fila[5]</p>
-                    <p>$fila[3]</p>             
-                    <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>
+                    <p>$fila[3]</p>";
+                    if(isset($_SESSION['usuario']))
+                    {
+                    echo "          
+                    <center><a href='productos.php?res=$fila[0]'><img src='img/carrito/agregar.png' width='40%'/></a></center>";
+                    }
+                    echo "
                     </figcaption>
                     </figure>
                     ";                  

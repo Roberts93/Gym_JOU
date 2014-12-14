@@ -1,14 +1,17 @@
+<?php
+session_start();
+?>
 <head>
     <title>Gym Joe</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/estructura.css">
-    <link rel="stylesheet" type="text/css" href="textos.css">
+    <link rel="stylesheet" type="text/css" href="css/textos.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/instalaciones.css">
-    <link rel="stylesheet" href="slick-master/slick/slick.css">
-	<link rel="stylesheet" href="css/estiloCarrusel_Instalaciones.css">
+    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/estiloCarrusel_Instalaciones.css">
 
 </head>
 <body>
@@ -71,7 +74,7 @@
 
 <div id="caja2">
     <div id="poci1">
-<img src="img/pesa2.jpg"  width="500" height="400" controls>
+<img src="img/Pesa2.jpg"  width="500" height="400" controls>
 <figcaption><b>Pesas</b></figcaption>
 </div>
 <div id="tama4">

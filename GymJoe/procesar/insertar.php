@@ -57,7 +57,7 @@ $extensionArchivo = substr($_FILES['img']['name'], strrpos($_FILES['img']['name'
 		//condicion
 		if($contador == 0)
 		{
-			$sql = $sql."'0','$nombre','$apellido','$nick',md5('$pass'),'$archivo', '2', '$calle', '$colonia', '$numcasa', '$ciudad', '$estado','$telefono', '$cp', '$email')";
+			$sql = $sql."'0','$nombre','$apellido','$nick','$pass','$archivo', '2', '$calle', '$colonia', '$numcasa', '$ciudad', '$estado','$telefono', '$cp', '$email')";
 		    move_uploaded_file($_FILES['img']['tmp_name'],'../fotos/usuarios/'.$archivo);
 				
 

@@ -4,7 +4,8 @@
 				<IMG SRC="img/logo5.png" width="250" height="50">
                 <?php
                 if(isset($_SESSION['usuario'])){
-                echo '<a href="index.php" id="texto_usuario">'.$_SESSION['usuario']."</a>";
+                echo '<a href="index.php" id="texto_usuario">'.$_SESSION['usuario']."</a>
+                      <img src=''/>";
             }
                 ?>
 			<ul id="lista">
@@ -17,8 +18,19 @@
                     <?php
                     if(isset($_SESSION['usuario'])){
                     ?>
-                    <li id="elementos_menu"><a href="procesar/cerrarsesion.php">Cerrar Sesión |</a></li>
+                    <?php
+                    if($_SESSION['privilegios']==1)
+                    {
+                    ?>
+                    <li id="elementos_menu"><a href="panel.php">Panel |</a></li>                    
+                    <li id="elementos_menu"><a href="procesar/cerrarsesion.php">Cerrar Sesión |</a></li>                    
                     <?php                    
+                    }
+                    else{
+                        ?>
+                        <li id="elementos_menu"><a href="procesar/cerrarsesion.php">Cerrar Sesión |</a></li>                    
+                        <?php
+                    }
                     }
                     else{
                         ?>

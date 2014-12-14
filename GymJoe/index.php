@@ -23,8 +23,8 @@ session_start();
 								start: 0,
 								scroll: 1,
 								circular: true,
-								auto:1000,
-								speed:800,				
+								auto:3500,
+								speed:2500,				
 								btnGo:
 								    [".1", ".2",
 								    ".3", ".4",

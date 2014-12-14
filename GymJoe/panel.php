@@ -18,7 +18,7 @@ if(isset($_SESSION['privilegios'])){
 <body>
 <div id="caja_principal">
 	<?php
-	include('Admin/menu.php');
+	include('menu.php');
 	?>
 <hr width="100%" height="100" color="#ccc">
 <hr id="sep" width="100%" height="100" color="blue">    
