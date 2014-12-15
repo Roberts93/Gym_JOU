@@ -40,7 +40,7 @@
 				<span class="right">		
 				</span>
 			</div>
-			<h1>Galería <span>Instalaciones </span> </h1>
+			<h1>INSTALACIONES<span></span> </h1>
             
 			
 			<div class="more">
