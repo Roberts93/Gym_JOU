@@ -191,5 +191,19 @@ height: 100%;
 	font-family: monospace;
 	position: relative;
 	left: 40px;
+}
+
+.tablas{
+	border:solid 1px #ccc;
+	color: black
+	font-family:sans-serif;
+
+}
+
+.textosperfil{
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+	
 
 }

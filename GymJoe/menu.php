@@ -4,7 +4,7 @@
 				<IMG SRC="img/logo5.png" width="250" height="50">
                 <?php
                 if(isset($_SESSION['usuario'])){
-                echo '<a href="index.php" id="texto_usuario">'.$_SESSION['usuario']."</a>
+                echo '<a href="perfil.php" id="texto_usuario">'.$_SESSION['usuario']."</a>
                       <img src=''/>";
             }
                 ?>
