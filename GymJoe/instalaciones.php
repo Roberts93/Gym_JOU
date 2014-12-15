@@ -1,141 +1,197 @@
-<?php
-session_start();
-?>
-<head>
-    <title>Gym Joe</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <html>
+ <head>
+<title>Instalaciones</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Slicebox - 3D Image Slider with Fallback"/>
+        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+		<meta name="author" content="Pedro Botelho for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+        <script type="text/javascript" src="js/js/modernizr.custom.46884.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/estructura.css">
-    <link rel="stylesheet" type="text/css" href="css/textos.css">
+    <link rel="stylesheet" type="text/css" href="textos.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pie_pagina.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="css/instalaciones.css">
-    <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/estiloCarrusel_Instalaciones.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+	<link rel="stylesheet" href="css/estiloCarrusel_Instalaciones.css">
 
-</head>
-<body>
-    <div id="caja_principal">
-    <?php 
+    <div id="contenedor">
+	</head>
+	
+	<body>
+<div id="caja_principal">
+	<?php 
         include('menu.php');
     ?>
     <hr width="100%" height="100" color="#ccc">
     <hr id="sep" width="100%" height="100" color="blue">
 
-    
-<div id="fondo">
-<div class="multiple-items">
-	<div><img src="fotos/imagenes/instalacionescarrusel1.jpg" class="tam_imagen"></div>
-	<div><img src="fotos/imagenes/instalacionescarrusel2.jpg" class="tam_imagen"></div>
-    <div><img src="fotos/imagenes/instalacionescarrusel3.jpg" class="tam_imagen"></div>
-
-	<div><img src="fotos/imagenes/instalacionescarrusel4.jpg" class="tam_imagen"></div>
-	<div><img src="fotos/imagenes/instalacionescarrusel5.jpg" class="tam_imagen"></div>
-	<div><img src="fotos/imagenes/instalacionescarrusel6.jpg" class="tam_imagen"></div>
-	<div><img src="fotos/imagenes/instalacionescarrusel7.jpg" class="tam_imagen"></div>
-	<div><img src="fotos/imagenes/instalacionescarrusel8.jpg" class="tam_imagen" ></div>
-	</div>
-<script rel="text/javascript" src="jquery-2.1.1.min.js"></script>
-     <script rel="text/javascript" src="slick-master/slick/slick.js"></script>
-	<script type="text/javascript">
-  $('.multiple-items').slick({
-  infinite: true,
- // slidesToShow: 4,
- // slidesToScroll: 4
-});
-</script>
-</div>
 
 
-
+		<div class="container">
+			<div class="codrops-top clearfix">
+				<span class="right">		
+				</span>
+			</div>
+			<h1>Galería <span>Instalaciones </span> </h1>
+            
+			
+			<div class="more">
 <div id="info">
 <p >¿Quieres entrenar en las mejores instalaciones?</p>
 <p > GYM JOE cuenta con las mejores instalaciones, donde puedes desarrollar  tus capacidades al maximo.</p>
 <p >Contamos con Spinning,Pesas, Vestidores y Salon de baile.  </p>
 </div>
 
-<div id="cajota">
 
-<div id="caja1">
-<div id="poci">
-<img src="img/spi11.jpg" width="500" height="400" controls>
-<figcaption><b>Spinning</b></figcaption>
-</div>
-<div id="tama2">
-<img src="img/spi5.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-<div id="tama3">
-<img src="img/spi4.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-</div>
+			</div>
+			<div class="wrapper">
+				<ul class="sb-slider" id="sb-slider" name="sb-slider">
+					<li>
+						<a href="index.php"_blank"><img src="images/1.jpg" width="700" height="600"  alt="image1"/></a> 
+						<div class="sb-description">
+							<h3>Instalaciones Gym Joe</h3>
+						</div>
+					</li>
+					<li>
+						<a href="index.php"_blank"><img src="images/2.jpg" width="700" height="600"  alt="image2"/></a>
+						<div class="sb-description">
+						<h3>Instalaciones Gym Joe</h3>	
+						</div>
+					</li>
+                  
+						
+					<li>
+						<a href="index.php"><img src="images/3.jpg" width="700" height="600" alt="image3"/></a>
+						<div class="sb-description">
+							<h3>Instalaciones Gym Joe</h3>
+						</div>
+					</li>
+                    
+					<li>
+						<a href="index.php"><img src="images/4.jpg" width="700" height="600" alt="image4"/></a>
+						<div class="sb-description">
+							<h3>Instalaciones Gym Joe</h3>
+						</div>
+					</li>
+					<li>
+						<a href="index.php"><img src="images/8.jpg" width="700" height="600"  alt="image5"/></a>
+						<div class="sb-description">
+							<h3>Instalaciones Gym Joe</h3>
+						</div>
+					</li>
+					<li>
+						<a href="index.php"><img src="images/6.jpg" width="700" height="600"   alt="image6"/></a>
+						<div class="sb-description">
+						<h3>Instalaciones Gym Joe</h3>	
+						</div>
+					</li>
+					
+				</ul>
 
+				<div id="shadow" class="shadow"></div>
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Siguiente</a>
+					<a href="#">Foto</a>
+				</div>
 
-<div id="caja2">
-    <div id="poci1">
-<img src="img/Pesa2.jpg"  width="500" height="400" controls>
-<figcaption><b>Pesas</b></figcaption>
-</div>
-<div id="tama4">
-<img src="img/61.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-<div id="tama5">
-<img src="img/pesas.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-</div>
-
-
-<div id="caja3">
-    <div id="poci2">
-<img src="img/vesti.jpg"  width="500" height="400" controls>
-<figcaption><b>Vestidores</b></figcaption>
-</div>
-
-<div id="tama6">
-<img src="img/vesti2.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-
-<div id="tama7">
-<img src="img/vesti4.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-</div>
-
-<div id="caja4">
-    <div id="poci">
-<img src="img/salon.jpg"  width="500" height="400" controls>
-<figcaption><b>Salon de baile</b></figcaption>
-</div>
-<div id="tama8">
-<img src="img/baile.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-<div id="tama9">
-<img src="img/bailee.jpg" width="300" height="180" controls>
-<figcaption><b></b></figcaption>
-</div>
-
-
-</div>
+				<div id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+                    <span></span>                    
+				</div>
+		  </div><!-- /wrapper -->
+		</div>
 
 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
 
+				var Page = (function() {
 
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$navDots = $( '#nav-dots' ).hide(),
+						$nav = $navDots.children( 'span' ),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
 
+								$navArrows.show();
+								$navDots.show();
+								$shadow.show();
+
+							},
+							onBeforeChange : function( pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slicebox.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slicebox.jump( i + 1 );
+									return false;
+								
+								} );
+							} );
+						};
+						return { init : init };
+				})();
+				Page.init();
+			});
+		</script>
 </div>
-
-
-</div>
-</div>
-</div>
-
-
-<?php
-    include('pie.php');
-    ?>
-</body>
-</html>
+	<?php
+	include('pie.php');
+	?>
+	</body>
+</html>	
