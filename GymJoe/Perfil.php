@@ -56,7 +56,7 @@ include('menu.php');
                                         <tbody>  
                                             <tr class="tablas">
                                                 <td class="tablas"><strong class="textosperfil">Nombre: <br /></strong><?php echo $_SESSION["nombre"]." ".$_SESSION["apellido"];?></td>
-                                                <td class="tablas"><strong class="textosperfil">Nick: <br /></strong><?php echo $_SESSION["nick"];?> </td>
+                                                <td class="tablas"><strong class="textosperfil">Nick: <br /></strong><?php echo $_SESSION["usuario"];?> </td>
                                             </tr>
                                             <tr class="tablas">
                                                 <td class="tablas"><strong class="textosperfil">Ciudad: <br /></strong><?php echo $_SESSION["ciudad"];?></td>
