@@ -13,5 +13,17 @@ if($numeroventa==0){
 }else{
 	$numeroventa++;
 }
-
+for ($i=0;$i<count($arreglo);$i++) { 
+	$consulta2=mysqli_query($conexion, "insert into ventas (numeroventa, img, nombre, precio, cantidad, subtotal) values(
+		".$numeroventa.",
+		'".$arreglo[$i]['Imagen']."',
+		'".$arreglo[$i]['Nombre']."',
+		'".$arreglo[$i]['Precio']."',
+		'".$arreglo[$i]['Cantidad']."',
+		'".($arreglo[$i]['Precio']*$arreglo[$i]['Cantidad'])."'
+		)");
+}
+unset($_SESSION['carrito']);
+mysqli_close($conexion);
+header("Location: productos.php?b=0")
 ?>

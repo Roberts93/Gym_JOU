@@ -78,6 +78,19 @@ session_start();
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>   
     <script type="text/javascript" src="js/Validar.js"></script> 
     <script type="text/javascript" src="js/script.js"></script>
+    <?php
+    if (isset($_GET['b'])) {
+    $b=$_GET['b'];
+    if($b==0)
+    {
+    ?>
+    <script type="text/javascript">
+    alert("Compra realizada satisfactoriamente");
+    </script>
+    <?php 
+    }
+    }
+    ?>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'/>
     <meta charset="UTF-8"/>        
 </head>
@@ -184,7 +197,7 @@ session_start();
                     echo '<center><h2 id="total" style="color:black;">Total: '.$total.'</h2></center>';
                     if($total!=0)
                     {
-                    echo '<center><a href="compras.php" class="aceptar">Comprar</a></center>';
+                    echo '<center><a href="datos.php" class="aceptar">Comprar</a></center>';
                     }
                     mysqli_close($conexion);
                     ?>
