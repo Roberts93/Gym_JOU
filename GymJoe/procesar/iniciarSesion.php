@@ -24,6 +24,8 @@ $cp=$dato[13];
 $ncasa=$dato[9];
 $tel=$dato[12];
 $email=$dato[14];
+$colonia=$dato[8];
+$calle=$dato[7];
     if($nick==$usuario && $pass==$cont){
         $_SESSION['usuario']=$nick;
         $_SESSION['contra']=$pass;
@@ -36,6 +38,8 @@ $email=$dato[14];
         $_SESSION['numcasa']=$ncasa;
         $_SESSION['telefono']=$tel;
         $_SESSION['email']=$email;
+        $_SESSION['colonia']=$colonia;
+        $_SESSION['calle']=$calle;
       if($privilegio==1){
         $_SESSION['privilegios']=$privilegio;
         header('location: ../panel.php');

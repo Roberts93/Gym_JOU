@@ -193,17 +193,56 @@ height: 100%;
 	left: 40px;
 }
 
+#tabla{
+	position: relative;
+	left: 409px;
+	bottom: 308px;
+	width: 50%;
+	height: 50%;
+}
+
 .tablas{
 	border:solid 1px #ccc;
-	color: black
+	color: #ccc;
 	font-family:sans-serif;
+	border-radius: 20%;
 
 }
 
 .textosperfil{
 	color: black;
-	font-size: 15px;
+	font-size: 100%;
 	font-family: sans-serif;
-	
+}
 
+#contenedorimg{
+	border:solid 1px ;
+	position: relative;
+	left: 100px;
+	border-radius: 20%;
+}
+
+.contim{
+	height: 300px;
+	width: 300px;
+}
+
+#texto{
+	color: black;
+	font-size: 50%;
+	font-family: sans-serif;
+}
+
+#boton{
+
+	width: 80%;
+    height: 200%;
+    border-radius: 15px;
+    border: 2px solid white;
+    position: relative;
+    left:254px;
+    top: 15px;
+    background-color: #0066ff;
+    font-size: 15px;
+    color: white;
 }

@@ -28,12 +28,12 @@ include('menu.php');
 <hr id="hr_separador" width="100%" height="100" color="blue">
 <div class="row">
 <div class="large-6 large-centered columns">
-<h3>Perfil</h3>
+
 </div>
 </div>
   <section id="max">  
   <div class="contenedor">
-            <div class="titulo">Productos</div>
+            <div class="titulo">Perfil</div>
             <div id="pestanas">
                 <ul id="listapro">
                 	<?php
@@ -51,24 +51,34 @@ include('menu.php');
             <div id="contenidopestanas">
                 <div id="cpestana1">                
                     <form>
-                            <div></div> 
-                            <table>
+                            <table id="contenedorimg">
                                         <tbody>  
                                             <tr class="tablas">
-                                                <td class="tablas"><strong class="textosperfil">Nombre: <br /></strong><?php echo $_SESSION["nombre"]." ".$_SESSION["apellido"];?></td>
-                                                <td class="tablas"><strong class="textosperfil">Nick: <br /></strong><?php echo $_SESSION["usuario"];?> </td>
+                                                <td class="contim"><IMG SRC="<?php echo $_SESSION["imagen"]?>" width="100%" height="100%"></td>
+                                               
+                                            </tr>
+                                            </tbody>
+                                    </table>
+
+                        
+                            
+                            <table id="tabla">
+                                        <tbody>  
+                                            <tr class="tablas">
+                                                <td class="tablas"><strong class="textosperfil">Nombre: <br /></strong><b id="text"><?php echo $_SESSION["nombre"]." ".$_SESSION["apellido"];?></b></td>
+                                                <td class="tablas"><strong class="textosperfil">Nick: <br /></strong><b id="text"><?php echo $_SESSION["usuario"];?></b> </td>
                                             </tr>
                                             <tr class="tablas">
-                                                <td class="tablas"><strong class="textosperfil">Ciudad: <br /></strong><?php echo $_SESSION["ciudad"];?></td>
-                                                <td class="tablas"><strong class="textosperfil">Estado Federativo: <br /></strong><?php echo $_SESSION["Estado"];?></td>
+                                                <td class="tablas"><strong class="textosperfil">Ciudad: <br /></strong><b id="text"><?php echo $_SESSION["ciudad"];?></b></td>
+                                                <td class="tablas"><strong class="textosperfil">Estado Federativo: <br /></strong><b id="text"><?php echo $_SESSION["Estado"];?></b></td>
                                             </tr>
                                             <tr class="tablas">                                                
-                                                <td class="tablas"><strong class="textosperfil">Codigo Postal: <br /></strong><?php echo $_SESSION["cp"];?></td>
-                                                <td class="tablas"><strong class="textosperfil">Celular: <br /></strong><?php echo $_SESSION["numcasa"];?></td>
+                                                <td class="tablas"><strong class="textosperfil">Codigo Postal: <br /></strong><p id="text"><?php echo $_SESSION["cp"];?></b></td>
+                                                <td class="tablas"><strong class="textosperfil">Celular: <br /></strong><b id="text"><?php echo $_SESSION["numcasa"];?></b></td>
                                             </tr>
                                             <tr class="tablas">
-                                                <td class="tablas"><strong class="textosperfil">Telefono: <br /></strong><?php echo $_SESSION["telefono"];?></td>
-                                                <td class="tablas"><strong class="textosperfil">Correo electronico: <br /></strong><?php echo $_SESSION["email"];?></td>
+                                                <td class="tablas"><strong class="textosperfil">Telefono: <br /></strong><b id="text"><?php echo $_SESSION["telefono"];?></b></td>
+                                                <td class="tablas"><strong class="textosperfil">Correo electronico: <br /></strong><b id="text"><?php echo $_SESSION["email"];?></b></td>
                                                 
                                             </tr>       
                                         </tbody>
@@ -78,7 +88,44 @@ include('menu.php');
                                     
                 </div>
                 <div id="cpestana2">
-                   <p>hola</p>
+                     <table >
+                                        <br><br><br>
+                                        <form method="post" action="procesar/modificarPerf.php">
+                                        <tbody>  
+                                            <tr class="tablas">
+                                                <td><strong class="textosperfil">Nombre: <br /></strong> <input type=text id="text" value="<?php echo $_SESSION['nombre']?>" name="nombre"> </td>
+                                                <td><strong class="textosperfil">Apellido: <br /></strong><input type=text id="text"value="<?php echo $_SESSION['apellido']?>" name="apellido"> </td>
+                                            </tr>
+                                            <tr class="tablas">
+                                                <td><strong class="textosperfil">Nick: <br /></strong><input type=text id="text" value="<?php echo $_SESSION['usuario'];?>" name="nick"> </td>
+                                                <td><strong class="textosperfil">Ciudad: <br /></strong><input type=text id="text" value="<?php echo $_SESSION['ciudad'];?>" name="ciudad"> </td>
+                                                
+                                            </tr>
+                                            <tr class="tablas">                                                
+                                               <td><strong class="textosperfil">Estado Federativo: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["Estado"];?>" name="estado"> </td>
+                                                <td><strong class="textosperfil">Codigo Postal: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["cp"];?>" name="cp"></td>
+                                                
+                                            </tr>
+                                            <tr class="tablas">
+                                                <td><strong class="textosperfil">Celular: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["numcasa"];?>" name="cel"></td>
+                                                <td><strong class="textosperfil">Telefono: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["telefono"];?>" name="tel"></td>
+                                                
+                                            </tr>   
+                                            <tr class="tablas">
+                                                <td><strong class="textosperfil">Correo electronico: <br /></strong><input type="text" id="text" value="<?php echo $_SESSION["email"];?>" name="email"> </td>
+                                                <td><strong class="textosperfil">Contraseña: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["contra"];?>" name="pass"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong class="textosperfil">Calle: <br /></strong><input type="text" id="text" value="<?php echo $_SESSION["calle"];?>" name="calle"> </td>
+                                                <td><strong class="textosperfil">Colonia: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["colonia"];?>" name="colonia"> </td>
+                                                <td><strong class="textosperfil">Numero de casa: <br /></strong><input type=text id="text" value="<?php echo $_SESSION["numcasa"];?>" name="ncasa"> </td>
+                                            </tr>   
+                                            <tr class="tablas">
+                                                <td><input id="boton" type="submit" value="Modificar"> </td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                </form>
                 </div>
                 
                 </div>
